@@ -1,6 +1,6 @@
 # Maison RDL — Flujo vigente
 
-El arranque inicial está integrado; continuar desde [LEEME-PRIMERO](../LEEME-PRIMERO.md). Contexto y límites: [AGENTS](../AGENTS.md) y [CONTEXT](../CONTEXT.md).
+El arranque inicial está integrado; ejecución y continuidad en [README](../README.md). Contexto y límites: [AGENTS](../AGENTS.md) y [CONTEXT](../CONTEXT.md).
 
 ## Equipo
 
