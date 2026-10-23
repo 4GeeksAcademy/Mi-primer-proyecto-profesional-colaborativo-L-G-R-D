@@ -1,7 +1,7 @@
 # Maison RDL — Guía visual compartida v0.1
 
 Fecha: 23/10/2026. Responsable: Roger.
-Estado: base de inicio aceptada por Roger para orientar el trabajo; no equivale a aprobación final de las cinco vistas ni a T02 integrada.
+Estado: base visual T02 aprobada por Lydia e integrada en main mediante la PR #4. Verificación técnica y pendientes en [T02](../tasks/T02-base-visual.md); no equivale a aprobación final de las cinco vistas.
 
 ## Dirección
 
@@ -112,7 +112,7 @@ El hero a pantalla completa corresponde solo a inicio: height 100svh con foto pa
 
 ## Base reutilizable T02
 
-Implementación local pendiente de revisión: [muestrario](componentes.html), [navbar](../src/partials/navbar.html), [footer](../src/partials/footer.html) y [entrada CSS](../src/styles/input.css). Los valores de tokens no cambian. Las fuentes se declaran en la entrada CSS; las rutas `../fonts/` se resuelven desde `assets/css/styles.css`, no desde el HTML. Recursos y licencias: [procedencia](../assets/PROCEDENCIA.md).
+Base integrada mediante la PR #4: [muestrario](componentes.html), [navbar](../src/partials/navbar.html), [footer](../src/partials/footer.html) y [entrada CSS](../src/styles/input.css). Los valores de tokens no cambian. Las fuentes se declaran en la entrada CSS; las rutas `../fonts/` se resuelven desde `assets/css/styles.css`, no desde el HTML. Recursos y licencias: [procedencia](../assets/PROCEDENCIA.md).
 
 - `site-container`: márgenes de 20/32/56 px; `section-title`: Cormorant 38/42/50 px. `font-body`: Manrope.
 - `site-header`: cabecera clara en flujo normal. Inicio añade `site-header--photo on-dark` y usa `logo-ivory.svg`; no aplicar esa variante a internas.
