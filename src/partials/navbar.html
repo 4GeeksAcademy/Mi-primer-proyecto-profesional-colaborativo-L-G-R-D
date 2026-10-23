@@ -1,0 +1,47 @@
+<header class="site-header">
+  <div class="site-container header-row grid grid-cols-[1fr_auto_1fr] items-center gap-0 sm:gap-2">
+    <nav aria-label="Principal" class="hidden items-center gap-8 lg:flex">
+      <a class="nav-link" href="catalogo.html">Colección</a>
+      <a class="nav-link" href="index.html#maison">La maison</a>
+    </nav>
+    <details class="native-menu lg:hidden">
+      <summary class="nav-link w-fit" aria-label="Menú de navegación">Menú</summary>
+      <nav aria-label="Navegación móvil" class="mobile-nav surface-light">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="producto.html">Producto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="index.html#maison">La maison</a>
+        <button class="nav-link text-left" type="button" popovertarget="cuenta">Cuenta de demostración</button>
+      </nav>
+    </details>
+    <a href="index.html" aria-label="Maison RDL, inicio"><img class="header-logo" src="assets/brand/logo-ink.svg" width="300" height="170" alt="Maison RDL"></a>
+    <div class="flex items-center justify-end sm:gap-2">
+      <button class="icon-button" type="button" popovertarget="buscar" aria-label="Buscar" title="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+      </button>
+      <button class="icon-button hidden sm:inline-flex" type="button" popovertarget="cuenta" aria-label="Cuenta de demostración" title="Cuenta de demostración">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg>
+      </button>
+      <a class="icon-button" href="carrito.html" aria-label="Ver carrito" title="Carrito">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="M5 7.5h14l1 13H4l1-13Z"/><path d="M8.5 8V5a3.5 3.5 0 0 1 7 0v3"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+<section popover id="buscar" class="small-popover surface-light" aria-labelledby="buscar-titulo">
+  <button class="icon-button close-button" type="button" popovertarget="buscar" popovertargetaction="hide" aria-label="Cerrar búsqueda" title="Cerrar búsqueda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  <h2 id="buscar-titulo" class="section-title">Una pieza por descubrir.</h2>
+  <label class="mt-6 block text-sm" for="buscar-prenda">Buscar en la colección</label>
+  <input class="field mt-2" id="buscar-prenda" type="search" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
+  <p id="buscar-ayuda" class="mt-3 text-sm leading-7 text-muted">Búsqueda de demostración, sin resultados automáticos ni envío de datos.</p>
+  <a class="btn mt-6" href="catalogo.html">Ver el catálogo</a>
+  <button class="text-link mt-5 block text-sm sm:hidden" type="button" popovertarget="cuenta">Cuenta de demostración</button>
+</section>
+<section popover id="cuenta" class="small-popover surface-light" aria-labelledby="cuenta-titulo">
+  <button class="icon-button close-button" type="button" popovertarget="cuenta" popovertargetaction="hide" aria-label="Cerrar cuenta" title="Cerrar cuenta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  <h2 id="cuenta-titulo" class="section-title">Tu espacio en la maison.</h2>
+  <p class="mt-5 text-sm leading-7 text-muted">Acceso de demostración. No se crean cuentas ni se recogen credenciales.</p>
+  <a class="text-link mt-6 inline-block text-sm" href="catalogo.html">Continuar sin registrarse</a>
+</section>

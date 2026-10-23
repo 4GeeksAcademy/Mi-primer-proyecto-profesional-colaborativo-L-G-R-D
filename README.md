@@ -46,7 +46,7 @@ npm run watch
 ```
 
 - `assets/css/styles.css` es generado: no editarlo a mano. Regenerarlo y añadirlo al commit cuando cambien clases, fuentes o tokens, porque el alojamiento estático lo sirve directamente.
-- Tailwind solo escanea los cinco HTML de la raíz y `src/partials/` (declarados con `@source` en input.css). Si se crea otra página HTML, añadir su `@source`; las clases de `docs/` no entran en el CSS.
+- Tailwind escanea los cinco HTML de la raíz, `src/partials/` y [docs/componentes.html](docs/componentes.html), declarados con `@source` en input.css. Si se crea otra página HTML, añadir su `@source`; el resto de `docs/` y la referencia visual quedan fuera.
 - Si hay un conflicto en el CSS generado, resolver los archivos fuente y volver a ejecutar `npm run build`.
 
 ## Servidor local
@@ -80,6 +80,12 @@ memory-bank/               Memoria compartida del proyecto
 ```
 
 `docs/referencia-visual` es una propuesta de la portada con su propio build; no forma parte del sitio entregado.
+
+## Base visual T02
+
+La base compartida está preparada localmente para revisión, no integrada ni verificada. Ver [muestrario de componentes](docs/componentes.html), [guía de uso y esquemas](docs/diseno.md) y [procedencia/licencias](assets/PROCEDENCIA.md). Inicio integra el hero de referencia; las páginas internas conservan sus secciones de contenido pendientes. El muestrario no sustituye esas páginas ni define el inventario.
+
+Los [fragmentos de navbar](src/partials/navbar.html) y [footer](src/partials/footer.html) son referencias con rutas para la raíz, no includes: sus copias se mantienen coordinadas en los cinco HTML. El muestrario adapta esas rutas con `../`. Menú, búsqueda y cuenta usan HTML nativo; la búsqueda no procesa resultados y las categorías llevan al catálogo sin filtrarlo.
 
 ## Alcance
 

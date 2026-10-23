@@ -110,6 +110,32 @@ Los fragmentos en src/partials son copias de referencia, no includes automático
 
 El hero a pantalla completa corresponde solo a inicio: height 100svh con foto panorámica en escritorio y retrato en tablet/móvil. Titular y CTA siguen siendo HTML. Mantener rostros visibles y CTA dentro de la primera pantalla incluso a 375×667; no imponer una altura mínima mayor que el viewport.
 
+## Base reutilizable T02
+
+Implementación local pendiente de revisión: [muestrario](componentes.html), [navbar](../src/partials/navbar.html), [footer](../src/partials/footer.html) y [entrada CSS](../src/styles/input.css). Los valores de tokens no cambian. Las fuentes se declaran en la entrada CSS; las rutas `../fonts/` se resuelven desde `assets/css/styles.css`, no desde el HTML. Recursos y licencias: [procedencia](../assets/PROCEDENCIA.md).
+
+- `site-container`: márgenes de 20/32/56 px; `section-title`: Cormorant 38/42/50 px. `font-body`: Manrope.
+- `site-header`: cabecera clara en flujo normal. Inicio añade `site-header--photo on-dark` y usa `logo-ivory.svg`; no aplicar esa variante a internas.
+- `btn`, `btn--secondary`, `btn--light`, `text-link`, `field`, `choice` y `product-card`: patrones del muestrario. Layout, espaciado, rejillas y estados puntuales siguen usando utilidades Tailwind. `product-track` prepara los dos listados horizontales de T04, aún sin inventario.
+- `on-dark` cambia el foco a marfil. Los paneles `surface-light` recuperan foco bronce. Deshabilitar controles con `disabled`, no solo una apariencia visual.
+- Menú `details/summary` y paneles `popover` nativos, sin JavaScript. Escape cierra popovers; el menú se vuelve a cerrar con su summary. Búsqueda sin formulario ni envío; cuenta sin credenciales.
+- Los fragmentos tienen rutas para HTML en la raíz: copiar su contenido, ajustar `aria-current="page"` y, desde `docs/`, anteponer `../` a rutas de páginas/recursos. No enlazarlos con `iframe`, `fetch` ni includes supuestos. Sincronizar siempre las cinco copias al cambiar un fragmento.
+- Los enlaces de categorías llevan a la sección de productos del catálogo, no activan filtros. Los textos legales y el contacto describen solo la demo, sin domicilios o condiciones comerciales inventados.
+- Hero: foto panorámica desde 1024 px, vertical por debajo; `100svh`, titular HTML de 58/88/104 px y 52 px en poca altura. Sin tipografía basada en `vw` ni tracking negativo nuevo; ajuste de legibilidad sobre la referencia, no cambio de identidad. CTA de 48 px y gradación oscura compartida.
+
+### Esquemas de las cuatro vistas internas
+
+Esquemas para contenido posterior, no tareas de estructura ya completadas:
+
+| Vista | Escritorio (desde 1024 px) | Tablet y móvil | Traspaso |
+| --- | --- | --- | --- |
+| Catálogo | Cabecera clara → título → filtros categoría/talla en fila → rejilla `grid grid-cols-2 gap-6 lg:grid-cols-4` → footer | Filtros apilados; tarjetas con `min-w-0`, una columna si no caben nombre/precio; imágenes 3:4 | T05 añade veinte entradas del inventario T03; no duplicar ejemplos para aparentar catálogo |
+| Producto | Cabecera → imagen y datos `grid gap-8 lg:grid-cols-2` → descripción/materiales/usos a ancho completo → footer | Imagen antes de datos; label visible para talla/cantidad; acción a ancho cómodo | T06 aporta nombre, referencia, precio y contenido; enlazar el recorrido a carrito sin prometer persistencia |
+| Carrito | Cabecera → título → `grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]`: líneas a izquierda, resumen a derecha → footer | Líneas apiladas; resumen después, importes con `tabular-nums`; evitar tabla de ancho fijo | T07 añade tres líneas, subtotal/impuestos/total y Comprar desde inventario común |
+| Checkout | Cabecera → título → tres bloques numerados en orden, columna de lectura `max-w-3xl`; resumen lateral solo si procede → footer | Una columna; campos `field`, labels persistentes, nunca ocultar una etapa tras pestañas | T08 desarrolla campos y resumen; sin formulario que envíe datos y botón final siempre deshabilitado |
+
+Usar separadores `border-line` y superficies sin tarjetas exteriores ni sombras. En resúmenes sobre paper mantener inputs ivory; borde control solo sobre ivory, bronze si el campo se coloca directamente sobre paper.
+
 ## Recursos y comportamiento
 
 - Fotos locales: luz cálida, materiales reconocibles y fondos sobrios. Documentar origen; no afirmar instalaciones, antigüedad o certificaciones ficticias.

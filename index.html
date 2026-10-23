@@ -4,31 +4,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maison RDL — Moda de lujo con sede en Francia</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-ivory text-ink font-body antialiased">
   <!-- Esqueleto T01. Navbar, footer y composición definitivos: T02 y diseño de Roger. -->
-  <a class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-3 focus:text-ivory" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="border-b border-line">
-    <div class="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-4 px-5 py-6 sm:px-8 lg:px-14">
-      <a class="font-display text-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="index.html">Maison RDL</a>
-      <nav aria-label="Principal">
-        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="index.html" aria-current="page">Inicio</a></li>
-          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="catalogo.html">Catálogo</a></li>
-          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="producto.html">Producto</a></li>
-          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="carrito.html">Carrito</a></li>
-          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="checkout.html">Checkout</a></li>
-        </ul>
+<header class="site-header site-header--photo on-dark">
+  <div class="site-container header-row grid grid-cols-[1fr_auto_1fr] items-center gap-0 sm:gap-2">
+    <nav aria-label="Principal" class="hidden items-center gap-8 lg:flex">
+      <a class="nav-link" href="catalogo.html">Colección</a>
+      <a class="nav-link" href="index.html#maison">La maison</a>
+    </nav>
+    <details class="native-menu lg:hidden">
+      <summary class="nav-link w-fit" aria-label="Menú de navegación">Menú</summary>
+      <nav aria-label="Navegación móvil" class="mobile-nav surface-light">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="producto.html">Producto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="index.html#maison">La maison</a>
+        <button class="nav-link text-left" type="button" popovertarget="cuenta">Cuenta de demostración</button>
       </nav>
+    </details>
+    <a href="index.html" aria-label="Maison RDL, inicio"><img class="header-logo" src="assets/brand/logo-ivory.svg" width="300" height="170" alt="Maison RDL"></a>
+    <div class="flex items-center justify-end sm:gap-2">
+      <button class="icon-button" type="button" popovertarget="buscar" aria-label="Buscar" title="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+      </button>
+      <button class="icon-button hidden sm:inline-flex" type="button" popovertarget="cuenta" aria-label="Cuenta de demostración" title="Cuenta de demostración">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg>
+      </button>
+      <a class="icon-button" href="carrito.html" aria-label="Ver carrito" title="Carrito">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="M5 7.5h14l1 13H4l1-13Z"/><path d="M8.5 8V5a3.5 3.5 0 0 1 7 0v3"/></svg>
+      </a>
     </div>
-  </header>
+  </div>
+</header>
+<section popover id="buscar" class="small-popover surface-light" aria-labelledby="buscar-titulo">
+  <button class="icon-button close-button" type="button" popovertarget="buscar" popovertargetaction="hide" aria-label="Cerrar búsqueda" title="Cerrar búsqueda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  <h2 id="buscar-titulo" class="section-title">Una pieza por descubrir.</h2>
+  <label class="mt-6 block text-sm" for="buscar-prenda">Buscar en la colección</label>
+  <input class="field mt-2" id="buscar-prenda" type="search" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
+  <p id="buscar-ayuda" class="mt-3 text-sm leading-7 text-muted">Búsqueda de demostración, sin resultados automáticos ni envío de datos.</p>
+  <a class="btn mt-6" href="catalogo.html">Ver el catálogo</a>
+  <button class="text-link mt-5 block text-sm sm:hidden" type="button" popovertarget="cuenta">Cuenta de demostración</button>
+</section>
+<section popover id="cuenta" class="small-popover surface-light" aria-labelledby="cuenta-titulo">
+  <button class="icon-button close-button" type="button" popovertarget="cuenta" popovertargetaction="hide" aria-label="Cerrar cuenta" title="Cerrar cuenta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+  <h2 id="cuenta-titulo" class="section-title">Tu espacio en la maison.</h2>
+  <p class="mt-5 text-sm leading-7 text-muted">Acceso de demostración. No se crean cuentas ni se recogen credenciales.</p>
+  <a class="text-link mt-6 inline-block text-sm" href="catalogo.html">Continuar sin registrarse</a>
+</section>
 
   <main id="contenido">
+    <section class="hero-section on-dark" aria-labelledby="hero-titulo">
+      <picture class="hero-picture">
+        <source media="(min-width: 1024px)" srcset="assets/images/hero-desktop.webp">
+        <img class="hero-image" src="assets/images/hero.webp" width="1122" height="1402" fetchpriority="high" alt="Campaña de muestra Maison RDL: dos modelos con prendas marfil y chocolate junto a una terraza de piedra">
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="site-container hero-copy">
+        <div>
+          <p class="eyebrow">Otoño — Invierno 2026 · L'essentiel</p>
+          <h1 class="hero-title" id="hero-titulo">La elegancia<br>de lo <em>esencial.</em></h1>
+          <p class="hero-description">Siluetas depuradas. Texturas que se sienten.<br>Un vestuario para hacerlo tuyo.</p>
+          <a class="btn btn--light hero-cta" href="catalogo.html">Explorar la colección <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="site-container hero-foot"><a class="text-link" href="#novedades-titulo">Descubrir</a><span>Le vestiaire contemporain</span></div>
+    </section>
     <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
       <div class="py-12">
-        <h1 class="font-display text-5xl">Maison RDL</h1>
+        <p class="eyebrow text-muted">Maison RDL</p>
         <!-- T04: hero de campaña a pantalla completa (diseño D01). -->
       </div>
       <section class="py-12 border-t border-line" aria-labelledby="novedades-titulo">
@@ -40,22 +90,62 @@
         <!-- T04: listado horizontal de tarjetas. -->
       </section>
     </div>
+    <section id="maison" class="on-dark bg-olive text-ivory" aria-labelledby="maison-titulo">
+      <div class="site-container grid gap-8 py-12 sm:py-16 lg:grid-cols-2 lg:gap-24">
+        <div><p class="eyebrow text-gold-light">El espíritu Maison RDL</p><h2 class="section-title mt-5" id="maison-titulo">Menos ruido.<br><em>Más intención.</em></h2></div>
+        <p class="max-w-lg self-center text-sm leading-8 text-on-olive-muted">Una mirada al vestir que empieza por lo esencial: la caída de una prenda, la textura de un tejido y la libertad de combinarlo a tu manera. Maison RDL es un proyecto académico de Roger, Daniel y Lydia.</p>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-night text-ivory">
-    <div class="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-14">
-      <!-- T02/T04: categorías, legal, marca y contacto con destinos reales. -->
-      <nav aria-label="Páginas del sitio">
-        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="index.html">Inicio</a></li>
-          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="catalogo.html">Catálogo</a></li>
-          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="producto.html">Producto</a></li>
-          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="carrito.html">Carrito</a></li>
-          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="checkout.html">Checkout</a></li>
-        </ul>
-      </nav>
-      <p class="mt-8 text-sm text-on-dark-muted">Maison RDL · Prototipo académico de tienda ficticia.</p>
+<!-- T02/T04: categorías, legal, marca y contacto con destinos reales. -->
+<footer class="on-dark bg-night text-ivory">
+  <div class="site-container grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12 lg:py-16">
+    <div id="marca">
+      <a href="index.html" aria-label="Maison RDL, inicio"><img class="h-auto w-[220px] max-w-full" src="assets/brand/logo-horizontal-ivory.svg" width="500" height="84" alt="Maison RDL"></a>
+      <p class="mt-5 max-w-64 text-sm leading-7 text-on-dark-muted">La elegancia de lo esencial.<br>Marca ficticia con sede en Francia.</p>
     </div>
-  </footer>
+    <nav aria-label="Categorías">
+      <h2 class="eyebrow">La colección</h2>
+      <ul class="mt-4 text-sm text-on-dark-muted">
+        <li><a class="footer-link" href="catalogo.html#productos-titulo">Camisas</a></li>
+        <li><a class="footer-link" href="catalogo.html#productos-titulo">Pantalones</a></li>
+        <li><a class="footer-link" href="catalogo.html#productos-titulo">Calzado</a></li>
+        <li><a class="footer-link" href="catalogo.html#productos-titulo">Accesorios</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Información de la maison">
+      <h2 class="eyebrow">La maison</h2>
+      <ul class="mt-4 text-sm text-on-dark-muted">
+        <li><a class="footer-link" href="index.html#maison">Sobre Maison RDL</a></li>
+        <li><a class="footer-link" href="#terminos">Términos de la demo</a></li>
+        <li><a class="footer-link" href="#privacidad">Privacidad</a></li>
+        <li><a class="footer-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="contacto">
+      <h2 class="eyebrow">Contacto</h2>
+      <p class="mt-5 text-sm leading-7 text-on-dark-muted">Roger · Daniel · Lydia</p>
+      <p class="mt-3 text-sm leading-7 text-on-dark-muted">Proyecto académico.<br>Canal comercial no habilitado.</p>
+      <button class="footer-link mt-2 text-sm underline underline-offset-4 sm:hidden" type="button" popovertarget="cuenta">Cuenta de demostración</button>
+    </div>
+  </div>
+  <div class="site-container grid gap-6 border-t border-dark-line py-8 text-sm leading-7 text-on-dark-muted sm:grid-cols-2">
+    <section id="terminos" aria-labelledby="terminos-titulo">
+      <h2 id="terminos-titulo" class="text-ivory">Términos de la demostración</h2>
+      <p class="mt-2">Prototipo académico: no se realizan pedidos, cobros ni envíos. Las piezas del muestrario no constituyen un inventario comercial.</p>
+    </section>
+    <section id="privacidad" aria-labelledby="privacidad-titulo">
+      <h2 id="privacidad-titulo" class="text-ivory">Privacidad</h2>
+      <p class="mt-2">Sin registro, analítica ni envío de formularios. No introduzcas datos personales o bancarios reales.</p>
+    </section>
+  </div>
+  <div class="site-container flex flex-wrap items-center justify-between gap-4 border-t border-dark-line py-6 text-sm text-on-dark-muted">
+    <p>© 2026 Maison RDL · Proyecto académico</p>
+    <nav aria-label="Páginas del sitio" class="flex flex-wrap gap-x-5">
+      <a class="footer-link" href="index.html">Inicio</a><a class="footer-link" href="catalogo.html">Catálogo</a><a class="footer-link" href="producto.html">Producto</a><a class="footer-link" href="carrito.html">Carrito</a><a class="footer-link" href="checkout.html">Checkout</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
