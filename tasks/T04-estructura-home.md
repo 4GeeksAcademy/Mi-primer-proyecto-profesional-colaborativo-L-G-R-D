@@ -64,6 +64,10 @@ Sesión del 23/10/2026. Dependencias comprobadas en origin/main: T02 integrada (
 - Comprobación de index.html con script Python (html.parser, no añadido al repositorio): 66 referencias, 0 rotas (incluidas anclas y controles); sin IDs duplicados; 7 imágenes, todas con alt, width y height; un h1, 10 h2 y 8 h3 (uno por tarjeta).
 - Navegador (mismo Chromium headless y script DevTools, servidor python3 -m http.server): 8 tarjetas y 7/7 imágenes cargadas. 375×667: página sin desbordamiento horizontal, una tarjeta visible por fila con desplazamiento interno. 768×1024: dos visibles con desplazamiento interno. 1280×800: cuatro visibles sin desplazamiento. Capturas revisadas localmente, no incluidas en el repositorio.
 
+23/10/2026, resolución de conflicto en codex/tarjetas-home tras integrarse la PR #12 (producto):
+- Conflicto solo en assets/css/styles.css. Se incorpora origin/main (e5c7880) con merge y se regenera el CSS con npm run build; sin marcas de conflicto y sin edición manual. El CSS contiene las utilidades del inicio y las de producto.
+- Repetidas tras el merge: script Python sobre index.html (66 referencias, 0 rotas) y producto.html (51, 0 rotas); navegador a 320, 375, 768 y 1280 px sin desbordamiento, 8 tarjetas e imágenes cargadas en inicio y bloque a dos columnas en escritorio en producto.
+
 ## Traspaso y siguiente paso
 
 PR de tarjetas presentada por Daniel para revisión de Gaby, sin fusionar. Tras integrarla, Roger recibe index.html en D01 y se libera la reserva.
