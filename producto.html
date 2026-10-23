@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Producto — Maison RDL</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-ivory text-ink font-body antialiased">
+  <!-- Esqueleto T01. Navbar, footer y composición definitivos: T02 y diseño de Roger. -->
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-3 focus:text-ivory" href="#contenido">Saltar al contenido</a>
+
+  <header class="border-b border-line">
+    <div class="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-4 px-5 py-6 sm:px-8 lg:px-14">
+      <a class="font-display text-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="index.html">Maison RDL</a>
+      <nav aria-label="Principal">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="index.html">Inicio</a></li>
+          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="catalogo.html">Catálogo</a></li>
+          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="producto.html" aria-current="page">Producto</a></li>
+          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="carrito.html">Carrito</a></li>
+          <li><a class="underline-offset-4 hover:underline aria-[current=page]:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bronze" href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
+      <div class="py-12">
+        <h1 class="font-display text-5xl">Producto</h1>
+      </div>
+      <section class="py-12 border-t border-line" aria-labelledby="detalle-titulo">
+        <h2 id="detalle-titulo" class="font-display text-4xl">Detalle del producto</h2>
+        <!-- T06: imagen y datos a dos columnas (nombre, referencia, talla, precio, cantidad y Añadir al carrito). -->
+      </section>
+      <section class="py-12 border-t border-line" aria-labelledby="descripcion-titulo">
+        <h2 id="descripcion-titulo" class="font-display text-4xl">Descripción</h2>
+        <!-- T06: descripción detallada, materiales y uso recomendado. -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-night text-ivory">
+    <div class="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-14">
+      <!-- T02/T04: categorías, legal, marca y contacto con destinos reales. -->
+      <nav aria-label="Páginas del sitio">
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="index.html">Inicio</a></li>
+          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="catalogo.html">Catálogo</a></li>
+          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="producto.html">Producto</a></li>
+          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="carrito.html">Carrito</a></li>
+          <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ivory" href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+      <p class="mt-8 text-sm text-on-dark-muted">Maison RDL · Prototipo académico de tienda ficticia.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "maison-rdl",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Maison RDL: prototipo estático de tienda de ropa en HTML y Tailwind CSS.",
+  "scripts": {
+    "build": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --minify",
+    "watch": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
