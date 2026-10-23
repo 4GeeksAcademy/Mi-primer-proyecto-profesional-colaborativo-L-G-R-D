@@ -1,27 +1,9 @@
 # Maison RDL — Estado contrastado
 
-Actualizado: 23/10/2026.
+Actualizado: 23/10/2026. Fuente actual: [verificación de entrega](../docs/verificacion.md).
 
-## Preparado localmente
+GitHub confirma doce PR integradas y main en b5d9654: base, inventario, inicio, catálogo, producto, carrito y checkout. [Evidencia pública consultada](../docs/evidencias/pull-requests.json).
 
-- Plan para tres personas, reparto y veinte fichas de tareas.
-- Portada e identidad visual en una preview independiente, aceptadas por Roger como base.
-- Guía visual v0.1, tokens compartidos, AGENTS.md, reglas y memoria adaptados de las prácticas de TrackFlow.
-- Matriz de las 17 casillas, desglose por vista y entrega contrastada con el enunciado completo del campus.
+La rama local codex/imagenes-revision-visual completa imágenes pendientes, portadas del equipo, cabecera pegajosa, contraste, metadatos y microdata, documentación y limpieza de plantilla. Build y Nu correctos; cinco vistas probadas en siete anchos. Organization y Product/Offer con cero errores y advertencias en Schema Markup Validator. Workflow de Pages, canónicas, metadatos sociales, sitemap y robots preparados; paquete público probado bajo subruta. Pendiente de revisión manual de Gaby, commit/PR e integración. No atribuir estos cambios a main.
 
-Estos documentos no acreditan integración en el repo de entrega. Los estados y reservas reales se consultan en [tasks](../tasks/README.md).
-
-## Verificaciones y límites
-
-Las capturas y comprobaciones de la preview se documentaron en [su verificación](../docs/referencia-visual/docs/VERIFICACION.md). No se atribuyen a las cinco páginas futuras.
-
-No hay evidencia aquí de T00/T01 realizadas, PR de implementación integradas, cinco vistas completas, URL pública final, PageSpeed final ni entrega en campus. No marcar esas fases como terminadas.
-
-La revisión de este paquete es documental; sus resultados se registran en [verificación del paquete](../docs/VERIFICACION-PAQUETE.md).
-
-## Próximo paso
-
-T00: comprobar accesos de los tres al repositorio de entrega.
-Después T01: incorporar este paquete y preparar Tailwind/HTML; T02: Roger integra la base visual. Daniel puede preparar inventario y Lydia los datos de carrito conforme a sus dependencias.
-
-Pendientes de coordinación: fecha/canal de entrega, disponibilidad, usuarios/accesos GitHub, idioma/moneda, inventario definitivo y alojamiento. Nombre, equipo, stack, responsable visual y dirección de diseño ya están acordados.
+Pendientes de entrega: publicar versión integrada, medir PageSpeed en URL pública (mínimo 80), guardar pagespeed-result.png y compartir repositorio por el canal del instructor. No se dispone aún de puntuación o URL pública final acreditadas.

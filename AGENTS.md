@@ -33,7 +33,7 @@ Cada autor prueba y corrige su parte.
 
 Una persona por rama y un responsable activo por archivo. Consultar la ficha antes de editar; no tomar archivos reservados sin coordinación. Tras integrar estructura, Roger recibe la página en su rama de diseño. Cambios globales se coordinan antes de tocar varias vistas.
 
-Cambios visuales requieren revisión de Roger. Sus PR las revisa Daniel o Lydia. No autoaprobar trabajo ni fabricar contribuciones de otro integrante.
+Cambios visuales requieren revisión de Roger. Gaby revisa y aprueba las PR de todos, incluidas las de Roger, según la decisión vigente del equipo. No autoaprobar trabajo ni fabricar contribuciones de otro integrante.
 
 ## Git
 

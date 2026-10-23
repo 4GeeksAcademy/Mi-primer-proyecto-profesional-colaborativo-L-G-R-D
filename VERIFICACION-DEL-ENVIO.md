@@ -1,14 +1,7 @@
-# Verificación del ZIP del equipo
+# Verificación del cierre
 
-Fecha: 23/10/2026.
+La evidencia vigente está en [docs/verificacion.md](docs/verificacion.md), con resultados del navegador, Nu y Schema.org. El informe antiguo del paquete inicial se conserva en [docs/VERIFICACION-PAQUETE.md](docs/VERIFICACION-PAQUETE.md) como antecedente; no usarlo para decidir el estado de la entrega.
 
-- Incluye documentación vigente, veinte fichas, reglas, memoria, tokens y referencia visual con recursos locales.
-- Excluye el plan histórico de comparación, node_modules, .git, cachés y originales de generación.
-- Las rutas personales de los manifiestos de imágenes se han sustituido por las de los WebP incluidos; se conservan los prompts y procedencia.
-- Las referencias a la antigua carpeta hermana se han trasladado a docs/referencia-visual. Los enlaces se validan dentro de la carpeta del ZIP.
-- Comprobaciones: 174 enlaces Markdown y 33 referencias HTML locales sin destinos ausentes; 17 criterios y veinte fichas pendientes.
-- Comprobación del ZIP: integridad CRC y lectura de enlaces sobre una extracción temporal antes de entregar el archivo.
-- No se han repetido las pruebas visuales anteriores: los HTML y recursos de la referencia no cambian. No es una prueba de las cinco páginas finales ni de publicación.
-- Ningún archivo se ha subido al repositorio remoto durante esta preparación.
+El cierre se prepara en una sola PR para Gaby. No está integrado ni publicado por el hecho de preparar documentos o un ZIP. Tras la revisión/integración quedan publicación, PageSpeed ≥80 con captura real y envío por el canal del instructor.
 
-La verificación anterior del paquete de planificación se conserva en docs/VERIFICACION-PAQUETE.md como antecedente: sus recuentos corresponden a la carpeta original, no a este ZIP.
+La carpeta duplicada del paquete inicial puede retirarse mediante tools/clean_workspace.py, que respalda fuera del repositorio antes de borrar. No se versionan node_modules, copias temporales, ZIP ni originales personales.

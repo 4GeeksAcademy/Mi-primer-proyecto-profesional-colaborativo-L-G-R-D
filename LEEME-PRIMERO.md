@@ -1,50 +1,21 @@
-# Maison RDL — Documentación para Roger, Daniel y Lydia
+# Maison RDL — Continuar el proyecto
 
-Envío del 23/10/2026. Esta preparación no ha subido archivos, abierto PR ni cambiado el repositorio remoto.
+El proyecto ya tiene las cinco vistas y el inventario integrados. No vuelvas a descomprimir el paquete inicial dentro del repositorio ni repitas T01. Estado comprobado y pendientes: [verificación](docs/verificacion.md).
 
-Repositorio común: [Mi-primer-proyecto-profesional-colaborativo-R-D](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-R-D).
+1. Leer [AGENTS.md](AGENTS.md), [CONTEXT.md](CONTEXT.md) y [progreso](memory-bank/progress.md).
+2. Consultar [README](README.md) para ejecutar/build y [tareas](tasks/README.md) para el estado de cada bloque.
+3. Trabajar en la rama exacta indicada; conservar cambios ajenos. Una PR conjunta reúne el cierre visual, SEO, limpieza y preparación de entrega.
+4. Gaby revisa y aprueba manualmente. Roger conserva la dirección visual; cada autor corrige su parte.
 
-## Empezar aquí
+## Limpieza del Codespace
 
-1. Descomprimir el ZIP completo; no trabajar desde el visor del archivo comprimido.
-2. Leer [el reparto y arranque](docs/INICIO-DE-TRABAJO.md), [los requisitos](docs/requisitos.md) y [la guía visual](docs/diseno.md).
-3. Daniel continúa con [INICIO-DANIEL.md](INICIO-DANIEL.md); Lydia con [INICIO-LYDIA.md](INICIO-LYDIA.md).
-4. Antes de usar un asistente, darle [AGENTS.md](AGENTS.md), [CONTEXT.md](CONTEXT.md) y el [prompt maestro](PROMPT-MAESTRO.md), indicando persona y ficha.
+`node_modules/` es local e ignorado; no debe subirse. Las carpetas `pquete-maison/` y `paquete-maison/` son paquetes iniciales duplicados, no parte del sitio. La herramienta comprueba rutas y crea un ZIP recuperable fuera del proyecto antes de retirarlas:
 
-No hace falta instalar nada para leer la documentación o ver las capturas. Abrir los Markdown en el editor habitual.
+```bash
+python tools/clean_workspace.py
+python tools/clean_workspace.py --apply
+```
 
-## Reparto
+La primera orden muestra qué encuentra; la segunda aplica la limpieza. Si hay enlaces simbólicos o otro repositorio dentro, se detiene para conservarlo. Mantener `.git`, `.agents`, `.github`, `.vscode`, assets, src, tools, docs, tasks y memory-bank. No borrar licencias ni archivos de contexto.
 
-| Persona | Responsabilidad |
-| --- | --- |
-| Roger | Diseño final de cinco páginas, identidad y componentes, responsive y optimización |
-| Daniel | Setup, inventario, estructura/contenido de inicio/catálogo/producto, SEO y Schema.org; preparación de publicación |
-| Lydia | Estructura/contenido de carrito/checkout, formularios e importes; coordinación de QA, evidencias y README |
-
-Cada autor comprueba y corrige su parte. Roger revisa cambios visuales de los demás; Daniel o Lydia revisan los suyos.
-
-## Qué incorporar primero al repositorio
-
-Daniel inicia T00 y después T01. La primera integración recomendada es una PR de preparación, revisada por Roger, sin commits de desarrollo directamente en main.
-
-Copiar el contenido de esta carpeta en la raíz del clon del repositorio, conservando .git, el remoto, la plantilla y la documentación útil existente. Revisar colisiones antes de copiar: integrar el README e instrucciones existentes, no reemplazarlos a ciegas. Incluir las carpetas ocultas .agents y .github.
-
-Este paquete contiene los documentos, veinte fichas y tokens; todavía no contiene las cinco páginas finales en la raíz. No confundir los HTML de la referencia con esas páginas. Roger integrará selectivamente recursos y componentes en T02; Daniel preparará los esqueletos en T01.
-
-Las instrucciones Git describen el flujo de trabajo que se seguirá al ejecutar cada tarea. Extraer o revisar este ZIP no sube nada automáticamente. No hacer push ni publicar desde un asistente solo por haber leído estos documentos; debe formar parte de la tarea que el equipo le haya encargado.
-
-## Referencia visual incluida
-
-- [Portada de escritorio](docs/referencia-visual/preview/desktop.png).
-- [Portada móvil](docs/referencia-visual/preview/mobile.png).
-- [Página completa](docs/referencia-visual/preview/inicio-completo.png).
-- [Logo e identidad](docs/referencia-visual/preview/identidad.png).
-- [Cómo abrir la referencia HTML](docs/referencia-visual/README.md).
-
-La referencia está en docs/referencia-visual con sus imágenes, fuentes, licencias, logos, CSS compilado y fuente Tailwind. Es una muestra del inicio, no la tienda terminada. npm y sus comandos, si se usan, corresponden solo a esa carpeta hasta que T01 documente los del proyecto final.
-
-## Límites y pendientes
-
-Solo HTML + Tailwind, sin JavaScript de aplicación, React, backend ni pagos reales. La marca es ficticia. Fecha/canal de entrega, disponibilidad, accesos, idioma/moneda, inventario final y alojamiento siguen pendientes de coordinación.
-
-La matriz tiene los 17 criterios del campus y la entrega. Las veinte fichas continúan pendientes de integración/verificación. Consultar [la memoria](memory-bank/progress.md) para distinguir preparación y resultados acreditados.
+Pendientes externos: Gaby, integrar, habilitar/publicar Pages, PageSpeed real con captura y entrega al instructor. [Repositorio](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D).

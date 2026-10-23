@@ -8,7 +8,7 @@ Las 17 casillas son cinco vistas, cinco prácticas de Git y siete criterios de e
 - Enunciado: prototipo de tienda de ropa de una marca con sede en Francia; SEO, diseño consistente y responsive; solo HTML y Tailwind CSS.
 - El texto plantea dos personas. Roger confirma que la entrega será entre Roger, Daniel y Lydia; ese es el equipo de este plan. No presentar tres como número exigido por el campus.
 - Entregable: al menos cinco HTML, uno por vista, enlazados entre sí, con estilos compartidos. CSS adicional está permitido por el enunciado.
-- Plantilla de partida: [html-hello](https://github.com/4GeeksAcademy/html-hello); trabajar en un repositorio propio del equipo. Ya existe el [repositorio de entrega](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-R-D): comprobar remotos y accesos en T00, sin crear otro por duplicado.
+- Plantilla de partida: [html-hello](https://github.com/4GeeksAcademy/html-hello); trabajar en un repositorio propio del equipo. Ya existe el [repositorio de entrega](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D): comprobar remotos y accesos en T00, sin crear otro por duplicado.
 - Codespaces es recomendado; clonar y trabajar en local también está permitido.
 - No hay puntos o porcentajes por criterio publicados en el texto leído. No inventarlos.
 
@@ -34,7 +34,7 @@ Las 17 casillas son cinco vistas, cinco prácticas de Git y siete criterios de e
 | E06 | Flujo Git: ramas, PR para partes importantes, commits descriptivos | Todos | Historial y PR; complementa G01–G05 |
 | E07 | PageSpeed Insights en URL pública: mínimo 80, idealmente más de 90 | T12 Roger; evidencia T13 Lydia | Informe de URL pública y captura real dentro del repo |
 
-Estado actual de los 17 criterios: pendientes de acreditación en el repositorio de entrega. La vista previa local no completa ninguna casilla por sí sola.
+Estado contrastado a 23/10/2026: implementación y comprobaciones locales documentadas en [verificación](verificacion.md). Las PR previas están integradas; esta revisión aún requiere aprobación/integración. E07, URL pública final y entrega al instructor siguen pendientes. No se marca el proyecto entregado por una preview local.
 
 ## Desglose que no debe perderse al diseñar
 

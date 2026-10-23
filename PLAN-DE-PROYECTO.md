@@ -1,8 +1,8 @@
 # Maison RDL — Plan de trabajo unificado
 
 Fecha: 23 de octubre de 2026.
-Equipo: Roger, Daniel y Lydia.
-Estado: planificación preparada; ninguna tarea de implementación está acreditada como terminada.
+Equipo de implementación: Roger, Daniel y Lydia. Revisión y aprobación manual: Gaby.
+Estado actualizado: PR #1–#12 integradas; revisión visual y preparación de entrega en codex/imagenes-revision-visual, pendiente de Gaby. Evidencia y pendientes reales: docs/verificacion.md.
 
 Este documento sustituye al plan de trabajo anterior como referencia vigente. Integra el enunciado, el plan T00–T08 de Daniel, la revisión comparativa y las decisiones de Roger. La comparación anterior se conserva como antecedente, no como instrucciones de ejecución.
 
@@ -27,7 +27,7 @@ Enunciado:
 https://learn.4geeks.com/es/main-cohort/spain-aie-pt-5/syllabus/command-line-git-and-github-v3/project/first-collaborative-project-tailwind-css?moduleId=2
 
 Repositorio de entrega existente:
-https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-R-D
+https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D
 
 ## 2. Reparto definitivo del plan
 

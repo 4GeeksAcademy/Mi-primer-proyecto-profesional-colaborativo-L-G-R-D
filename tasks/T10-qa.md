@@ -1,9 +1,9 @@
 # T10 — QA de las cinco vistas
 
 Proyecto: Maison RDL.
-Estado: Pendiente.
+Estado: En curso; preparación local de entrega, pendiente de revisión e integración.
 Responsable: Lydia.
-Revisor: Daniel; Roger para la revisión visual.
+Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/qa.
 Depende de: T09.
 Archivos previstos: docs/verificacion.md, docs/evidencias/ y ficha propia; correcciones HTML coordinadas.
@@ -41,3 +41,7 @@ Pendiente. Registrar qué se probó, URL/archivo, tamaño de pantalla si aplica,
 ## Traspaso y siguiente paso
 
 Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la reserva del archivo.
+
+## Actualización de Roger — 23/10/2026
+
+Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.

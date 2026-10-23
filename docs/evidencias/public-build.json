@@ -1,0 +1,114 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "canonical": "http://127.0.0.1:8055/tienda/",
+    "ogUrl": "http://127.0.0.1:8055/tienda/",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "catalogo.html",
+    "width": 375,
+    "canonical": "http://127.0.0.1:8055/tienda/catalogo.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/catalogo.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "producto.html",
+    "width": 375,
+    "canonical": "http://127.0.0.1:8055/tienda/producto.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/producto.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/shirt.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "carrito.html",
+    "width": 375,
+    "canonical": "http://127.0.0.1:8055/tienda/carrito.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/carrito.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "robots": "noindex, follow",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "checkout.html",
+    "width": 375,
+    "canonical": "http://127.0.0.1:8055/tienda/checkout.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/checkout.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "robots": "noindex, follow",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 375,
+    "flow": "http://127.0.0.1:8055/tienda/checkout.html"
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "canonical": "http://127.0.0.1:8055/tienda/",
+    "ogUrl": "http://127.0.0.1:8055/tienda/",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "catalogo.html",
+    "width": 1440,
+    "canonical": "http://127.0.0.1:8055/tienda/catalogo.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/catalogo.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "producto.html",
+    "width": 1440,
+    "canonical": "http://127.0.0.1:8055/tienda/producto.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/producto.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/shirt.webp",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "carrito.html",
+    "width": 1440,
+    "canonical": "http://127.0.0.1:8055/tienda/carrito.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/carrito.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "robots": "noindex, follow",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "file": "checkout.html",
+    "width": 1440,
+    "canonical": "http://127.0.0.1:8055/tienda/checkout.html",
+    "ogUrl": "http://127.0.0.1:8055/tienda/checkout.html",
+    "ogImage": "http://127.0.0.1:8055/tienda/assets/images/hero-equipo-desktop.webp",
+    "robots": "noindex, follow",
+    "broken": 0,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "flow": "http://127.0.0.1:8055/tienda/checkout.html"
+  }
+]
