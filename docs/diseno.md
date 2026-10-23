@@ -28,14 +28,14 @@ Los valores reproducen la portada actual. Se añaden nombres semánticos para co
 | --- | --- | --- |
 | ivory | #F3F0E9 | Fondo principal; texto sobre zonas oscuras |
 | ink | #262A22 | Texto principal sobre fondos claros |
-| muted | #666058 | Texto secundario sobre marfil/piedra |
+| muted | #57534D | Texto secundario sobre marfil/piedra |
 | sand | #E5DED1 | Apoyo cálido puntual |
 | stone | #E9E5DF | Fondo neutro de imágenes |
 | paper | #E7E3D9 | Sección de Más vendidos |
 | olive | #343B2E | Sección de marca |
 | night | #22271F | Footer |
 | line | #CFC8BD | Separación decorativa en fondos claros |
-| control | #8C857B | Borde de inputs/selectores |
+| control | #746D63 | Borde de inputs/selectores |
 | bronze | #7A6143 | Acento oscuro y foco sobre fondos claros |
 | gold | #A89270 | Variante bronce del logo/decoración; no texto pequeño en marfil |
 | on-dark-muted | #C4C7B9 | Texto secundario del footer |
@@ -151,3 +151,7 @@ Usar separadores `border-line` y superficies sin tarjetas exteriores ni sombras.
 Antes de integrar una vista: misma paleta/fuentes, componentes comunes, contenido de la rúbrica completo, imágenes coherentes, foco/teclado, móvil/tablet/escritorio, ausencia de overflow y enlaces válidos.
 
 Un cambio de marca se registra aquí y en los tokens dentro de la misma PR. Daniel y Lydia pueden proponer ajustes con una captura y motivo; no crear variantes de identidad por su cuenta. Las PR de Roger las revisa Daniel o Lydia.
+
+## Cabecera final — 23/10/2026
+
+Menú pegajoso. Superposición con degradado neutro al inicio de la portada; al desplazar usa night (#22271F), texto y logo marfil. Las vistas internas conservan marfil/tinta. Contraste reforzado en muted y control; los tokens son la fuente de verdad. Ver docs/verificacion.md.

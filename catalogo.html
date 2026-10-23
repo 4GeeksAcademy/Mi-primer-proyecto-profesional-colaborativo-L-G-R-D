@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catálogo — Maison RDL</title>
+  <meta name="description" content="Catálogo de demostración Maison RDL: veinte prendas y accesorios con filtros estáticos por categoría y talla, imágenes y precios ficticios en euros.">
+  <meta name="theme-color" content="#f3f0e9">
+  <link rel="preload" href="assets/fonts/font-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -46,7 +49,7 @@
   <button class="icon-button close-button" type="button" popovertarget="buscar" popovertargetaction="hide" aria-label="Cerrar búsqueda" title="Cerrar búsqueda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
   <h2 id="buscar-titulo" class="section-title">Una pieza por descubrir.</h2>
   <label class="mt-6 block text-sm" for="buscar-prenda">Buscar en la colección</label>
-  <input class="field mt-2" id="buscar-prenda" type="search" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
+  <input class="field mt-2" id="buscar-prenda" name="q" type="search" autocomplete="off" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
   <p id="buscar-ayuda" class="mt-3 text-sm leading-7 text-muted">Búsqueda de demostración, sin resultados automáticos ni envío de datos.</p>
   <a class="btn mt-6" href="catalogo.html">Ver el catálogo</a>
   <button class="text-link mt-5 block text-sm sm:hidden" type="button" popovertarget="cuenta">Cuenta de demostración</button>
@@ -131,19 +134,19 @@
           <p class="mt-2 text-sm tabular-nums">240,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa de popelín blanca</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cam-002.webp" width="850" height="1133" alt="Camisa de popelín blanca de manga larga" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Camisa de popelín blanca</h3></a>
           <p class="mt-2 text-sm tabular-nums">165,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa de lino arena</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cam-003.webp" width="850" height="1133" alt="Camisa de lino color arena con cuello abierto" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Camisa de lino arena</h3></a>
           <p class="mt-2 text-sm tabular-nums">175,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa oxford azul niebla</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cam-004.webp" width="850" height="1133" alt="Camisa oxford azul niebla con cuello abotonado" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Camisa oxford azul niebla</h3></a>
           <p class="mt-2 text-sm tabular-nums">155,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Sobrecamisa de lana oliva</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cam-005.webp" width="850" height="1133" alt="Sobrecamisa de lana verde oliva con bolsillos de parche" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Sobrecamisa de lana oliva</h3></a>
           <p class="mt-2 text-sm tabular-nums">285,00 €</p>
         </article>
         <article class="product-card min-w-0">
@@ -151,19 +154,19 @@
           <p class="mt-2 text-sm tabular-nums">295,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón recto de lana carbón</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-pan-002.webp" width="850" height="1133" alt="Pantalón recto de lana gris carbón" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pantalón recto de lana carbón</h3></a>
           <p class="mt-2 text-sm tabular-nums">270,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de lino marfil</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-pan-003.webp" width="850" height="1133" alt="Pantalón amplio de lino color marfil" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de lino marfil</h3></a>
           <p class="mt-2 text-sm tabular-nums">210,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Chino de algodón piedra</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-pan-004.webp" width="850" height="1133" alt="Pantalón chino de algodón color piedra" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Chino de algodón piedra</h3></a>
           <p class="mt-2 text-sm tabular-nums">180,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de pana chocolate</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-pan-005.webp" width="850" height="1133" alt="Pantalón de pana marrón chocolate" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de pana chocolate</h3></a>
           <p class="mt-2 text-sm tabular-nums">230,00 €</p>
         </article>
         <article class="product-card min-w-0">
@@ -171,19 +174,19 @@
           <p class="mt-2 text-sm tabular-nums">390,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Bailarina de piel marfil</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cal-002.webp" width="850" height="1133" alt="Bailarinas de piel color marfil" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Bailarina de piel marfil</h3></a>
           <p class="mt-2 text-sm tabular-nums">320,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Botín de ante arena</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cal-003.webp" width="850" height="1133" alt="Botines Chelsea de ante color arena" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Botín de ante arena</h3></a>
           <p class="mt-2 text-sm tabular-nums">450,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Zapato derby de piel negra</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cal-004.webp" width="850" height="1133" alt="Zapatos derby de piel negra con cordones" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Zapato derby de piel negra</h3></a>
           <p class="mt-2 text-sm tabular-nums">410,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Sandalia de piel coñac</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cal-005.webp" width="850" height="1133" alt="Sandalias planas de piel color coñac" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Sandalia de piel coñac</h3></a>
           <p class="mt-2 text-sm tabular-nums">280,00 €</p>
         </article>
         <article class="product-card min-w-0">
@@ -191,19 +194,19 @@
           <p class="mt-2 text-sm tabular-nums">690,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Cinturón de piel espresso</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-acc-002.webp" width="850" height="1133" alt="Cinturón de piel marrón oscuro con hebilla metálica" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Cinturón de piel espresso</h3></a>
           <p class="mt-2 text-sm tabular-nums">140,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pañuelo de seda piedra</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-acc-003.webp" width="850" height="1133" alt="Pañuelo de seda con estampado geométrico en tonos piedra" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pañuelo de seda piedra</h3></a>
           <p class="mt-2 text-sm tabular-nums">160,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Bufanda de cachemira oliva</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-acc-004.webp" width="850" height="1133" alt="Bufanda de cachemira verde oliva con flecos" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Bufanda de cachemira oliva</h3></a>
           <p class="mt-2 text-sm tabular-nums">260,00 €</p>
         </article>
         <article class="product-card min-w-0">
-          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Guantes de piel chocolate</h3></a>
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-acc-005.webp" width="850" height="1133" alt="Guantes de piel marrón chocolate" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Guantes de piel chocolate</h3></a>
           <p class="mt-2 text-sm tabular-nums">170,00 €</p>
         </article>
       </div>

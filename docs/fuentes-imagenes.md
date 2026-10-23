@@ -27,14 +27,31 @@ Las descripciones de los cuatro productos con imagen se redactaron a partir de l
 
 Nota para Roger: el [muestrario](componentes.html) declara `width="768" height="1024"` en estas cuatro imágenes; los archivos miden 850 × 1133. La proporción 3:4 coincide, así que no hay deformación. Ajustarlo o no es decisión de Roger.
 
-## Imágenes pendientes
+## Imágenes completadas por Roger — 23/10/2026
 
-Dieciséis productos no tienen imagen propia: MRDL-CAM-002 a 005, MRDL-PAN-002 a 005, MRDL-CAL-002 a 005 y MRDL-ACC-002 a 005. En el inventario figuran como «pendiente», con una ruta prevista en `assets/images/productos/` que todavía no existe.
+Generadas con image_gen para cada referencia, como muestras ficticias. WebP de 850 × 1133 px, carga diferida en las tarjetas. No son fotografías de productos reales.
 
-Pendiente de decidir con Roger:
+| Referencia | Archivo | Peso |
+| --- | --- | --- |
+| MRDL-CAM-002 | assets/images/productos/mrdl-cam-002.webp | 35 KiB |
+| MRDL-CAM-003 | assets/images/productos/mrdl-cam-003.webp | 98 KiB |
+| MRDL-CAM-004 | assets/images/productos/mrdl-cam-004.webp | 85 KiB |
+| MRDL-CAM-005 | assets/images/productos/mrdl-cam-005.webp | 110 KiB |
+| MRDL-PAN-002 | assets/images/productos/mrdl-pan-002.webp | 60 KiB |
+| MRDL-PAN-003 | assets/images/productos/mrdl-pan-003.webp | 67 KiB |
+| MRDL-PAN-004 | assets/images/productos/mrdl-pan-004.webp | 83 KiB |
+| MRDL-PAN-005 | assets/images/productos/mrdl-pan-005.webp | 78 KiB |
+| MRDL-CAL-002 | assets/images/productos/mrdl-cal-002.webp | 77 KiB |
+| MRDL-CAL-003 | assets/images/productos/mrdl-cal-003.webp | 99 KiB |
+| MRDL-CAL-004 | assets/images/productos/mrdl-cal-004.webp | 80 KiB |
+| MRDL-CAL-005 | assets/images/productos/mrdl-cal-005.webp | 75 KiB |
+| MRDL-ACC-002 | assets/images/productos/mrdl-acc-002.webp | 56 KiB |
+| MRDL-ACC-003 | assets/images/productos/mrdl-acc-003.webp | 104 KiB |
+| MRDL-ACC-004 | assets/images/productos/mrdl-acc-004.webp | 165 KiB |
+| MRDL-ACC-005 | assets/images/productos/mrdl-acc-005.webp | 119 KiB |
 
-1. **Cómo conseguir las imágenes.** Generarlas con el mismo estilo que las cuatro actuales (fondo de yeso o piedra clara, luz cálida, formato 3:4) o usar recursos con un permiso de uso comprobado. No descargar imágenes sin comprobar ese permiso. Registrar en este documento la procedencia de cada nueva imagen.
-2. **Qué mostrar mientras tanto.** Si el catálogo necesita imagen antes de tenerlas, reutilizar provisionalmente la imagen de la misma categoría solo con el acuerdo de Roger. En ese caso el texto alternativo debe describir lo que se ve, no el producto de la ficha, y la tarjeta no debe dar a entender que la foto es de ese artículo.
-3. **Tratamiento técnico.** Tamaño, formato, recorte y optimización corresponden a Roger (T12).
+## Portada del equipo
 
-Hasta que haya decisión, los 16 productos tienen todos sus datos salvo la imagen.
+`hero-equipo-desktop.webp` (1672 × 940) y `hero-equipo-mobile.webp` (1122 × 1402): campaña generada con image_gen a petición de Roger, usando las cuatro fotografías personales aportadas como referencia. Conserva el traje estampado y adapta los demás conjuntos a la campaña. Son recreaciones generadas, con parecido aproximado. Los originales anteriores se conservan. Las fotografías personales de referencia no se incluyen en el repositorio.
+
+Descripciones de generación: [manifest de imágenes](imagenes-generadas.json). Revisión y aprobación de Gaby pendientes.

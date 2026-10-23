@@ -1,10 +1,12 @@
+> Estado vigente: continuar el cierre; no repetir setup o inventario. Leer docs/verificacion.md y memory-bank/progress.md antes de escoger una ficha.
+
 # Maison RDL — Prompt maestro corregido
 
 Copiar el bloque siguiente al asistente de cada integrante y sustituir los campos. Las fichas contienen instrucciones específicas; no ejecutar todas las tareas en una sesión.
 
 ~~~
 Proyecto: Maison RDL, prototipo de tienda de ropa de lujo con sede en Francia.
-Equipo: Roger, Daniel y Lydia.
+Equipo de implementación: Roger, Daniel y Lydia. Gaby revisa y aprueba manualmente las PR.
 Persona de esta sesión: <NOMBRE>.
 Tarea: <ID y nombre>.
 Ficha: tasks/<ARCHIVO>.md.

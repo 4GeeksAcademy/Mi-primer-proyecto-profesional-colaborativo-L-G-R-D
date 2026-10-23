@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-23",
+  "tool": "image_gen",
+  "purpose": "Imágenes ficticias de muestra para Maison RDL",
+  "products": [
+    {
+      "id": "cam-002",
+      "subject": "White cotton poplin long sleeve shirt, Italian spread collar, hidden placket, rounded cuffs, straight cut",
+      "file": "assets/images/productos/mrdl-cam-002.webp",
+      "bytes": 36206
+    },
+    {
+      "id": "cam-003",
+      "subject": "Sand beige linen long sleeve shirt, open collar, one chest pocket, relaxed cut, natural linen texture",
+      "file": "assets/images/productos/mrdl-cam-003.webp",
+      "bytes": 99936
+    },
+    {
+      "id": "cam-004",
+      "subject": "Soft mist blue grey cotton Oxford shirt, button down collar, regular cut, long sleeves",
+      "file": "assets/images/productos/mrdl-cam-004.webp",
+      "bytes": 87026
+    },
+    {
+      "id": "cam-005",
+      "subject": "Olive green thick wool overshirt, straight cut, two patch chest pockets, dark buttons",
+      "file": "assets/images/productos/mrdl-cam-005.webp",
+      "bytes": 112978
+    },
+    {
+      "id": "pan-002",
+      "subject": "Charcoal grey wool straight leg trousers, mid rise, button and zip closure, rear welt pockets",
+      "file": "assets/images/productos/mrdl-pan-002.webp",
+      "bytes": 61586
+    },
+    {
+      "id": "pan-003",
+      "subject": "Ivory wide leg linen trousers, elasticated waist and discreet drawstring, side pockets",
+      "file": "assets/images/productos/mrdl-pan-003.webp",
+      "bytes": 68752
+    },
+    {
+      "id": "pan-004",
+      "subject": "Stone beige cotton chinos, straight slightly tapered legs, slash pockets, subtle crease",
+      "file": "assets/images/productos/mrdl-pan-004.webp",
+      "bytes": 85334
+    },
+    {
+      "id": "pan-005",
+      "subject": "Chocolate brown fine wale corduroy trousers, straight mid rise, five pockets",
+      "file": "assets/images/productos/mrdl-pan-005.webp",
+      "bytes": 79432
+    },
+    {
+      "id": "cal-002",
+      "subject": "Pair of ivory leather ballet flats, rounded toes, padded insole, thin flat soles",
+      "file": "assets/images/productos/mrdl-cal-002.webp",
+      "bytes": 78780
+    },
+    {
+      "id": "cal-003",
+      "subject": "Pair of sandy suede Chelsea ankle boots, elastic side panels, rear pull tabs, rubber soles",
+      "file": "assets/images/productos/mrdl-cal-003.webp",
+      "bytes": 101668
+    },
+    {
+      "id": "cal-004",
+      "subject": "Pair of polished black leather plain toe derby shoes, open lacing, thin leather soles",
+      "file": "assets/images/productos/mrdl-cal-004.webp",
+      "bytes": 81834
+    },
+    {
+      "id": "cal-005",
+      "subject": "Pair of cognac brown flat leather sandals, crossed straps and ankle buckles",
+      "file": "assets/images/productos/mrdl-cal-005.webp",
+      "bytes": 77228
+    },
+    {
+      "id": "acc-002",
+      "subject": "Espresso dark brown leather belt, 3cm wide, matte brass rectangular buckle, neatly coiled",
+      "file": "assets/images/productos/mrdl-acc-002.webp",
+      "bytes": 57318
+    },
+    {
+      "id": "acc-003",
+      "subject": "Stone grey and ivory geometric patterned square silk twill scarf, rolled edges, softly draped",
+      "file": "assets/images/productos/mrdl-acc-003.webp",
+      "bytes": 106672
+    },
+    {
+      "id": "acc-004",
+      "subject": "Olive green cashmere fine knitted long scarf, short fringe, softly folded",
+      "file": "assets/images/productos/mrdl-acc-004.webp",
+      "bytes": 168906
+    },
+    {
+      "id": "acc-005",
+      "subject": "Pair of chocolate brown smooth leather gloves, subtle stitched backs, cashmere knit lining visible at cuffs",
+      "file": "assets/images/productos/mrdl-acc-005.webp",
+      "bytes": 121848
+    }
+  ],
+  "hero": "Recrear campaña parisina al atardecer con las cuatro personas aportadas por el usuario, conservando sus rasgos y el traje estampado; composición panorámica con espacio izquierdo para texto y versión vertical del mismo grupo."
+}

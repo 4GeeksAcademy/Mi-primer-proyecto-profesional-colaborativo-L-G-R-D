@@ -1,7 +1,7 @@
 # Maison RDL — Inventario de productos
 
 Tarea: [T03](../tasks/T03-inventario.md). Responsable: Daniel. Actualizado: 23/10/2026.
-Estado: borrador en revisión; no integrado.
+Estado: inventario base integrado; nuevas imágenes de esta actualización pendientes de revisión de Gaby e integración.
 
 > **Datos ficticios.** Maison RDL es una marca inventada para un prototipo académico. Productos, referencias, precios, tallas, materiales y descripciones son de demostración: no existen, no se venden y no describen artículos reales. No hay existencias, envíos ni condiciones comerciales.
 
@@ -16,7 +16,7 @@ Fuente común para las cinco páginas: inicio (T04), catálogo (T05), producto (
 | Impuestos | Supuesto de demostración confirmado por Lydia; no es fiscalidad real ni requisito del enunciado. | Impuesto de simulación del 20 % incluido en los precios; se desglosa, no se suma de nuevo. |
 | Cantidades del carrito | Confirmadas por Lydia. | Una unidad de cada una de las tres referencias de T07. |
 | Talla de cada línea del carrito | Selección autorizada por Lydia entre las tallas disponibles. | Camisa M, pantalón 38 y mocasín 42; ver supuesto de importes. |
-| Imágenes de 16 productos | **Pendiente de coordinar con Roger.** | Ver [imágenes pendientes](fuentes-imagenes.md#imágenes-pendientes). |
+| Imágenes de 16 productos | Completadas por petición de Roger el 23/10/2026. | Imágenes de muestra generadas para cada referencia; ver [fuentes](fuentes-imagenes.md). |
 
 Si cambia la moneda, cambian todos los precios de este documento en el mismo cambio.
 
@@ -56,25 +56,25 @@ Cinco productos por categoría. Tallas: camisas en letras (XS–XL); pantalones 
 | Referencia | Nombre | Categoría | Tallas | Precio | Imagen |
 | --- | --- | --- | --- | --- | --- |
 | MRDL-CAM-001 | Camisa de seda marfil | Camisas | XS, S, M, L, XL | 240 € | Propia de muestra |
-| MRDL-CAM-002 | Camisa de popelín blanca | Camisas | XS, S, M, L, XL | 165 € | Pendiente |
-| MRDL-CAM-003 | Camisa de lino arena | Camisas | S, M, L, XL | 175 € | Pendiente |
-| MRDL-CAM-004 | Camisa oxford azul niebla | Camisas | S, M, L, XL | 155 € | Pendiente |
-| MRDL-CAM-005 | Sobrecamisa de lana oliva | Camisas | S, M, L, XL | 285 € | Pendiente |
+| MRDL-CAM-002 | Camisa de popelín blanca | Camisas | XS, S, M, L, XL | 165 € | Propia de muestra |
+| MRDL-CAM-003 | Camisa de lino arena | Camisas | S, M, L, XL | 175 € | Propia de muestra |
+| MRDL-CAM-004 | Camisa oxford azul niebla | Camisas | S, M, L, XL | 155 € | Propia de muestra |
+| MRDL-CAM-005 | Sobrecamisa de lana oliva | Camisas | S, M, L, XL | 285 € | Propia de muestra |
 | MRDL-PAN-001 | Pantalón ancho de pinzas taupe | Pantalones | 34, 36, 38, 40, 42, 44 | 295 € | Propia de muestra |
-| MRDL-PAN-002 | Pantalón recto de lana carbón | Pantalones | 36, 38, 40, 42, 44 | 270 € | Pendiente |
-| MRDL-PAN-003 | Pantalón de lino marfil | Pantalones | 34, 36, 38, 40, 42 | 210 € | Pendiente |
-| MRDL-PAN-004 | Chino de algodón piedra | Pantalones | 36, 38, 40, 42, 44 | 180 € | Pendiente |
-| MRDL-PAN-005 | Pantalón de pana chocolate | Pantalones | 36, 38, 40, 42, 44 | 230 € | Pendiente |
+| MRDL-PAN-002 | Pantalón recto de lana carbón | Pantalones | 36, 38, 40, 42, 44 | 270 € | Propia de muestra |
+| MRDL-PAN-003 | Pantalón de lino marfil | Pantalones | 34, 36, 38, 40, 42 | 210 € | Propia de muestra |
+| MRDL-PAN-004 | Chino de algodón piedra | Pantalones | 36, 38, 40, 42, 44 | 180 € | Propia de muestra |
+| MRDL-PAN-005 | Pantalón de pana chocolate | Pantalones | 36, 38, 40, 42, 44 | 230 € | Propia de muestra |
 | MRDL-CAL-001 | Mocasín de piel espresso | Calzado | 39, 40, 41, 42, 43, 44, 45 | 390 € | Propia de muestra |
-| MRDL-CAL-002 | Bailarina de piel marfil | Calzado | 36, 37, 38, 39, 40, 41 | 320 € | Pendiente |
-| MRDL-CAL-003 | Botín de ante arena | Calzado | 37, 38, 39, 40, 41, 42, 43, 44 | 450 € | Pendiente |
-| MRDL-CAL-004 | Zapato derby de piel negra | Calzado | 39, 40, 41, 42, 43, 44, 45 | 410 € | Pendiente |
-| MRDL-CAL-005 | Sandalia de piel coñac | Calzado | 36, 37, 38, 39, 40, 41 | 280 € | Pendiente |
+| MRDL-CAL-002 | Bailarina de piel marfil | Calzado | 36, 37, 38, 39, 40, 41 | 320 € | Propia de muestra |
+| MRDL-CAL-003 | Botín de ante arena | Calzado | 37, 38, 39, 40, 41, 42, 43, 44 | 450 € | Propia de muestra |
+| MRDL-CAL-004 | Zapato derby de piel negra | Calzado | 39, 40, 41, 42, 43, 44, 45 | 410 € | Propia de muestra |
+| MRDL-CAL-005 | Sandalia de piel coñac | Calzado | 36, 37, 38, 39, 40, 41 | 280 € | Propia de muestra |
 | MRDL-ACC-001 | Bolso de asa corta coñac | Accesorios | Única | 690 € | Propia de muestra |
-| MRDL-ACC-002 | Cinturón de piel espresso | Accesorios | 80, 85, 90, 95, 100 (cm) | 140 € | Pendiente |
-| MRDL-ACC-003 | Pañuelo de seda piedra | Accesorios | Única | 160 € | Pendiente |
-| MRDL-ACC-004 | Bufanda de cachemira oliva | Accesorios | Única | 260 € | Pendiente |
-| MRDL-ACC-005 | Guantes de piel chocolate | Accesorios | S, M, L | 170 € | Pendiente |
+| MRDL-ACC-002 | Cinturón de piel espresso | Accesorios | 80, 85, 90, 95, 100 (cm) | 140 € | Propia de muestra |
+| MRDL-ACC-003 | Pañuelo de seda piedra | Accesorios | Única | 160 € | Propia de muestra |
+| MRDL-ACC-004 | Bufanda de cachemira oliva | Accesorios | Única | 260 € | Propia de muestra |
+| MRDL-ACC-005 | Guantes de piel chocolate | Accesorios | S, M, L | 170 € | Propia de muestra |
 
 Rango de precios: 140 € a 690 €. Las referencias siguen el patrón `MRDL-<categoría>-<número>`: CAM camisas, PAN pantalones, CAL calzado, ACC accesorios.
 
@@ -105,8 +105,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: uso diario y trabajo; combina con traje o con vaquero. Lavado a 30 °C y planchado a temperatura media.
 - Tallas: XS, S, M, L, XL.
 - Precio: 165 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cam-002.webp`.
-- Texto alternativo previsto: «Camisa de popelín blanca de manga larga».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cam-002.webp`.
+- Texto alternativo: «Camisa de popelín blanca de manga larga».
 
 #### MRDL-CAM-003 — Camisa de lino arena
 
@@ -116,8 +116,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: primavera y verano, viajes y planes de día. El lino se arruga con el uso; lavado a 30 °C.
 - Tallas: S, M, L, XL.
 - Precio: 175 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cam-003.webp`.
-- Texto alternativo previsto: «Camisa de lino color arena con cuello abierto».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cam-003.webp`.
+- Texto alternativo: «Camisa de lino color arena con cuello abierto».
 
 #### MRDL-CAM-004 — Camisa oxford azul niebla
 
@@ -127,8 +127,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: uso diario, sola o bajo un jersey o una americana. Lavado a 30 °C.
 - Tallas: S, M, L, XL.
 - Precio: 155 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cam-004.webp`.
-- Texto alternativo previsto: «Camisa oxford azul niebla con cuello abotonado».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cam-004.webp`.
+- Texto alternativo: «Camisa oxford azul niebla con cuello abotonado».
 
 #### MRDL-CAM-005 — Sobrecamisa de lana oliva
 
@@ -138,8 +138,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: otoño e invierno, sobre una camiseta o una camisa fina. Lavado en seco.
 - Tallas: S, M, L, XL.
 - Precio: 285 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cam-005.webp`.
-- Texto alternativo previsto: «Sobrecamisa de lana verde oliva con bolsillos de parche».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cam-005.webp`.
+- Texto alternativo: «Sobrecamisa de lana verde oliva con bolsillos de parche».
 
 ### Pantalones
 
@@ -162,8 +162,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: trabajo y ocasiones formales; admite americana a juego o jersey fino. Lavado en seco.
 - Tallas: 36, 38, 40, 42, 44.
 - Precio: 270 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-pan-002.webp`.
-- Texto alternativo previsto: «Pantalón recto de lana gris carbón».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-pan-002.webp`.
+- Texto alternativo: «Pantalón recto de lana gris carbón».
 
 #### MRDL-PAN-003 — Pantalón de lino marfil
 
@@ -173,8 +173,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: verano, viajes y planes de costa. Lavado a 30 °C.
 - Tallas: 34, 36, 38, 40, 42.
 - Precio: 210 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-pan-003.webp`.
-- Texto alternativo previsto: «Pantalón amplio de lino color marfil».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-pan-003.webp`.
+- Texto alternativo: «Pantalón amplio de lino color marfil».
 
 #### MRDL-PAN-004 — Chino de algodón piedra
 
@@ -184,8 +184,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: uso diario y fines de semana; con camisa oxford o punto. Lavado a 30 °C.
 - Tallas: 36, 38, 40, 42, 44.
 - Precio: 180 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-pan-004.webp`.
-- Texto alternativo previsto: «Pantalón chino de algodón color piedra».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-pan-004.webp`.
+- Texto alternativo: «Pantalón chino de algodón color piedra».
 
 #### MRDL-PAN-005 — Pantalón de pana chocolate
 
@@ -195,8 +195,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: otoño e invierno, con punto grueso o sobrecamisa. Lavado a 30 °C del revés.
 - Tallas: 36, 38, 40, 42, 44.
 - Precio: 230 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-pan-005.webp`.
-- Texto alternativo previsto: «Pantalón de pana marrón chocolate».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-pan-005.webp`.
+- Texto alternativo: «Pantalón de pana marrón chocolate».
 
 ### Calzado
 
@@ -219,8 +219,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: uso diario y ciudad; con pantalón tobillero o falda. Limpiar con un paño seco.
 - Tallas: 36, 37, 38, 39, 40, 41.
 - Precio: 320 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cal-002.webp`.
-- Texto alternativo previsto: «Bailarinas de piel color marfil».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cal-002.webp`.
+- Texto alternativo: «Bailarinas de piel color marfil».
 
 #### MRDL-CAL-003 — Botín de ante arena
 
@@ -230,8 +230,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: otoño y primavera, uso diario. Aplicar protector para ante y evitar el agua.
 - Tallas: 37, 38, 39, 40, 41, 42, 43, 44.
 - Precio: 450 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cal-003.webp`.
-- Texto alternativo previsto: «Botines Chelsea de ante color arena».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cal-003.webp`.
+- Texto alternativo: «Botines Chelsea de ante color arena».
 
 #### MRDL-CAL-004 — Zapato derby de piel negra
 
@@ -241,8 +241,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: ocasiones formales y trabajo; con traje o pantalón de lana. Limpiar con crema para piel.
 - Tallas: 39, 40, 41, 42, 43, 44, 45.
 - Precio: 410 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cal-004.webp`.
-- Texto alternativo previsto: «Zapatos derby de piel negra con cordones».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cal-004.webp`.
+- Texto alternativo: «Zapatos derby de piel negra con cordones».
 
 #### MRDL-CAL-005 — Sandalia de piel coñac
 
@@ -252,8 +252,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: verano, ciudad y vacaciones. Evitar el agua.
 - Tallas: 36, 37, 38, 39, 40, 41.
 - Precio: 280 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-cal-005.webp`.
-- Texto alternativo previsto: «Sandalias planas de piel color coñac».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-cal-005.webp`.
+- Texto alternativo: «Sandalias planas de piel color coñac».
 
 ### Accesorios
 
@@ -276,8 +276,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: con pantalón de vestir o chino. Talla según el contorno de cintura en centímetros.
 - Tallas: 80, 85, 90, 95, 100 (cm).
 - Precio: 140 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-acc-002.webp`.
-- Texto alternativo previsto: «Cinturón de piel marrón oscuro con hebilla metálica».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-acc-002.webp`.
+- Texto alternativo: «Cinturón de piel marrón oscuro con hebilla metálica».
 
 #### MRDL-ACC-003 — Pañuelo de seda piedra
 
@@ -287,8 +287,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: al cuello, en el pelo o anudado al asa de un bolso. Lavado en seco.
 - Tallas: Única.
 - Precio: 160 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-acc-003.webp`.
-- Texto alternativo previsto: «Pañuelo de seda con estampado geométrico en tonos piedra».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-acc-003.webp`.
+- Texto alternativo: «Pañuelo de seda con estampado geométrico en tonos piedra».
 
 #### MRDL-ACC-004 — Bufanda de cachemira oliva
 
@@ -298,8 +298,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: otoño e invierno. Lavado a mano en frío o en seco; secar en plano.
 - Tallas: Única.
 - Precio: 260 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-acc-004.webp`.
-- Texto alternativo previsto: «Bufanda de cachemira verde oliva con flecos».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-acc-004.webp`.
+- Texto alternativo: «Bufanda de cachemira verde oliva con flecos».
 
 #### MRDL-ACC-005 — Guantes de piel chocolate
 
@@ -309,8 +309,8 @@ En «Imagen», **propia de muestra** significa que el archivo existe y muestra e
 - Uso recomendado: invierno y ciudad. Limpiar con un paño seco.
 - Tallas: S, M, L.
 - Precio: 170 €.
-- Imagen: pendiente; ruta prevista `assets/images/productos/mrdl-acc-005.webp`.
-- Texto alternativo previsto: «Guantes de piel marrón chocolate».
+- Imagen: propia de muestra, `assets/images/productos/mrdl-acc-005.webp`.
+- Texto alternativo: «Guantes de piel marrón chocolate».
 
 ## Uso en las páginas
 

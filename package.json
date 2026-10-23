@@ -5,7 +5,8 @@
   "description": "Maison RDL: prototipo estático de tienda de ropa en HTML y Tailwind CSS.",
   "scripts": {
     "build": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --minify",
-    "watch": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --watch"
+    "watch": "tailwindcss -i src/styles/input.css -o assets/css/styles.css --watch",
+    "start": "python -m http.server 8000 --bind 0.0.0.0"
   },
   "devDependencies": {
     "@tailwindcss/cli": "4.3.3",

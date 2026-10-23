@@ -1,0 +1,53 @@
+name: Publicar Maison RDL
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: npm ci
+      - run: npm run build
+      - run: python tools/check_site.py
+      - name: Obtener la URL real de Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Preparar archivos públicos y SEO
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python tools/build_site.py --base-url "$SITE_URL" --output dist
+      - run: python tools/check_site.py dist
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4

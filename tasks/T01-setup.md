@@ -70,3 +70,7 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 ## Traspaso y siguiente paso
 
 Tras la revisión y la PR integrada, T02 (Roger) recibe los esqueletos, input.css y el método de build, y T03 puede empezar. Liberar entonces la reserva de los archivos de T01.
+
+## Actualización de limpieza — 23/10/2026
+
+Las menciones anteriores a Flask y a los README de plantilla son históricas. Se retiran por petición de Roger; el procedimiento vigente es npm start con Python estándar, sin Flask. Ver README y docs/verificacion.md.

@@ -1,0 +1,110 @@
+[
+  {
+    "number": 12,
+    "title": "T06 producto: ficha a dos columnas con talla, cantidad y descripción",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/12",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T18:09:31Z",
+    "head": "codex/estructura-producto",
+    "base": "main"
+  },
+  {
+    "number": 11,
+    "title": "Completar checkout estático coherente con T07 (T08)",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11",
+    "author": "LydiaBlackCat",
+    "merged_at": "2026-10-23T18:22:06Z",
+    "head": "codex/estructura-checkout",
+    "base": "main"
+  },
+  {
+    "number": 10,
+    "title": "T05 catálogo: filtros estáticos y veinte productos",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/10",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T18:15:03Z",
+    "head": "codex/estructura-catalogo",
+    "base": "main"
+  },
+  {
+    "number": 9,
+    "title": "T04 inicio: tarjetas de Nuevos lanzamientos y Más vendidos",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/9",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T18:16:06Z",
+    "head": "codex/tarjetas-home",
+    "base": "main"
+  },
+  {
+    "number": 8,
+    "title": "T04 inicio: estructura de secciones (pendiente de tarjetas)",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/8",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T17:51:48Z",
+    "head": "codex/estructura-home",
+    "base": "main"
+  },
+  {
+    "number": 7,
+    "title": "Completar carrito T07",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/7",
+    "author": "LydiaBlackCat",
+    "merged_at": "2026-10-23T17:43:59Z",
+    "head": "codex/estructura-carrito",
+    "base": "main"
+  },
+  {
+    "number": 6,
+    "title": "Preparar inventario y recursos T03",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/6",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T17:22:27Z",
+    "head": "codex/inventario",
+    "base": "main"
+  },
+  {
+    "number": 5,
+    "title": "Actualizar cierre y pendientes de T02",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/5",
+    "author": "rogerdevmtz",
+    "merged_at": "2026-10-23T17:05:21Z",
+    "head": "codex/cierre-t02",
+    "base": "main"
+  },
+  {
+    "number": 4,
+    "title": "Preparar base visual de Maison RDL",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/4",
+    "author": "rogerdevmtz",
+    "merged_at": "2026-10-23T16:23:47Z",
+    "head": "codex/base-visual",
+    "base": "main"
+  },
+  {
+    "number": 3,
+    "title": "Planificar carrito y checkout",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/3",
+    "author": "LydiaBlackCat",
+    "merged_at": "2026-10-23T15:44:28Z",
+    "head": "codex/estructura-carrito",
+    "base": "main"
+  },
+  {
+    "number": 2,
+    "title": "Preparar Tailwind y esqueletos de las cinco páginas",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/2",
+    "author": "dochoadi",
+    "merged_at": "2026-10-23T15:28:23Z",
+    "head": "codex/setup-tecnico",
+    "base": "main"
+  },
+  {
+    "number": 1,
+    "title": "Añadir documentación y planificación de Maison RDL",
+    "url": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/1",
+    "author": "rogerdevmtz",
+    "merged_at": "2026-10-23T14:44:04Z",
+    "head": "codex/setup",
+    "base": "main"
+  }
+]

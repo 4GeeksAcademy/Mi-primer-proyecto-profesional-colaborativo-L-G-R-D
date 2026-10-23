@@ -1,9 +1,9 @@
 # T11 — Publicación de prueba
 
 Proyecto: Maison RDL.
-Estado: Pendiente.
+Estado: Configuración preparada; publicación y comprobación pública pendientes.
 Responsable: Daniel.
-Revisor: Lydia.
+Revisor: Gaby.
 Rama: codex/publicacion.
 Depende de: T10 sin incidencias bloqueantes.
 Archivos previstos: README.md, configuración de publicación si hace falta, docs/verificacion.md y ficha propia.
@@ -41,3 +41,7 @@ Pendiente. Registrar qué se probó, URL/archivo, tamaño de pantalla si aplica,
 ## Traspaso y siguiente paso
 
 Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la reserva del archivo.
+
+## Preparación de Roger — 23/10/2026
+
+Workflow de Pages y generador estático preparados en codex/imagenes-revision-visual. Paquete probado localmente bajo subruta, sin errores. La publicación no se ha ejecutado; requiere habilitar Source: GitHub Actions, revisión e integración. Evidencia y límites en docs/verificacion.md.

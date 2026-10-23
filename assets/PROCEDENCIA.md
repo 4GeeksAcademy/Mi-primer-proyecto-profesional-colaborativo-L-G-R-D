@@ -9,3 +9,6 @@ Traslado selectivo de la referencia aceptada en T02, sin modificar los archivos.
 - `images/shirt.webp`, `trousers.webp`, `bag.webp` y `shoes.webp`: recursos exclusivos de demostración del muestrario; no fijan el inventario T03.
 
 Las imágenes proceden de la generación con image_gen documentada en la referencia; no representan productos reales. No se atribuye una licencia de terceros no acreditada. Fuente y contexto: [recursos y branding](../docs/referencia-visual/docs/RECURSOS-Y-BRANDING.md). Prompts conservados en [images.json](../docs/referencia-visual/tools/images.json) y [hero-desktop.json](../docs/referencia-visual/tools/hero-desktop.json). El sitio no necesita esa carpeta para servir sus recursos.
+## Ampliación solicitada por Roger — 23/10/2026
+
+Dieciséis imágenes de producto y dos portadas del equipo generadas con image_gen. Imágenes de muestra, sin productos reales. Referencias personales aportadas por el usuario para las portadas, sin distribuir las fotos originales. Detalle: [fuentes](../docs/fuentes-imagenes.md) y [descripciones de generación](../docs/imagenes-generadas.json).

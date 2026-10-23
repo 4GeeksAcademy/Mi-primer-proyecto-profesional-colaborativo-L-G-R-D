@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maison RDL — Moda de lujo con sede en Francia</title>
+  <meta name="description" content="Maison RDL: marca ficticia con sede en Francia. Descubre la colección de demostración, nuevos lanzamientos y selección de prendas y accesorios.">
+  <meta name="theme-color" content="#171717">
+  <link rel="preload" href="assets/fonts/font-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -46,7 +49,7 @@
   <button class="icon-button close-button" type="button" popovertarget="buscar" popovertargetaction="hide" aria-label="Cerrar búsqueda" title="Cerrar búsqueda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
   <h2 id="buscar-titulo" class="section-title">Una pieza por descubrir.</h2>
   <label class="mt-6 block text-sm" for="buscar-prenda">Buscar en la colección</label>
-  <input class="field mt-2" id="buscar-prenda" type="search" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
+  <input class="field mt-2" id="buscar-prenda" name="q" type="search" autocomplete="off" placeholder="Camisas, pantalones…" aria-describedby="buscar-ayuda">
   <p id="buscar-ayuda" class="mt-3 text-sm leading-7 text-muted">Búsqueda de demostración, sin resultados automáticos ni envío de datos.</p>
   <a class="btn mt-6" href="catalogo.html">Ver el catálogo</a>
   <button class="text-link mt-5 block text-sm sm:hidden" type="button" popovertarget="cuenta">Cuenta de demostración</button>
@@ -61,8 +64,8 @@
   <main id="contenido">
     <section class="hero-section on-dark" aria-labelledby="hero-titulo">
       <picture class="hero-picture">
-        <source media="(min-width: 1024px)" srcset="assets/images/hero-desktop.webp">
-        <img class="hero-image" src="assets/images/hero.webp" width="1122" height="1402" fetchpriority="high" alt="Campaña de muestra Maison RDL: dos modelos con prendas marfil y chocolate junto a una terraza de piedra">
+        <source media="(min-width: 1024px)" srcset="assets/images/hero-equipo-desktop.webp">
+        <img class="hero-image" src="assets/images/hero-equipo-mobile.webp" width="1122" height="1402" fetchpriority="high" alt="Los cuatro integrantes de Maison RDL con ropa de campaña en una terraza parisina al atardecer">
       </picture>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="site-container hero-copy">
@@ -92,11 +95,11 @@
             <p class="mt-2 text-sm tabular-nums">295,00 €</p>
           </article>
           <article class="product-card min-w-0">
-            <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa de lino arena</h3></a>
+            <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cam-003.webp" width="850" height="1133" alt="Camisa de lino color arena con cuello abierto" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Camisa de lino arena</h3></a>
             <p class="mt-2 text-sm tabular-nums">175,00 €</p>
           </article>
           <article class="product-card min-w-0">
-            <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Botín de ante arena</h3></a>
+            <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-cal-003.webp" width="850" height="1133" alt="Botines Chelsea de ante color arena" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Botín de ante arena</h3></a>
             <p class="mt-2 text-sm tabular-nums">450,00 €</p>
           </article>
         </div>
@@ -125,11 +128,11 @@
             <p class="mt-2 text-sm tabular-nums">690,00 €</p>
           </article>
           <article class="product-card min-w-0">
-            <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón recto de lana carbón</h3></a>
+            <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-pan-002.webp" width="850" height="1133" alt="Pantalón recto de lana gris carbón" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pantalón recto de lana carbón</h3></a>
             <p class="mt-2 text-sm tabular-nums">270,00 €</p>
           </article>
           <article class="product-card min-w-0">
-            <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Bufanda de cachemira oliva</h3></a>
+            <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/productos/mrdl-acc-004.webp" width="850" height="1133" alt="Bufanda de cachemira verde oliva con flecos" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Bufanda de cachemira oliva</h3></a>
             <p class="mt-2 text-sm tabular-nums">260,00 €</p>
           </article>
         </div>
@@ -138,7 +141,9 @@
   </main>
 
 <!-- Footer compartido: copia de src/partials/footer.html. -->
-<footer class="on-dark bg-night text-ivory">
+<footer class="on-dark bg-night text-ivory" itemscope itemtype="https://schema.org/Organization">
+  <meta itemprop="name" content="Maison RDL">
+  <meta itemprop="description" content="Marca ficticia con sede en Francia; prototipo académico sin venta real.">
   <div class="site-container grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12 lg:py-16">
     <div id="marca">
       <a href="index.html" aria-label="Maison RDL, inicio"><img class="h-auto w-[220px] max-w-full" src="assets/brand/logo-horizontal-ivory.svg" width="500" height="84" alt="Maison RDL"></a>

@@ -5,7 +5,7 @@ Acuerdos estables a 23/10/2026. Requisitos: [matriz](docs/requisitos.md). Ejecuc
 ## Acuerdos
 
 - Maison RDL es la marca ficticia de ropa de lujo con sede en Francia.
-- Equipo: Roger, Daniel y Lydia; Roger confirma la entrega entre tres.
+- Implementación: Roger, Daniel y Lydia. Gaby se incorpora exclusivamente como revisora y aprobadora manual de las PR, por decisión de Roger.
 - Roger dirige y realiza el diseño de las cinco páginas y la optimización.
 - Daniel: estructura/contenido de inicio, catálogo y producto; inventario, SEO/Schema.org y preparación técnica.
 - Lydia: estructura/contenido de carrito y checkout; QA de cinco vistas, incidencias, evidencias y documentación.
@@ -28,12 +28,12 @@ Valores y reglas en [docs/diseno.md](docs/diseno.md) y [tokens](src/styles/token
 
 Cada persona actualiza su [ficha](tasks/README.md), con reserva de archivos, estado, comprobaciones y PR. Daniel coordina cambios de acuerdos/memoria mediante PR; no hay que reescribir el contexto al final de cada sesión.
 
-Roger revisa cambios visuales; otro integrante revisa sus PR. Una persona por rama y un responsable activo por archivo. Traspaso al diseño tras integrar la estructura.
+Roger dirige los cambios visuales; Gaby revisa y aprueba las PR, incluidas las de Roger. Una persona por rama y un responsable activo por archivo. Traspaso al diseño tras integrar la estructura.
 
 TrackFlow aporta prácticas de documentación y memoria, adaptadas en [la referencia](docs/REFERENCIA-TRACKFLOW.md); no aporta stack ni reglas de negocio.
 
 ## Pendientes
 
-Fecha/canal de entrega, disponibilidad, usuarios/accesos GitHub, idioma/moneda, inventario definitivo y alojamiento. GitHub Pages es propuesta pendiente de disponibilidad.
+Fecha/canal de entrega, revisión de Gaby de esta rama, publicación final y PageSpeed sobre URL pública. Idioma español, moneda EUR e inventario de veinte productos ya están definidos; ver inventario y docs/verificacion.md.
 
-Este paquete local se incorporará al repo durante T01. El progreso global se consulta en [memory-bank/progress.md](memory-bank/progress.md); no confundir planificación y preview con entrega.
+T01 y las estructuras ya están incorporadas al repositorio; esta revisión visual y de entrega sigue local. El progreso global se consulta en [memory-bank/progress.md](memory-bank/progress.md); no confundir planificación y preview con entrega.

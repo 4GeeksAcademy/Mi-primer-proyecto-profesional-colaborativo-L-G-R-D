@@ -1,102 +1,70 @@
 # Maison RDL
 
-Prototipo estático de tienda de ropa de lujo de una marca ficticia con sede en Francia. Primer proyecto profesional colaborativo de Roger, Daniel y Lydia: cinco páginas HTML enlazadas con estilos compartidos generados con Tailwind CSS.
+Prototipo académico de una marca de ropa ficticia con sede en Francia. Cinco páginas estáticas en HTML y Tailwind CSS, con recursos locales. Sin JavaScript de aplicación, backend, almacenamiento ni pagos reales.
 
-Antes de trabajar, leer [AGENTS.md](AGENTS.md), [CONTEXT.md](CONTEXT.md), [requisitos](docs/requisitos.md) y la [ficha de la tarea](tasks/README.md).
-
-## Estado
-
-Las cinco páginas combinan los esqueletos de [T01](tasks/T01-setup.md) con la base visual compartida de [T02](tasks/T02-base-visual.md), aprobada por Lydia e integrada en `main` mediante la PR #4. No son las vistas terminadas: el inventario, contenido y diseños finales corresponden a T03–T08 y D01–D05.
-
-| Página | Vista |
-| --- | --- |
-| [index.html](index.html) | Inicio |
-| [catalogo.html](catalogo.html) | Catálogo |
-| [producto.html](producto.html) | Producto |
-| [carrito.html](carrito.html) | Carrito |
-| [checkout.html](checkout.html) | Checkout |
-
-## Requisitos
-
-- Node.js y npm, solo para generar el CSS. Comprobado con Node 24.21.0 y npm 11.19.0.
-- Python 3 para el servidor local.
-
-Tailwind CSS 4.3.3 y su CLI oficial (`@tailwindcss/cli` 4.3.3) son dependencias de desarrollo con versión fija en [package.json](package.json) y [package-lock.json](package-lock.json). El sitio publicado no usa JavaScript ni el CDN de Tailwind: solo HTML y el CSS generado.
-
-## Instalación
-
-```bash
-npm ci
-```
-
-Usar `npm ci` para instalar exactamente las versiones del lockfile. No versionar `node_modules/`.
-
-## Generar el CSS
-
-```bash
-npm run build
-```
-
-Lee [src/styles/input.css](src/styles/input.css), que importa Tailwind y los [tokens de marca](src/styles/tokens.css), y escribe `assets/css/styles.css` minificado.
-
-Durante el desarrollo se puede regenerar automáticamente al guardar:
-
-```bash
-npm run watch
-```
-
-- `assets/css/styles.css` es generado: no editarlo a mano. Regenerarlo y añadirlo al commit cuando cambien clases, fuentes o tokens, porque el alojamiento estático lo sirve directamente.
-- Tailwind escanea los cinco HTML de la raíz, `src/partials/` y [docs/componentes.html](docs/componentes.html), declarados con `@source` en input.css. Si se crea otra página HTML, añadir su `@source`; el resto de `docs/` y la referencia visual quedan fuera.
-- Si hay un conflicto en el CSS generado, resolver los archivos fuente y volver a ejecutar `npm run build`.
-
-## Servidor local
+## Ejecutar en Codespaces
 
 Desde la raíz del repositorio:
 
 ```bash
-python3 -m http.server 8000
+npm ci
+npm run build
+npm start
 ```
 
-Abrir http://localhost:8000/ (en Codespaces, desde la pestaña de puertos). No requiere instalar nada más.
+Abrir el puerto **8000** desde la pestaña Puertos. Para ver el sitio sin regenerar CSS basta con `npm start`: el CSS compilado está incluido. Node.js/npm se usan para Tailwind; Python sirve los archivos sin dependencias adicionales.
 
-Alternativa de la plantilla html-hello, con Flask en el puerto 3000:
+## Páginas
+
+| Página | Contenido |
+| --- | --- |
+| [Inicio](index.html) | Campaña del equipo, novedades y más vendidos |
+| [Catálogo](catalogo.html) | Veinte productos y filtros estáticos |
+| [Producto](producto.html) | Ficha de ejemplo, materiales y uso |
+| [Carrito](carrito.html) | Tres productos y total de demostración de 925,00 € |
+| [Checkout](checkout.html) | Tres bloques de campos y pago deshabilitado |
+
+Búsqueda, filtros, cuenta y carrito son demostraciones identificadas. Todas las tarjetas abren la misma ficha de ejemplo. Los campos no se envían. Imágenes y datos de productos son ficticios.
+
+## Equipo y revisión
+
+Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. Los cambios actuales están subidos en `codex/imagenes-revision-visual`, [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13), pendientes de revisión de Gaby e integración; no se atribuyen nuevas aprobaciones.
+
+## Entrega y evaluación
+
+[Requisitos](docs/requisitos.md), [verificación actual](docs/verificacion.md), [guía visual](docs/diseno.md), [inventario](docs/inventario-productos.md) y [procedencia de imágenes](docs/fuentes-imagenes.md).
+
+**SEO completado:** Organization y Product/Offer validados en Schema.org con cero errores y advertencias. La publicación genera canónicas, metadatos sociales, robots y sitemap con la URL real; incluye un workflow de GitHub Pages. [Procedimiento](#publicación).
+
+**Pendientes externos:** integrar la PR revisada por Gaby, publicar esa versión, medir PageSpeed Insights sobre su URL pública (mínimo 80), guardar la captura real `pagespeed-result.png` y compartir el repositorio por el canal del instructor. URL pública final: pendiente de publicación; no se presenta localhost como entrega publicada.
+
+## Archivos necesarios
+
+- Cinco HTML, `assets/` y `src/`: sitio, imágenes, fuentes/licencias y entrada de Tailwind.
+- `package.json`, `package-lock.json`, `.gitignore`, `.vscode/`, `.github/`: instalación reproducible y trabajo del equipo.
+- `docs/`, `tasks/`, `memory-bank/`, `.agents/` y archivos de coordinación: requisitos, evidencia y acuerdos. La referencia visual se conserva porque está enlazada por la guía y la procedencia.
+- `node_modules/` se instala localmente y no se versiona ni se entrega en el ZIP. Se retiran README de plantilla en otros idiomas, servidor Flask, ficha learn.json y foto de plantilla sin uso. No se retira el historial Git.
+
+El CSS generado no se edita a mano: modificar `src/styles/` y ejecutar `npm run build`. Si hay conflictos, resolver las fuentes y regenerar.
+
+## Créditos
+
+Basado en la plantilla [html-hello de 4Geeks Academy](https://github.com/4GeeksAcademy/html-hello). Fuentes Cormorant Garamond y Manrope con licencias SIL OFL incluidas. Imágenes generadas de demostración con procedencia documentada.
+
+## Publicación
+
+Se incluye `.github/workflows/pages.yml`. Un administrador selecciona **Settings → Pages → Source: GitHub Actions**. Tras la revisión de Gaby e integración en main, el workflow compila, genera el sitio con la URL de Pages y lo publica. No ejecuta código de aplicación en el cliente ni publica documentación, node_modules o herramientas.
+
+Para comprobar antes de publicar:
 
 ```bash
-pip3 install flask && python3 server.py
+python tools/check_site.py
+python tools/build_site.py --base-url https://TU-URL-PUBLICA/ --output dist
+python tools/check_site.py dist
 ```
 
-El servidor local sirve para desarrollo; no sustituye la URL pública ni la medición de PageSpeed exigidas en la entrega.
+Sustituir la URL por la real, incluida su subruta. `dist` debe estar vacío o no existir; el generador no borra directorios automáticamente. No se versiona `dist/`. No ejecutar el ejemplo con una URL inventada para la entrega final. La copia de desarrollo sigue abriéndose con npm start.
 
-## Estructura
+## Mantener el Codespace limpio
 
-```text
-index.html, catalogo.html, producto.html, carrito.html, checkout.html
-assets/css/styles.css      CSS generado por Tailwind (no editar)
-src/styles/input.css       Entrada de Tailwind y fuentes escaneadas
-src/styles/tokens.css      Colores y tipografías de marca (Roger)
-docs/                      Requisitos, guía visual y referencia visual
-tasks/                     Fichas de tareas
-memory-bank/               Memoria compartida del proyecto
-```
-
-`docs/referencia-visual` es una propuesta de la portada con su propio build; no forma parte del sitio entregado.
-
-## Base visual T02
-
-La base compartida está aprobada por Lydia e integrada en `main` mediante la [PR #4](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/4). Integración no significa verificación completa: las pruebas realizadas y los pendientes se registran en [T02](tasks/T02-base-visual.md). Esta corrección de cierre en `codex/cierre-t02` queda preparada para revisión de Gaby, pendiente, y necesita su propia PR; todavía no se ha integrado.
-
-Comprobaciones de cierre del 23/10/2026: build correcto, seis HTML validados con Nu HTML Checker sin mensajes y comprobación estática de enlaces, recursos, IDs y controles sin errores. Chromium sigue bloqueado por `libatk-1.0.so.0`; quedan pendientes interacción, teclado/foco y responsive en móvil, tablet y escritorio. La [lista manual de T02](tasks/T02-base-visual.md#lista-manual-pendiente) detalla qué comprobar. T02 no se marca verificada.
-
-Para preparar la revisión de Gaby solo se comprueban el build existente y el diff; las validaciones anteriores no se presentan como repetidas. Roger confirma revisión visual general de las cinco páginas, sin medidas en píxeles ni resultados interactivos específicos acreditados; el muestrario sigue sin revisión manual confirmada. No se añaden herramientas ni se continúa la instalación de Chromium.
-
-Están disponibles para Daniel (T04–T06) y Lydia (T07–T08) el [muestrario de componentes](docs/componentes.html), la [guía de uso y esquemas](docs/diseno.md), los estilos y tokens de `src/styles/`, el CSS generado y los [recursos locales con procedencia/licencias](assets/PROCEDENCIA.md). Incluyen navbar clara y sobre fotografía, menú nativo, búsqueda/cuenta de demo, footer, tarjetas, botones, campos, selectores y estados. Inicio integra el hero de referencia; las páginas internas conservan sus secciones de contenido pendientes. El muestrario no sustituye esas páginas ni define el inventario. Contenido, Schema.org y PageSpeed quedan fuera de este cierre.
-
-Los [fragmentos de navbar](src/partials/navbar.html) y [footer](src/partials/footer.html) son referencias con rutas para la raíz, no includes: sus copias se mantienen coordinadas en los cinco HTML. El muestrario adapta esas rutas con `../`. Menú, búsqueda y cuenta usan HTML nativo; la búsqueda no procesa resultados y las categorías llevan al catálogo sin filtrarlo.
-
-## Alcance
-
-Solo HTML y Tailwind CSS, con CSS adicional si hace falta. Sin JavaScript de aplicación, frameworks, backend, persistencia ni pagos reales. Búsqueda, filtros, cuenta y carrito son demostraciones estáticas; el checkout no envía datos.
-
-## Créditos de la plantilla
-
-Proyecto creado a partir de la plantilla [html-hello](https://github.com/4GeeksAcademy/html-hello) de [4Geeks Academy](https://4geeksacademy.com/), realizada por [Alejandro Sanchez](https://twitter.com/alesanchezr) y [otros contribuyentes](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: crea un respaldo verificado fuera del proyecto y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.

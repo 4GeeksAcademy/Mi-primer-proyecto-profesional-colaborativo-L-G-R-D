@@ -1,0 +1,22 @@
+[
+  {
+    "file": "index.html",
+    "messages": []
+  },
+  {
+    "file": "catalogo.html",
+    "messages": []
+  },
+  {
+    "file": "producto.html",
+    "messages": []
+  },
+  {
+    "file": "carrito.html",
+    "messages": []
+  },
+  {
+    "file": "checkout.html",
+    "messages": []
+  }
+]
