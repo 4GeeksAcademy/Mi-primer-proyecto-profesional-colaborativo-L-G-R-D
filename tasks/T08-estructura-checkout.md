@@ -3,12 +3,12 @@
 Proyecto: Maison RDL.
 Estado: Implementada y preparada para revisión de Gaby; comprobaciones de navegador pendientes. No integrada ni verificada.
 Responsable: Lydia.
-Revisora de esta entrega: Gaby; revisión pendiente. Roger mantiene la dirección visual y el acabado D05.
+Revisora de esta entrega: Gaby (gabrielajara2982); revisión solicitada en la PR #11, todavía pendiente. Roger mantiene la dirección visual y el acabado D05.
 Rama: codex/estructura-checkout.
 Depende de: T02 y datos de T07.
 Archivos de esta entrega: checkout.html, assets/css/styles.css generado por build y esta ficha.
 Responsable activo de los archivos: Lydia para checkout.html y esta ficha, por la petición actual tras la integración de las dependencias. Sin cambios de páginas de Daniel, carrito, inventario, estilos fuente, tokens ni fragmentos compartidos.
-PR: pendiente de publicación; commit, push y apertura autorizados por Lydia en esta entrega, sin autorización de merge.
+PR: [#11, abierta hacia main](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11), desde codex/estructura-checkout; revisión solicitada a Gaby, sin aprobación ni merge.
 
 La planificación inicial se conserva como historial en los apartados siguientes. El registro de implementación al final actualiza dependencias, decisiones y comprobaciones, y sustituye los bloqueos y límites de publicación de aquella preparación.
 
@@ -133,3 +133,11 @@ El primer control estático se detuvo por una expectativa incorrecta del comprob
 - Comprobar clic en el botón deshabilitado y Enter en campos: no debe haber envío ni datos en URL; comprobar restricciones nativas con datos ficticios sin afirmar validación bancaria o de vencimiento.
 - Gaby: revisar la PR, sin aprobación atribuida. Roger mantiene revisión visual y acabado en [D05](D05-diseno-checkout.md). Tras integrar T08 con revisión ajena, liberar checkout.html para D05.
 - No marcar T08 integrada ni verificada. Commit, push y PR se realizan por la autorización actual de Lydia; no se fusiona la rama.
+
+### Publicación para revisión
+
+Commit de implementación 43598fe: `feat: completar checkout de demostración (T08)`, con checkout.html, CSS generado y esta ficha. Rama publicada en origin/codex/estructura-checkout.
+
+[PR #11](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11) creada abierta, no draft, contra main. GitHub confirma solicitud de revisión a gabrielajara2982 (nombre público Gaby Jara). Sin revisión aprobada ni integración. La descripción incluye requisitos, resultados de las comprobaciones y pendientes concretos de navegador y diseño D05.
+
+Control previo a publicación: nueve enlaces locales de la ficha con destino existente, CRLF y planificación histórica conservados; `git diff --check` y comprobación del staging correctos reconociendo CRLF. Rama al día con origin/main antes del commit (0/0). Solo checkout, CSS generado y T08 modificados. Este registro de publicación se incorpora mediante un commit documental posterior; no requiere repetir el build porque no modifica HTML ni CSS.
