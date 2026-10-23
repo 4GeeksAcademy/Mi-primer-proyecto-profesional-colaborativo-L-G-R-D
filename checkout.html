@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-ivory text-ink font-body antialiased">
-  <!-- Esqueleto T01. Navbar, footer y composición definitivos: T02 y diseño de Roger. -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
@@ -59,24 +58,132 @@
   <a class="text-link mt-6 inline-block text-sm" href="catalogo.html">Continuar sin registrarse</a>
 </section>
 
-  <main id="contenido">
-    <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
-      <div class="py-12">
-        <h1 class="font-display text-5xl">Checkout</h1>
-      </div>
-      <section class="py-12 border-t border-line" aria-labelledby="datos-personales-titulo">
-        <h2 id="datos-personales-titulo" class="font-display text-4xl">1. Datos personales</h2>
-        <!-- T08: campos de datos personales. -->
-      </section>
-      <section class="py-12 border-t border-line" aria-labelledby="entrega-titulo">
-        <h2 id="entrega-titulo" class="font-display text-4xl">2. Dirección de entrega</h2>
-        <!-- T08: campos de dirección de entrega. -->
-      </section>
-      <section class="py-12 border-t border-line" aria-labelledby="pago-titulo">
-        <h2 id="pago-titulo" class="font-display text-4xl">3. Pago con tarjeta</h2>
-        <!-- T08: campos de tarjeta de demostración; botón final deshabilitado y sin envío de datos. -->
-        <p class="mt-5 text-sm leading-7 text-muted" id="pago-demo">Demostración sin envío de datos ni pagos reales. No introduzcas datos bancarios.</p>
-        <button class="btn mt-6" type="button" disabled aria-describedby="pago-demo">Pago no disponible</button>
+  <main id="contenido" class="site-container py-12 lg:py-16">
+    <h1 class="section-title">Checkout</h1>
+    <p id="checkout-demo" class="mt-5 max-w-3xl text-sm leading-7 text-muted">Demostración académica. Usa únicamente datos ficticios, nunca datos personales ni bancarios reales. No se envían ni se guardan los datos introducidos; no se crean pedidos ni se realizan pagos.</p>
+    <a class="text-link mt-5 inline-block text-sm" href="carrito.html">Volver al carrito</a>
+
+    <div class="mt-8 grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+      <form class="min-w-0 max-w-3xl" method="dialog" autocomplete="off" aria-label="Checkout de demostración" aria-describedby="checkout-demo campos-ayuda">
+        <p id="campos-ayuda" class="mb-6 text-sm leading-7 text-muted">Los campos indicados como obligatorios pertenecen a la simulación; no habilitan el pago.</p>
+        <fieldset id="datos-personales" class="min-w-0 border-t border-line py-8">
+          <legend class="font-display text-3xl">1. Datos personales</legend>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <div class="min-w-0">
+              <label class="block text-sm" for="nombre">Nombre (obligatorio)</label>
+              <input class="field mt-2" id="nombre" type="text" required maxlength="100">
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="apellidos">Apellidos (obligatorios)</label>
+              <input class="field mt-2" id="apellidos" type="text" required maxlength="150">
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="correo">Correo electrónico (obligatorio)</label>
+              <input class="field mt-2" id="correo" type="email" required maxlength="254" placeholder="ejemplo@example.com">
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="telefono">Teléfono (opcional)</label>
+              <input class="field mt-2" id="telefono" type="tel" maxlength="30">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="entrega" class="min-w-0 border-t border-line py-8">
+          <legend class="font-display text-3xl">2. Dirección de entrega</legend>
+          <p id="entrega-ayuda" class="mt-4 text-sm leading-7 text-muted">Dirección ficticia: no representa cobertura de envío ni se realiza ninguna entrega.</p>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="pais">País (obligatorio)</label>
+              <input class="field mt-2" id="pais" type="text" required maxlength="100" aria-describedby="entrega-ayuda">
+            </div>
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="calle">Calle y número (obligatorios)</label>
+              <input class="field mt-2" id="calle" type="text" required maxlength="200">
+            </div>
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="direccion-adicional">Piso, puerta u otra información (opcional)</label>
+              <input class="field mt-2" id="direccion-adicional" type="text" maxlength="150">
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="codigo-postal">Código postal (obligatorio)</label>
+              <input class="field mt-2" id="codigo-postal" type="text" required maxlength="20">
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="localidad">Localidad (obligatoria)</label>
+              <input class="field mt-2" id="localidad" type="text" required maxlength="100">
+            </div>
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="region">Provincia o región (opcional)</label>
+              <input class="field mt-2" id="region" type="text" maxlength="100">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset id="pago" class="min-w-0 border-t border-line py-8" aria-describedby="pago-demo">
+          <legend class="font-display text-3xl">3. Tarjeta de demostración</legend>
+          <p class="mt-4 text-sm leading-7 text-muted" id="pago-demo">No introduzcas datos bancarios reales. Se muestran restricciones de formato, sin comprobación bancaria ni validación automática del vencimiento.</p>
+          <div class="mt-6 grid gap-6 sm:grid-cols-2">
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="titular">Titular ficticio (obligatorio)</label>
+              <input class="field mt-2" id="titular" type="text" required maxlength="150">
+            </div>
+            <div class="min-w-0 sm:col-span-2">
+              <label class="block text-sm" for="numero-tarjeta">Número ficticio (obligatorio)</label>
+              <input class="field mt-2" id="numero-tarjeta" type="text" inputmode="numeric" required minlength="16" maxlength="16" pattern="[0-9]{16}" aria-describedby="numero-ayuda">
+              <p id="numero-ayuda" class="mt-2 text-sm leading-7 text-muted">16 dígitos sin espacios, por ejemplo 0000000000000000. No se comprueba la validez de una tarjeta.</p>
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="caducidad-mes">Mes de caducidad (obligatorio)</label>
+              <select class="field mt-2" id="caducidad-mes" required>
+                <option value="" selected>Seleccionar mes</option>
+                <option value="01">01</option><option value="02">02</option><option value="03">03</option>
+                <option value="04">04</option><option value="05">05</option><option value="06">06</option>
+                <option value="07">07</option><option value="08">08</option><option value="09">09</option>
+                <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+              </select>
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="caducidad-anio">Año de caducidad (obligatorio)</label>
+              <select class="field mt-2" id="caducidad-anio" required>
+                <option value="" selected>Seleccionar año</option>
+                <option>2026</option><option>2027</option><option>2028</option><option>2029</option>
+                <option>2030</option><option>2031</option><option>2032</option><option>2033</option>
+                <option>2034</option><option>2035</option><option>2036</option>
+              </select>
+            </div>
+            <div class="min-w-0">
+              <label class="block text-sm" for="codigo-seguridad">Código de seguridad ficticio (obligatorio)</label>
+              <input class="field mt-2" id="codigo-seguridad" type="password" inputmode="numeric" required minlength="3" maxlength="4" pattern="[0-9]{3,4}" aria-describedby="seguridad-ayuda">
+              <p id="seguridad-ayuda" class="mt-2 text-sm leading-7 text-muted">Tres o cuatro dígitos ficticios.</p>
+            </div>
+          </div>
+        </fieldset>
+        <button class="btn w-full" type="submit" disabled aria-describedby="checkout-demo pago-demo">Pago no disponible</button>
+      </form>
+
+      <section class="min-w-0 border-t border-line pt-8" aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo" class="font-display text-3xl">Resumen del pedido</h2>
+        <ul class="mt-6 text-sm leading-6">
+          <li class="grid grid-cols-[64px_minmax(0,1fr)] gap-4 border-b border-line pb-6">
+            <img class="aspect-[3/4] h-auto w-16 bg-stone object-cover" src="assets/images/shirt.webp" width="850" height="1133" alt="Camisa de seda marfil de manga larga colgada en una percha de madera" loading="lazy">
+            <div class="min-w-0"><h3 class="font-display text-2xl">Camisa de seda marfil</h3><p class="mt-2 break-words text-muted">MRDL-CAM-001</p><p>Talla M · Cantidad 1</p><p class="mt-2 tabular-nums">240,00 €</p></div>
+          </li>
+          <li class="grid grid-cols-[64px_minmax(0,1fr)] gap-4 border-b border-line py-6">
+            <img class="aspect-[3/4] h-auto w-16 bg-stone object-cover" src="assets/images/trousers.webp" width="850" height="1133" alt="Pantalón ancho de pinzas color taupe colgado de una percha de madera" loading="lazy">
+            <div class="min-w-0"><h3 class="font-display text-2xl">Pantalón ancho de pinzas taupe</h3><p class="mt-2 break-words text-muted">MRDL-PAN-001</p><p>Talla 38 · Cantidad 1</p><p class="mt-2 tabular-nums">295,00 €</p></div>
+          </li>
+          <li class="grid grid-cols-[64px_minmax(0,1fr)] gap-4 border-b border-line py-6">
+            <img class="aspect-[3/4] h-auto w-16 bg-stone object-cover" src="assets/images/shoes.webp" width="850" height="1133" alt="Par de mocasines de piel marrón oscuro sobre un suelo de piedra clara" loading="lazy">
+            <div class="min-w-0"><h3 class="font-display text-2xl">Mocasín de piel espresso</h3><p class="mt-2 break-words text-muted">MRDL-CAL-001</p><p>Talla 42 · Cantidad 1</p><p class="mt-2 tabular-nums">390,00 €</p></div>
+          </li>
+        </ul>
+        <dl class="mt-6 grid gap-4 text-sm leading-6 tabular-nums">
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1"><dt>Subtotal sin impuestos</dt><dd>770,83 €</dd></div>
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1"><dt>Impuestos incluidos (20 %)</dt><dd>154,17 €</dd></div>
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1 border-t border-line pt-4 font-semibold"><dt>Total</dt><dd>925,00 €</dd></div>
+        </dl>
+        <p class="mt-6 text-sm leading-7 text-muted">Precios en EUR con un impuesto de simulación del 20 % incluido, ya desglosado y no sumado nuevamente. No representa fiscalidad real. Sin portes, descuentos ni otros cargos.</p>
+        <p class="mt-4 text-sm leading-7 text-muted">Selección estática idéntica al carrito de demostración, sin transferencia ni actualización automática de productos.</p>
       </section>
     </div>
   </main>
