@@ -1,14 +1,16 @@
 # T08 — Estructura y contenido de checkout
 
 Proyecto: Maison RDL.
-Estado: Pendiente de implementación (planificación preparada; bloqueada por T02 y datos de T07).
+Estado: Implementada y preparada para revisión de Gaby; comprobaciones de navegador pendientes. No integrada ni verificada.
 Responsable: Lydia.
-Revisor: Daniel; Roger si afecta a la composición.
+Revisora de esta entrega: Gaby (gabrielajara2982); revisión solicitada en la PR #11, todavía pendiente. Roger mantiene la dirección visual y el acabado D05.
 Rama: codex/estructura-checkout.
 Depende de: T02 y datos de T07.
-Archivos previstos: checkout.html y ficha propia.
-Responsable activo de los archivos: Lydia, solo esta ficha durante la preparación; checkout.html no reservado por Lydia. Respetar la reserva de T01 hasta coordinar su liberación.
-PR: no creada; sin commit, push ni integración por indicación de Lydia.
+Archivos de esta entrega: checkout.html, assets/css/styles.css generado por build y esta ficha.
+Responsable activo de los archivos: Lydia para checkout.html y esta ficha, por la petición actual tras la integración de las dependencias. Sin cambios de páginas de Daniel, carrito, inventario, estilos fuente, tokens ni fragmentos compartidos.
+PR: [#11, abierta hacia main](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11), desde codex/estructura-checkout; revisión solicitada a Gaby, sin aprobación ni merge.
+
+La planificación inicial se conserva como historial en los apartados siguientes. El registro de implementación al final actualiza dependencias, decisiones y comprobaciones, y sustituye los bloqueos y límites de publicación de aquella preparación.
 
 ## Instrucciones
 
@@ -23,7 +25,7 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 - [ ] Tres bloques completos y accesibles dentro del alcance estático.
 - [ ] No hay envío de formulario, cobro ni datos personales en la URL.
-- [ ] Comprobaciones pertinentes documentadas con evidencia real.
+- [x] Comprobaciones pertinentes documentadas con evidencia real; navegador pendiente con motivo registrado.
 - [ ] PR revisada por otra persona, integrada y resultado verificado.
 
 ## Decisiones
@@ -79,3 +81,71 @@ Estas restricciones se comprobarán con datos ficticios al implementar; no impli
 ## Traspaso y siguiente paso
 
 Revisar esta planificación con Lydia; T08 continúa pendiente de implementación en su propia rama tras T02/T07. Solo esta ficha queda a cargo de Lydia para la revisión, sin reservar el HTML. Tras integrar la futura estructura, liberar checkout.html para D05 de Roger. Sin commit, push, PR ni merge en esta sesión.
+
+## Registro de implementación - 23/10/2026
+
+### Dependencias y alcance
+
+- Inicio en main sin cambios locales. `git fetch origin` correcto; rama codex/estructura-checkout creada desde origin/main en 6e54093. No existía previamente local ni remotamente.
+- T02 integrada en la PR #4; T07 integrada en la PR #7, merge 712646d, con el commit de carrito 24188df. El inventario y carrito actuales ya fijan los datos necesarios: no se mantienen como pendientes decisiones resueltas.
+- Stack real: HTML semántico y utilidades Tailwind 4.3.3 con CSS estático generado. Sin JavaScript, backend, almacenamiento de aplicación ni pagos reales. No se añaden dependencias ni herramientas.
+- Se conserva navbar, popovers y footer de Roger sin cambios. Solo se completa el contenido de checkout.html y esta ficha; CSS regenerado con el build existente. No se modifican páginas de Daniel, T07, inventario, tokens, estilos fuente ni fragmentos.
+
+### Estructura y decisiones
+
+- Tres fieldset con legend numerados y visibles: datos personales (nombre, apellidos, email y teléfono opcional), dirección (país, calle/número, información adicional opcional, código postal, localidad y región opcional) y tarjeta ficticia (titular, número, mes, año y código de seguridad).
+- Quince campos con labels persistentes e IDs únicos, usando el componente field de Roger. Nombre y apellidos admiten acentos y espacios sin patrones alfabéticos; teléfono sin patrón nacional. Código postal de tipo text para conservar ceros iniciales.
+- País como texto libre en vez del select previsto: no requiere inventar un país de demostración ni una lista de destinos comerciales. Provincia/región opcional y sin formato postal nacional. Se advierte que la dirección es ficticia y no representa cobertura de envío.
+- Número de tarjeta de tipo text e inputmode numeric, exactamente 16 dígitos ficticios, sin comprobación bancaria. Código de seguridad password, tres o cuatro dígitos ficticios. Selects de caducidad con meses 01-12 y años 2026-2036, sin validación dinámica de vencimiento. No se introducen ni precargan datos reales.
+- Formulario con method="dialog", sin action, autocomplete="off" y sin atributos name serializables. Se usa un único botón type="submit" deshabilitado, en lugar del type="button" previsto, para que el botón de envío predeterminado bloqueado impida también el envío implícito. method="dialog" añade una defensa nativa: fuera de un dialog no produce navegación ni envío de formulario. Esta propiedad se revisa en el HTML; clic y Enter en navegador siguen pendientes de prueba.
+- Aviso de demo y de no introducir datos reales antes de los campos; aviso específico de tarjeta y botón final "Pago no disponible" siempre disabled. No se promete validación al pulsar el botón deshabilitado, envío, pedido, persistencia ni confirmación.
+- Layout de una columna por defecto, campos en dos columnas desde sm cuando procede y resumen lateral desde lg. min-w-0 en formulario, fieldsets y celdas; componentes de Roger sin nuevos estilos fuente. Acabado visual final para D05.
+
+### Coherencia con T07 integrado
+
+| Referencia | Producto | Talla | Cantidad | Importe incluido |
+| --- | --- | --- | --- | --- |
+| MRDL-CAM-001 | Camisa de seda marfil | M | 1 | 240,00 EUR |
+| MRDL-PAN-001 | Pantalón ancho de pinzas taupe | 38 | 1 | 295,00 EUR |
+| MRDL-CAL-001 | Mocasín de piel espresso | 42 | 1 | 390,00 EUR |
+
+Resumen idéntico al carrito: subtotal sin impuestos 770,83 EUR, impuesto de simulación del 20 % incluido 154,17 EUR y total 925,00 EUR. Cálculo: 240 + 295 + 390 = 925; 925 / 1,20 redondeado a céntimos = 770,83; 925 - 770,83 = 154,17. No se suman otra vez impuestos ni se añaden portes, descuentos u otros cargos. Imágenes, textos alternativos y referencias coinciden con T07. Se indica que la selección es estática, sin transferencia ni recálculo automático.
+
+### Comprobaciones realizadas
+
+| Comprobación | Resultado y límite |
+| --- | --- |
+| `npm run build` | Correcto con Tailwind 4.3.3; CSS regenerado tras completar checkout |
+| HTMLParser estándar ejecutado desde terminal, sin archivo de test | Tres fieldset/legend, 15 campos etiquetados, IDs únicos, referencias aria/for/popover resueltas y anidamiento comprobado; un header/main/footer/h1/form |
+| Restricciones y seguridad por inspección del HTML | Tipos, required/opcionales y patrones presentes; método dialog, sin action ni names, autocomplete off, único submit disabled y sin scripts ni eventos de aplicación. No equivale a pruebas interactivas de validación o ausencia de envío |
+| Navegación y recursos locales | 30 enlaces/anclas y cinco recursos HTML con destinos existentes; imágenes con alt y dimensiones; vuelta al carrito disponible |
+| Comparación con T07 y Decimal/ROUND_HALF_UP | Tres referencias, nombres, tallas, cantidades y precios coincidentes; resumen 770,83 + 154,17 = 925,00 EUR correcto con impuesto incluido |
+| Componentes compartidos | Comparación con HEAD confirma navbar, popovers y footer intactos |
+| Adaptación básica por inspección estática | Rejillas sm/lg presentes en HTML y CSS compilado; no acredita renderizado, ausencia de overflow ni comportamiento del foco |
+| Diagnósticos del editor | Sin errores notificados en checkout.html; no sustituye validación HTML completa |
+
+El primer control estático se detuvo por una expectativa incorrecta del comprobador (16 campos en vez de los 15 previstos). Se corrigió solo el contador, sin modificar HTML por ese resultado; la repetición completó las comprobaciones anteriores correctamente. No se añaden tests al repositorio.
+
+### Pendientes y traspaso
+
+- Navegador: no hay ejecutable Chromium/Chrome/Firefox ni paquete Playwright/Puppeteer disponible en esta sesión. No se instalan herramientas ni se reparan bibliotecas. No hay capturas, pruebas interactivas, validación HTML externa ni PageSpeed nuevos.
+- Probar con datos exclusivamente ficticios a 375, 768 y 1440 px: renderizado de fuentes/imágenes, legibilidad, overflow, orden de teclado, foco, labels, controles nativos y menú/popovers compartidos. Esos tamaños son pendientes, no medidas ejecutadas.
+- Comprobar clic en el botón deshabilitado y Enter en campos: no debe haber envío ni datos en URL; comprobar restricciones nativas con datos ficticios sin afirmar validación bancaria o de vencimiento.
+- Gaby: revisar la PR, sin aprobación atribuida. Roger mantiene revisión visual y acabado en [D05](D05-diseno-checkout.md). Tras integrar T08 con revisión ajena, liberar checkout.html para D05.
+- No marcar T08 integrada ni verificada. Commit, push y PR se realizan por la autorización actual de Lydia; no se fusiona la rama.
+
+### Publicación para revisión
+
+Commit de implementación 43598fe: `feat: completar checkout de demostración (T08)`, con checkout.html, CSS generado y esta ficha. Rama publicada en origin/codex/estructura-checkout.
+
+[PR #11](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11) creada abierta, no draft, contra main. GitHub confirma solicitud de revisión a gabrielajara2982 (nombre público Gaby Jara). Sin revisión aprobada ni integración. La descripción incluye requisitos, resultados de las comprobaciones y pendientes concretos de navegador y diseño D05.
+
+Control previo a publicación: nueve enlaces locales de la ficha con destino existente, CRLF y planificación histórica conservados; `git diff --check` y comprobación del staging correctos reconociendo CRLF. Rama al día con origin/main antes del commit (0/0). Solo checkout, CSS generado y T08 modificados. Este registro de publicación se incorpora mediante un commit documental posterior; no requiere repetir el build porque no modifica HTML ni CSS.
+
+### Resolución de conflicto con main - 23/10/2026
+
+Se incorpora origin/main en 82799ed a codex/estructura-checkout para resolver el conflicto de la PR #11. Al empezar no había cambios locales ni merge en curso. El único conflicto era assets/css/styles.css; las fuentes se combinaron sin conflictos y no se eligió unilateralmente el CSS de ninguna rama.
+
+`npm run build` correcto con Tailwind 4.3.3: CSS regenerado desde las cinco páginas combinadas. Comprobación sin marcadores de conflicto en archivos de texto versionados y sin archivos sin resolver tras registrar el CSS. Inicio, catálogo, producto y sus fichas coinciden exactamente con origin/main; checkout, carrito, estilos fuente y tokens conservan la versión previa de T08. CSS con componentes de hero, tarjetas y campos, y utilidades de columnas de checkout; las cinco páginas siguen incluidas en el escaneo Tailwind. Diff revisado y control de espacios del staging correcto, respetando CRLF.
+
+No se repiten pruebas de navegador ni se atribuye aprobación de Gaby. La resolución se publica en la misma rama y PR #11; no se crea otra PR ni se fusiona la existente. T08 mantiene pendientes de revisión e interacción.
