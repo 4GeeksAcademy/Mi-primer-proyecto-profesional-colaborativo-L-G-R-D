@@ -51,6 +51,10 @@ Sesión del 23/10/2026. Dependencias en origin/main: T02 (PR #4/#5) y T03 comple
 - Script Python (html.parser, fuera del repositorio) sobre catalogo.html: 73 referencias, 0 rotas (incluidas anclas, `for` y aria-describedby); sin IDs duplicados; 6 imágenes con alt, width y height; select con label; un h1, 20 h3 (uno por tarjeta).
 - Navegador (Chromium headless del entorno vía DevTools, servidor python3 -m http.server): 20 tarjetas y 6/6 imágenes cargadas en todos los tamaños; sin desbordamiento horizontal. Columnas de la rejilla: 1 a 320×640, 2 a 375×667, 2 a 768×1024 y 4 a 1280×800. Filtros en una columna hasta 1023 px y en dos desde 1024 px. Capturas revisadas localmente, no incluidas en el repositorio.
 
+23/10/2026, resolución de conflicto en codex/estructura-catalogo tras integrarse la PR #12 (producto):
+- Conflicto solo en assets/css/styles.css. Se incorpora origin/main (e5c7880) con merge y se regenera el CSS con npm run build; sin marcas de conflicto y sin edición manual.
+- Repetidas tras el merge: script Python sobre catalogo.html (73 referencias, 0 rotas) y producto.html (51, 0 rotas); navegador a 320, 375, 768 y 1280 px sin desbordamiento, 20 tarjetas, rejilla de 1/2/2/4 columnas e imágenes cargadas; producto a dos columnas en escritorio.
+
 ## Traspaso y siguiente paso
 
 PR presentada por Daniel para revisión de Gaby, sin fusionar. Tras integrarla, Roger recibe catalogo.html en D02 y se libera la reserva.
