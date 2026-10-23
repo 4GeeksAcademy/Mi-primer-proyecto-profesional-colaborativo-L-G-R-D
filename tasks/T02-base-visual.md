@@ -1,14 +1,16 @@
 # T02 — Guía visual y elementos compartidos
 
 Proyecto: Maison RDL.
-Estado: En curso; revisión visual manual realizada por Roger. Pruebas automáticas de navegador bloqueadas; sin integrar ni verificar.
+Estado: Base visual integrada en main mediante la PR #4; build, HTML y comprobaciones estáticas correctos. Verificación de navegador pendiente: T02 no se marca verificada. Esta corrección aún requiere su propia PR.
 Responsable: Roger.
-Revisor: Daniel.
-Rama: codex/base-visual.
+Revisión de la base: Lydia, aprobación registrada en la PR #4.
+Revisor del cierre: Gaby; revisión pendiente, sin aprobación atribuida.
+Rama de la base integrada: codex/base-visual.
+Rama de esta corrección: codex/cierre-t02.
 Depende de: T01.
 Archivos: docs/diseno.md, docs/componentes.html, README.md, src/styles/input.css, src/partials/navbar.html, src/partials/footer.html, cinco esqueletos, assets/css/styles.css y recursos de assets/ documentados en assets/PROCEDENCIA.md. src/styles/tokens.css se conserva sin cambios.
-Responsable activo de los archivos: Roger durante T02; estilos compartidos, fragmentos, recursos trasladados, docs/componentes.html, docs/diseno.md, README.md y base común de los cinco esqueletos. No incluye contenido ni fichas T03/T07/T08.
-PR: pendiente.
+Responsable activo del cierre: Roger; docs/componentes.html, docs/diseno.md (solo estado), README.md y esta ficha. Sin cambios de diseño, inventario ni fichas de Daniel o Lydia.
+PR de la base: [#4, integrada](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/4). PR de esta corrección: todavía no creada por instrucción de Roger.
 
 ## Instrucciones
 
@@ -25,15 +27,18 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 ## Criterios de cierre
 
-- [ ] Existe guía concreta que Daniel y Lydia pueden seguir.
+- [x] Existe guía concreta que Daniel y Lydia pueden seguir: docs/diseno.md y docs/componentes.html, integrados en la PR #4.
 - [ ] Navbar/footer y controles de referencia funcionan dentro del alcance estático y se revisan en móvil y escritorio.
-- [ ] Cada enlace tiene destino o un pendiente explícito que deba cerrarse antes de QA.
-- [ ] Comprobaciones pertinentes documentadas con evidencia real.
-- [ ] PR revisada por otra persona, integrada y resultado verificado.
+- [x] Cada enlace de las seis vistas tiene destino existente: comprobación estática de enlaces/anclas realizada el 23/10/2026; no acredita navegación interactiva.
+- [x] Comprobaciones realizadas y límites documentados: build, Nu HTML Checker, rutas/recursos/IDs/controles y bloqueo actual de Chromium, en el registro de cierre inferior.
+- [x] Base revisada por otra persona e integrada: aprobación de Lydia y merge de la PR #4 comprobados en GitHub.
+- [ ] Resultado técnico de la base verificado en las seis vistas; integración no equivale a verificación.
+- [ ] Corrección de cierre revisada e integrada mediante su propia PR, aún no autorizada.
 
 ## Decisiones
 
-- Trabajo de Roger en `codex/base-visual`, creada desde `origin/main` en `0a607bf`. Comprobadas por GitHub CLI las PR #2 y #3 como MERGED hacia main y su ascendencia mediante Git. No se ha hecho commit, push, PR ni merge de entrega.
+- La base de Roger en `codex/base-visual` se integró en main mediante la PR #4, commit de merge `1f093aa26626f797da9a53ea72ad171b63dee6e6`. Aprobación de `LydiaBlackCat` registrada el 23/10/2026 a las 16:23:31 UTC; su revisión mantiene pendientes contenido y validación de navegador. Confirmado con GitHub CLI y ascendencia Git, sin repetir la integración.
+- El cierre se trabaja en `codex/cierre-t02`, creada desde `origin/main` actualizado en ese merge. No se autoriza commit, push, apertura de PR ni merge de esta corrección.
 - Se conservan los borrados locales previos de README.cn.md, README.es.md, learn.json y server.py, y la carpeta pquete-maison/ sin seguimiento. No se han restaurado, borrado ni guardado con stash.
 - Tokens intactos. Cormorant Garamond 500 normal/italic y Manrope variable locales, con las dos licencias OFL. Logos y fotografías WebP copiados selectivamente sin modificar; procedencia en [assets/PROCEDENCIA.md](../assets/PROCEDENCIA.md).
 - Cabecera clara en internas y variante superpuesta con logo marfil en inicio. Menú details/summary, búsqueda y cuenta mediante popover nativo, sin JavaScript. Búsqueda sin envío; cuenta sin registro ni credenciales.
@@ -45,10 +50,38 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 ## Pendiente
 
-- Desbloquear Chromium y realizar la comprobación solicitada de las seis vistas a 375×667, 768×1024 y 1440×1000; anchuras intermedias, navegación, teclado, foco, labels, contraste, recursos, overflow y CTA del hero en móvil compacto. No existen aún capturas nuevas ni resultados de estas pruebas.
-- Recoger observaciones concretas y el alcance de la revisión manual de Roger si se facilitan; su confirmación no detalla páginas, tamaños, incidencias ni aprobación final. El contenido de T03–T08 y los diseños finales D01–D05 siguen pendientes.
-- PageSpeed sobre URL pública corresponde a T12; no se ha ejecutado ni se atribuye una puntuación.
-- Revisión de Daniel, PR e integración posteriores, solo cuando se autoricen. No marcar T02 integrada ni verificada.
+- Completar la revisión interactiva de las seis vistas en navegador. Chromium sigue sin arrancar por `libatk-1.0.so.0`; no se han ejecutado pruebas responsive ni generado capturas en este cierre. Tamaños previstos, no probados: móvil compacto 375×667, tablet 768×1024 y escritorio 1440×1000, más anchuras intermedias.
+- Roger confirma revisión manual de inicio, catálogo, producto, carrito y checkout, sin medir píxeles. No queda confirmada la revisión del muestrario, ni una matriz de dispositivos/tamaños ni resultados técnicos inequívocos. Los puntos manuales inferiores siguen sin acreditar; la aprobación de integración de Lydia no sustituye esas comprobaciones. No se añaden herramientas ni se continúa intentando instalar o reparar Chromium.
+- Revisión de Gaby pendiente; PR propia de esta corrección solo cuando se autorice. La base ya está integrada; no marcarla verificada hasta completar las comprobaciones relevantes. La automatización de navegador no se añade como requisito del proyecto.
+
+Contenido de T03–T08, diseños finales D01–D05, Schema.org T09 y PageSpeed público T12 siguen fuera de este cierre; no se evalúan aquí ni se les atribuye cumplimiento.
+
+## Verificación del cierre — 23/10/2026
+
+Entorno real: contenedor Ubuntu 24.04.5 LTS, Linux 6.8.0-1064-azure, Node 24.21.0, npm 11.19.0, Python 3.14.2 y OpenJDK 25.0.4.1. Rama `codex/cierre-t02` desde `origin/main` en `1f093aa`. Herramientas de validación solo en `/tmp/maison-cierre-t02`; sin dependencias nuevas del proyecto ni tests añadidos al repositorio.
+
+Preparación para Gaby: se limita al build existente, revisión del diff y registro documental. Se conservan las correcciones de DOCTYPE y estado de integración. Las validaciones HTML/estáticas y el intento fallido de navegador de la tabla se realizaron anteriormente y no se presentan como repetidos en esta preparación. No se instalan herramientas, no se reintenta Chromium y no se cambia identidad, inventario ni contenido.
+
+Ámbito: index.html, catalogo.html, producto.html, carrito.html, checkout.html y docs/componentes.html. Las comprobaciones de archivos no tienen viewport; los tamaños indicados arriba son exclusivamente pendientes de prueba en navegador.
+
+| Comprobación ejecutada | Resultado y alcance |
+| --- | --- |
+| PR #4 con GitHub CLI y ascendencia Git | Estado MERGED hacia main, aprobación APPROVED de LydiaBlackCat y commit de merge confirmados; no se repite la integración |
+| DOCTYPE del muestrario | Primera línea exacta `<!DOCTYPE html>` comprobada; sin cambios de composición o estilos |
+| `npm run build` | Correcto con Tailwind 4.3.3; assets/css/styles.css regenerado sin diferencias respecto a main |
+| `java -jar /tmp/maison-cierre-t02/vnu.jar --format json index.html catalogo.html producto.html carrito.html checkout.html docs/componentes.html` | Nu HTML Checker 26.10.12 (0a70d65): `messages: []`, sin errores ni avisos en los seis documentos |
+| `python3 /tmp/maison-cierre-t02/comprobar.py` | Parsers estándar HTMLParser y tinycss2 1.5.1: 67 enlaces/anclas locales, 14 recursos únicos HTML/CSS y 56 destinos de popover o campos etiquetados; cero errores. IDs sin duplicados; referencias aria/for/list y destinos de controles existentes; imágenes con alt/dimensiones, fuentes locales referenciadas y archivos no vacíos; checkout sin formulario y botón final deshabilitado. Es una comprobación estática, no de renderizado ni interacción |
+| Arranque de Chromium con Playwright | Bloqueado antes de cargar páginas: `error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory`. No se reintenta reparar bibliotecas ni se atribuyen pruebas Playwright/axe, capturas, contraste visual, ausencia de overflow o CTA visible |
+| `git -c core.whitespace=cr-at-eol diff --check` | Correcto en los cuatro archivos de esta corrección, respetando los finales CRLF existentes |
+
+### Lista manual pendiente
+
+Puntos no acreditados para revisar en las seis vistas y registrar con el contexto realmente utilizado. Las resoluciones anteriores son referencias previstas, no mediciones realizadas ni requisitos nuevos del instructor:
+
+1. Recorrer navbar, footer y enlaces; abrir/cerrar menú móvil con summary, búsqueda y cuenta con sus botones y Escape. Confirmar vuelta del foco al control que abrió cada panel y acceso a cuenta desde móvil.
+2. Usar solo teclado: enlace de salto, Tab/Mayús+Tab, Enter/Espacio, orden lógico y foco visible sobre fondos claros, foto y footer. Revisar labels, lectura y contraste; la validación HTML no acredita accesibilidad completa.
+3. En el muestrario, editar texto/cantidad, seleccionar opciones/radios/checkbox y comprobar controles deshabilitados. Verificar que no hay envío de datos ni se promete filtrado, registro o pago real.
+4. Confirmar imágenes y fuentes cargadas, recortes móvil/escritorio y ausencia de desbordamiento horizontal. En inicio a 375×667, comprobar titular legible y CTA completo dentro de la primera pantalla, sin solapamientos.
 
 ## Comprobaciones y evidencia
 
@@ -56,9 +89,20 @@ Fecha: 23/10/2026.
 
 ### Revisión manual de Roger
 
-Roger comunica: «He revisado visualmente la web» y confirma registrar esta revisión manual. No aporta observaciones específicas, páginas, dispositivos, tamaños de pantalla ni capturas. Se deja constancia de la revisión realizada, sin atribuir resultados concretos de navegación, teclado, foco, labels, contraste, recursos, overflow o CTA en móvil, ni aprobación final. Esta revisión no sustituye a las pruebas automáticas bloqueadas.
+Registro actualizado el 23/10/2026 tras solicitar confirmación antes de editar. Evidencia declarada por Roger, no obtenida mediante una prueba automática:
 
-### Comprobaciones técnicas
+| Dato solicitado | Confirmación recibida |
+| --- | --- |
+| Páginas revisadas | Inicio, catálogo, producto, carrito y checkout |
+| Muestrario docs/componentes.html | No seleccionado; revisión no confirmada |
+| Tamaños en píxeles | Roger indica: «no medi pixeles»; no se asignan resoluciones ni se dan por probados los tamaños previstos |
+| Dispositivo y navegador | No identificados; no se deduce cobertura de móvil, tablet o escritorio |
+| Fecha exacta de ejecución y capturas | No precisadas; la fecha anterior corresponde al registro de esta declaración, no acredita el momento de la prueba. No se han aportado capturas |
+| Resultados de las comprobaciones | Se confirma la revisión visual general; las respuestas no permiten acreditar resultados específicos de interacción o responsive |
+
+Quedan sin acreditar de forma inequívoca menú móvil; apertura/cierre de búsqueda y cuenta con botones/Escape; navegación por teclado, enlace de salto, foco visible y retorno del foco; campos del muestrario; renderizado de imágenes/fuentes; contraste visual; ausencia de overflow; CTA completo en la primera pantalla móvil; y ausencia de envío de datos/pagos comprobada manualmente. Las comprobaciones estáticas anteriores conservan su propio alcance y no sustituyen esta evidencia interactiva. No se marca ningún criterio adicional como cumplido ni T02 como verificada.
+
+### Comprobaciones técnicas de la preparación original (histórico)
 
 - Preparación para commit, 23/10/2026: `npm run build` ejecutado de nuevo sobre los archivos actuales, correcto con Tailwind 4.3.3. Revisión del diff de T02 y comparación estática de las seis copias de navbar/footer con sus fragmentos: coinciden, incluidas variantes y rutas. Comentarios de tareas de los cinco esqueletos conservados. Esta comprobación estática no acredita comportamiento responsive ni accesibilidad en navegador; no se ha reintentado Playwright/axe en esta preparación.
 - Control de espacios del staging: se respeta CRLF con `git -c core.whitespace=cr-at-eol diff --cached --check`. Dos avisos heredados de `trailing whitespace` en la línea 21 de cada licencia OFL; se conservan las licencias copiadas sin modificar. No confundir estos avisos con un fallo del build.
@@ -70,4 +114,6 @@ Roger comunica: «He revisado visualmente la web» y confirma registrar esta rev
 
 ## Traspaso y siguiente paso
 
-Reserva de Roger mantenida hasta cerrar T02; todavía no hay traspaso integrado. Revisión visual manual de Roger registrada, sin aprobación final ni observaciones detalladas. Siguiente paso: preparar únicamente los archivos de T02 para el commit, sin crear el commit, hacer push ni abrir PR; quedan fuera pquete-maison/, node_modules/ y los borrados locales previos. Desbloquear después Chromium y ejecutar la comprobación preparada; cuando se autorice, entregar los patrones a Daniel (T04–T06) y Lydia (T07–T08). No tomar sus tareas de contenido ni cambiar sus fichas. Revisión de Daniel pendiente; sin autoaprobación.
+La base ya está disponible en main para Daniel (T04–T06) y Lydia (T07–T08): fragmentos src/partials/navbar.html y footer.html con copias en las cinco páginas; navbar clara/sobre foto, menú móvil nativo, búsqueda/cuenta de demo, footer, tarjetas, botones, campos, selectores, hover/foco/deshabilitado; tokens y entrada de src/styles/, assets/css/styles.css, fuentes/logos/imágenes con licencias y procedencia; muestrario docs/componentes.html y esquemas en docs/diseno.md. Los fragmentos no son includes automáticos.
+
+Roger deja la corrección de cierre preparada en su rama para revisión de Gaby, todavía no realizada. Sin commit, push, PR ni merge en esta sesión. Fuera del cierre: inventario y contenido T03–T08, diseños finales D01–D05, Schema.org T09 y PageSpeed T12. No se toman sus fichas ni se declara terminado su trabajo. Se conservan fuera de los cambios pquete-maison/, node_modules/ y los cuatro borrados locales previos.
