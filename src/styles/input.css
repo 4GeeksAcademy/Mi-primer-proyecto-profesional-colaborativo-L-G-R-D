@@ -1,0 +1,13 @@
+/* Maison RDL — entrada de Tailwind CSS 4.
+   Genera assets/css/styles.css con `npm run build`. No editar el CSS generado.
+   source(none) desactiva la detección automática para no escanear docs/ ni la
+   referencia visual; las páginas y fragmentos se registran con @source. */
+@import "tailwindcss" source(none);
+@import "./tokens.css";
+
+@source "../../index.html";
+@source "../../catalogo.html";
+@source "../../producto.html";
+@source "../../carrito.html";
+@source "../../checkout.html";
+@source "../partials";
