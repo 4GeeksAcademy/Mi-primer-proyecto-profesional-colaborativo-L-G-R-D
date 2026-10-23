@@ -1,6 +1,6 @@
 # Verificación de entrega — 23/10/2026
 
-Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d9654`. Los cambios de esta rama no están aprobados, publicados ni integrados. Revisión manual: Gaby.
+Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d9654`. La PR #13 fue aprobada por Gaby e integrada en main; versión publicada bef45b0. Esta actualización documental de evidencias se prepara en codex/evidencias-entrega y todavía requiere revisión.
 
 ## Resultado local
 
@@ -22,7 +22,7 @@ Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d965
 | V03 | Ficha con imagen/datos a dos columnas, SKU, talla, precio, cantidad, añadir, descripción, materiales y uso. Implementado y probado localmente. |
 | V04 | Carrito completo, tres productos, importes por línea y resumen: 770,83 + 154,17 = 925,00 EUR. Implementado y probado localmente. |
 | V05 | Tres bloques numerados: datos, dirección y tarjeta ficticia; sin envío ni pago. Implementado y probado localmente. |
-| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. Esta rama está subida en [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); requiere revisión de Gaby e integración; no se certifica ausencia absoluta de force-push a partir del historial público. |
+| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. La actualización está integrada mediante [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); aprobada por Gaby e integrada; no se certifica ausencia absoluta de force-push a partir del historial público. |
 | E01 | Cinco HTML válidos según Nu; landmarks, encabezados y etiquetas revisados. |
 | E02 | Tailwind compilado y breakpoints; sin frameworks ni JavaScript de aplicación. |
 | E03 | Componentes compartidos y contenido de las cinco vistas presentes. |
@@ -37,7 +37,7 @@ Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d965
 3. Registrar aquí URL exacta, commit publicado, fecha, modo y resultado PageSpeed; guardar captura real `pagespeed-result.png` en la raíz.
 4. Confirmar canal/fecha del instructor y compartir el repositorio. No se ha enviado la entrega desde esta sesión.
 
-URL pública final: pendiente. PageSpeed: no medido. Captura de PageSpeed: pendiente. El acceso a la página privada del campus no pudo repetirse desde esta sesión; se utiliza la matriz local del enunciado previamente documentada.
+URL pública final: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ . PageSpeed: sin puntuación acreditada, bloqueado por respuestas 429 del servicio. Captura de resultado satisfactorio: pendiente. El acceso a la página privada del campus no pudo repetirse desde esta sesión; se utiliza la matriz local del enunciado previamente documentada.
 
 ## Limpieza
 
@@ -49,7 +49,7 @@ Fuentes técnicas: [Web Interface Guidelines](https://github.com/vercel-labs/web
 
 `tools/build_site.py` prepara una carpeta pública limpia, únicamente con los cinco HTML y recursos usados. Recibe la URL real del alojamiento; añade canónicas absolutas, Open Graph y tarjeta social, robots.txt y sitemap.xml. Carrito y checkout se sirven con noindex/follow y quedan fuera del sitemap. No inventa un dominio ni publica localhost como URL final.
 
-`.github/workflows/pages.yml` instala desde el lockfile, compila Tailwind, comprueba rutas con `tools/check_site.py`, obtiene la URL de Pages, genera el paquete y publica tras integrar en main. El administrador debe seleccionar **Settings → Pages → Source: GitHub Actions** antes de ejecutarlo. Esta sesión no cambió permisos ni habilitó Pages; la consulta pública de configuración devolvió 404. El workflow está preparado, todavía no ejecutado en GitHub.
+`.github/workflows/pages.yml` instala desde el lockfile, compila Tailwind, comprueba rutas con `tools/check_site.py`, obtiene la URL de Pages, genera el paquete y publica tras integrar en main. El administrador debe seleccionar **Settings → Pages → Source: GitHub Actions** antes de ejecutarlo. Tras la autorización explícita de Roger se habilitó Pages con GitHub Actions y se ejecutó la publicación correctamente. La configuración previamente ausente ya está creada; [ejecución exitosa](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/actions/runs/40009296141).
 
 Prueba local del paquete bajo `/tienda/`: doce comprobaciones de navegador en móvil/escritorio sin imágenes rotas, errores de carga o overflow; recorrido enlazado completo. [Resultado](evidencias/public-build.json). Los cinco HTML generados pasan Nu sin mensajes: [resultado](evidencias/public-html-validation.json). Es una prueba del paquete, no evidencia de publicación.
 
@@ -65,4 +65,21 @@ La captura del Codespace muestra `pquete-maison/Maison-RDL-equipo`, sin seguimie
 
 ## Subida de la actualización
 
-[PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) abierta contra main. Rama: `codex/imagenes-revision-visual`. Commit de implementación: `c0dd340`. La PR permanece sin fusionar y sin aprobación atribuida a Gaby. La carpeta duplicada no existe localmente; su retirada en el Codespace se ejecuta con la herramienta incluida después de disponer de esta rama.
+[PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) abierta contra main. Rama: `codex/imagenes-revision-visual`. Commit de implementación: `c0dd340`. La PR fue aprobada por gabrielajara2982 y fusionada en main, commit bef45b0. La carpeta duplicada no existe localmente; su retirada en el Codespace se ejecuta con la herramienta incluida después de disponer de esta rama.
+
+## Publicación comprobada — 23/10/2026
+
+- URL pública: [Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/).
+- Commit publicado: `bef45b0184393eb8a89dcbcd0644e93480932c07`. [Workflow exitoso](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/actions/runs/40009296141).
+- Cinco páginas públicas comprobadas a 375 y 1440 px: HTTP 200, cero imágenes rotas, cero errores de recursos y sin overflow horizontal. Canónicas con dominio/subruta reales. [Evidencia](evidencias/public-live.json).
+- PR #13 aprobada por Gaby y fusionada. Estas evidencias no modifican la web publicada; requieren revisión documental.
+
+## PageSpeed: bloqueo externo real
+
+Se intentó analizar la URL pública raíz y también index.html. La interfaz mostró “Unable to resolve”; la inspección de red confirmó HTTP 429 en `PagespeedUi/data/batchexecute`. La API oficial devolvió HTTP 429, cuota diaria agotada de pagespeedonline.googleapis.com. Por eso no existe una puntuación real que pueda afirmarse ni un archivo pagespeed-result.png satisfactorio. Las capturas de error se guardan con nombres explícitos en evidencias y no cumplen E07.
+
+[Intento raíz](evidencias/pagespeed-error-inicial.json), [captura raíz](evidencias/pagespeed-error-inicial.png), [intento index](evidencias/pagespeed-error-index.json), [captura index](evidencias/pagespeed-error-index.png). [Resumen de publicación y bloqueo](evidencias/publicacion.json). Repetir la medición cuando el servicio vuelva a permitir consultas o desde el navegador del equipo. Registrar URL, modo, fecha y puntuación ≥80 y guardar su captura real.
+
+## Enlace de entrega confirmado por Roger
+
+El instructor solo solicita compartir el enlace del repositorio: https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D . No se requiere otro archivo de entrega ni se ha enviado un mensaje al instructor desde esta sesión. Puede compartirse el enlace, manteniendo explícito que la acreditación E07 sigue pendiente.

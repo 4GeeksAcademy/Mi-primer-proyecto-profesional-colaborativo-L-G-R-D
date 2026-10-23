@@ -28,7 +28,7 @@ Búsqueda, filtros, cuenta y carrito son demostraciones identificadas. Todas las
 
 ## Equipo y revisión
 
-Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. Los cambios actuales están subidos en `codex/imagenes-revision-visual`, [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13), pendientes de revisión de Gaby e integración; no se atribuyen nuevas aprobaciones.
+Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. La actualización visual y SEO de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) fue aprobada por Gaby e integrada; publicación comprobada en bef45b0.
 
 ## Entrega y evaluación
 
@@ -36,7 +36,7 @@ Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inic
 
 **SEO completado:** Organization y Product/Offer validados en Schema.org con cero errores y advertencias. La publicación genera canónicas, metadatos sociales, robots y sitemap con la URL real; incluye un workflow de GitHub Pages. [Procedimiento](#publicación).
 
-**Pendientes externos:** integrar la PR revisada por Gaby, publicar esa versión, medir PageSpeed Insights sobre su URL pública (mínimo 80), guardar la captura real `pagespeed-result.png` y compartir el repositorio por el canal del instructor. URL pública final: pendiente de publicación; no se presenta localhost como entrega publicada.
+**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Pendiente E07:** Google PageSpeed devuelve HTTP 429; aún no se acredita ≥80 ni su captura. Ver evidencia y límites en docs/verificacion.md.
 
 ## Archivos necesarios
 
@@ -68,3 +68,9 @@ Sustituir la URL por la real, incluida su subruta. `dist` debe estar vacío o no
 ## Mantener el Codespace limpio
 
 Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: crea un respaldo verificado fuera del proyecto y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.
+
+## Enlace para compartir con el instructor
+
+https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D
+
+Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza arriba. PageSpeed permanece pendiente por la limitación externa de consultas; no se inventa su resultado.

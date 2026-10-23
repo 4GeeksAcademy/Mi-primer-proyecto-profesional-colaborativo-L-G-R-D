@@ -1,7 +1,7 @@
 # T11 — Publicación de prueba
 
 Proyecto: Maison RDL.
-Estado: Configuración preparada; publicación y comprobación pública pendientes.
+Estado: Publicación ejecutada y cinco rutas comprobadas; evidencia documental preparada para revisión.
 Responsable: Daniel.
 Revisor: Gaby.
 Rama: codex/publicacion.
@@ -45,3 +45,7 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 ## Preparación de Roger — 23/10/2026
 
 Workflow de Pages y generador estático preparados en codex/imagenes-revision-visual. Paquete probado localmente bajo subruta, sin errores. La publicación no se ha ejecutado; requiere habilitar Source: GitHub Actions, revisión e integración. Evidencia y límites en docs/verificacion.md.
+
+## Verificación pública — 23/10/2026
+
+PR #13 aprobada por Gaby e integrada. Sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ ; workflow correcto y cinco páginas comprobadas. Evidencia en docs/verificacion.md. PageSpeed bloqueado por HTTP 429; no se afirma E07 cumplido. Roger confirma que solo se comparte el enlace del repositorio; no se ha enviado al instructor. Este registro documental está pendiente de revisión.

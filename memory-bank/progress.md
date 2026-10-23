@@ -1,11 +1,9 @@
 # Maison RDL — Estado contrastado
 
-Actualizado: 23/10/2026. Fuente actual: [verificación de entrega](../docs/verificacion.md).
+Actualizado: 23/10/2026. [Evidencia actual](../docs/verificacion.md).
 
-GitHub confirma doce PR integradas y main en b5d9654: base, inventario, inicio, catálogo, producto, carrito y checkout. [Evidencia pública consultada](../docs/evidencias/pull-requests.json).
+La PR #13 fue aprobada por Gaby e integrada en main, commit bef45b0. GitHub Pages habilitado por autorización de Roger y publicado con éxito: [sitio](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). Cinco rutas públicas verificadas en móvil/escritorio, HTTP 200, sin recursos rotos ni overflow.
 
-La rama local codex/imagenes-revision-visual completa imágenes pendientes, portadas del equipo, cabecera pegajosa, contraste, metadatos y microdata, documentación y limpieza de plantilla. Build y Nu correctos; cinco vistas probadas en siete anchos. Organization y Product/Offer con cero errores y advertencias en Schema Markup Validator. Workflow de Pages, canónicas, metadatos sociales, sitemap y robots preparados; paquete público probado bajo subruta. Subida en [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); pendiente de revisión manual de Gaby e integración. No atribuir estos cambios a main.
+Build, HTML, microdata y QA local contrastados. E07 sigue pendiente: PageSpeed web y API responden 429 por cuota; no hay puntuación ni captura satisfactorias. Se conservan capturas de los errores como diagnóstico, no como evidencia de cumplimiento. Las evidencias de publicación se preparan para revisión de Gaby en codex/evidencias-entrega.
 
-Pendientes de entrega: publicar versión integrada, medir PageSpeed en URL pública (mínimo 80), guardar pagespeed-result.png y compartir repositorio por el canal del instructor. No se dispone aún de puntuación o URL pública final acreditadas.
-
-Limpieza coordinada: documentos de continuación actualizados, archivos de plantilla sin uso retirados y paquete inicial duplicado excluido de Git. tools/clean_workspace.py permite retirarlo en Codespaces con respaldo ZIP verificado fuera del proyecto. node_modules no se versiona.
+Roger confirma que la entrega consiste únicamente en compartir [el repositorio](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D). No se ha enviado al instructor desde esta sesión. Cuando PageSpeed permita medir: obtener ≥80, guardar pagespeed-result.png real y registrar URL/modo/fecha/resultado.

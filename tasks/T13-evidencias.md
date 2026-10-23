@@ -45,3 +45,7 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 ## Actualización de Roger — 23/10/2026
 
 Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+
+## Verificación pública — 23/10/2026
+
+PR #13 aprobada por Gaby e integrada. Sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ ; workflow correcto y cinco páginas comprobadas. Evidencia en docs/verificacion.md. PageSpeed bloqueado por HTTP 429; no se afirma E07 cumplido. Roger confirma que solo se comparte el enlace del repositorio; no se ha enviado al instructor. Este registro documental está pendiente de revisión.
