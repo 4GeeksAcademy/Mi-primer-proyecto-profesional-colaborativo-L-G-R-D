@@ -1,13 +1,14 @@
 # T06 — Estructura y contenido de producto
 
 Proyecto: Maison RDL.
-Estado: Pendiente.
+Estado: En revisión (PR pendiente de revisión de Gaby).
 Responsable: Daniel.
 Revisor: Lydia; Roger si afecta a la composición.
-Rama: codex/estructura-producto.
+Revisora de esta entrega: Gaby (revisión y aprobación de la PR). Revisión pendiente.
+Rama: codex/estructura-producto (creada desde origin/main 6e54093 el 23/10/2026).
 Depende de: T02 y primera versión T03.
 Archivos previstos: producto.html y ficha propia.
-Responsable activo de los archivos: sin reserva todavía.
+Responsable activo de los archivos: Daniel, para producto.html y esta ficha mientras dure T06. assets/css/styles.css solo se regenera con el build.
 PR: pendiente.
 
 ## Instrucciones
@@ -28,16 +29,29 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 ## Decisiones
 
-Sin decisiones adicionales registradas. Respetar Maison RDL y la responsabilidad de Roger sobre diseño y optimización.
+Sesión del 23/10/2026. Dependencias en origin/main: T02 (PR #4/#5), T03 (PR #6) y T07 (PR #7) integrados.
+
+- Producto de la ficha: MRDL-CAM-001 «Camisa de seda marfil», con foto propia y primera línea del carrito de T07. Referencia, nombre, precio (240,00 €, impuestos incluidos), imagen y alt coinciden con el [inventario](../docs/inventario-productos.md) y con carrito.html; la talla M aparece seleccionada, como en la línea del carrito.
+- Composición del esquema de Roger: `grid gap-8 lg:grid-cols-2`, imagen a la izquierda y datos a la derecha en escritorio; apiladas por debajo de 1024 px con la imagen primero. Imagen principal sin lazy loading, con `fetchpriority="high"` y width/height reales.
+- Datos: categoría, nombre (h1), referencia, precio, talla (fieldset con radios `choice` y las tallas del inventario), cantidad (`input type="number"` 1–9 con label, patrón `field`) y «Añadir al carrito» como enlace `btn` a carrito.html, sin formulario ni envío.
+- Un texto visible, asociado al enlace con aria-describedby, aclara que el carrito de ejemplo muestra una selección fija y que la talla y la cantidad no se guardan. Otro texto indica que todas las tarjetas abren esta misma ficha.
+- Debajo, a ancho completo: descripción, materiales y uso recomendado del inventario (tres columnas en escritorio, una en móvil). Ruta de navegación Catálogo / Camisas.
+- Navbar, popovers y footer sin cambios; el footer coincide con src/partials/footer.html. Se sustituyen los comentarios del esqueleto T01. Sin Schema.org todavía: corresponde a T09.
 
 ## Pendiente
 
-Toda la tarea. Comprobar dependencias y coordinar archivos antes de empezar.
+- Gaby: revisar y aprobar la PR.
+- D03 (Roger): acabado visual. T09 (Daniel): marcado Product coherente con los datos visibles.
+- No ejecutados: navegación completa por teclado, validación HTML con validador externo.
 
 ## Comprobaciones y evidencia
 
-Pendiente. Registrar qué se probó, URL/archivo, tamaño de pantalla si aplica, fecha y resultado. No inventar capturas ni aprobaciones.
+23/10/2026, rama codex/estructura-producto:
+- npm run build: correcto. Utilidades nuevas en el CSS generado: `gap-x-2`, `gap-x-6`, `mt-1` y `mt-12`.
+- Script Python (html.parser, fuera del repositorio) sobre producto.html: 51 referencias, 0 rotas (incluidas `for`, aria-describedby y anclas); sin IDs duplicados; 3 imágenes con alt, width y height; campo de cantidad con label; un h1 (nombre del producto).
+- Coherencia con carrito.html: misma referencia, nombre, precio, imagen, alt y talla M.
+- Navegador (Chromium headless del entorno vía DevTools, servidor python3 -m http.server): sin desbordamiento horizontal a 320×640, 375×667, 768×1024 y 1280×800; 3/3 imágenes cargadas; bloque imagen/datos en una columna hasta 768 px y en dos a 1280 px. Capturas revisadas localmente, no incluidas en el repositorio. Tras la revisión visual se corrigió la mayúscula inicial de descripción y uso.
 
 ## Traspaso y siguiente paso
 
-Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la reserva del archivo.
+PR presentada por Daniel para revisión de Gaby, sin fusionar. Tras integrarla, Roger recibe producto.html en D03 y, después, T09 añade el marcado Product. Liberar entonces la reserva.
