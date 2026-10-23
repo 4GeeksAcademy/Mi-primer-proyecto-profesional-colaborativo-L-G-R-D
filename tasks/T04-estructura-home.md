@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T04 — Estructura y contenido de inicio
 
 Proyecto: Maison RDL.
-Estado: En revisión. Estructura integrada en la PR #8; tarjetas de los dos listados en una segunda PR pendiente de revisión.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Daniel.
 Revisor: Lydia; Roger si afecta a la composición.
 Revisora de esta entrega: Gaby (revisión y aprobación de la PR). Revisión pendiente.
@@ -29,10 +31,10 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 ## Decisiones
 
-Sesión del 23/10/2026. Dependencias comprobadas en origin/main: T02 integrada (PR #4 y cierre en PR #5; src/partials, docs/componentes.html y estilos presentes) y T03 integrada (PR #6; docs/inventario-productos.md y docs/fuentes-imagenes.md presentes).
+Sesión del 23/10/2026. Dependencias comprobadas en origin/main: T02 integrada (PR #4 y cierre en PR #5; src/partials, docs/componentes.html y estilos presentes) y T03 integrada (PR #6; memory-bank/inventario-productos.md y assets/fuentes-imagenes.md presentes).
 
 - De los veinte productos del inventario, solo cuatro tienen imagen propia: MRDL-CAM-001, MRDL-PAN-001, MRDL-CAL-001 y MRDL-ACC-001. Repartirlos entre los dos listados (2 + 2, o los cuatro repetidos) o usar imágenes provisionales para otros productos depende de Roger. Daniel decide esperar esa decisión: no se añaden tarjetas en esta sesión.
-- Avance independiente en index.html: orden de secciones según la composición de [docs/diseno.md](../docs/diseno.md) (hero → Nuevos lanzamientos sobre ivory → bloque Maison sobre olive → Más vendidos sobre paper → footer); títulos con el patrón compartido `section-title`, contenedor `site-container` y enlace «Ver la colección» con `text-link`; se retiran el bloque vacío y los comentarios del esqueleto T01. Cada listado tiene un comentario que marca dónde irán las tarjetas.
+- Avance independiente en index.html: orden de secciones según la composición de [memory-bank/diseno.md](../memory-bank/diseno.md) (hero → Nuevos lanzamientos sobre ivory → bloque Maison sobre olive → Más vendidos sobre paper → footer); títulos con el patrón compartido `section-title`, contenedor `site-container` y enlace «Ver la colección» con `text-link`; se retiran el bloque vacío y los comentarios del esqueleto T01. Cada listado tiene un comentario que marca dónde irán las tarjetas.
 - Sin cambios en hero, navbar, popovers de búsqueda y cuenta, bloque Maison, footer, estilos fuente, fragmentos ni en las otras páginas. El footer coincide con src/partials/footer.html; la cabecera solo difiere en la variante sobre foto documentada para inicio.
 
 ### Tarjetas (segunda sesión, 23/10/2026)
@@ -41,7 +43,7 @@ Sesión del 23/10/2026. Dependencias comprobadas en origin/main: T02 integrada (
 - Nuevos lanzamientos: MRDL-CAM-001 y MRDL-PAN-001 (con foto), MRDL-CAM-003 y MRDL-CAL-003 (imagen pendiente). Más vendidos: MRDL-CAL-001 y MRDL-ACC-001 (con foto), MRDL-PAN-002 y MRDL-ACC-004 (imagen pendiente). Ningún producto se repite y las cuatro categorías aparecen en el inicio.
 - Tarjetas con los patrones `product-track` y `product-card` del muestrario: imagen local con width/height reales (850 × 1133), alt del inventario y `loading="lazy"`; nombre; precio con dos decimales (formato del carrito de T07, mismo valor que el inventario); enlace a producto.html.
 - Cada listado indica que los datos son ficticios y que todas las tarjetas abren la misma ficha de ejemplo; Más vendidos aclara que la selección no se basa en ventas reales.
-- Datos generados desde docs/inventario-productos.md con un script temporal fuera del repositorio, para evitar errores de copia.
+- Datos generados desde memory-bank/inventario-productos.md con un script temporal fuera del repositorio, para evitar errores de copia.
 
 ## Pendiente
 

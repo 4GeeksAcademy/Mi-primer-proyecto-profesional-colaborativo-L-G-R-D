@@ -1,12 +1,14 @@
+> Estado vigente a 23/10/2026: Enlace de repositorio listo; no se ha registrado envío al instructor. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T14 — Entrega documentada
 
 Proyecto: Maison RDL.
-Estado: En curso; preparación local de entrega, pendiente de revisión e integración.
+Estado: Enlace de repositorio listo; no se ha registrado envío al instructor.
 Responsable: Lydia; aportaciones de Roger y Daniel.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/entrega.
 Depende de: T13.
-Archivos previstos: README.md, docs/verificacion.md y ficha propia.
+Archivos previstos: README.md, memory-bank/verificacion.md y ficha propia.
 Responsable activo de los archivos: sin reserva todavía.
 PR: pendiente.
 
@@ -44,8 +46,8 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 
 ## Actualización de Roger — 23/10/2026
 
-Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../memory-bank/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
 
 ## Verificación pública — 23/10/2026
 
-PR #13 aprobada por Gaby e integrada. Sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ ; workflow correcto y cinco páginas comprobadas. Evidencia en docs/verificacion.md. PageSpeed bloqueado por HTTP 429; no se afirma E07 cumplido. Roger confirma que solo se comparte el enlace del repositorio; no se ha enviado al instructor. Este registro documental está pendiente de revisión.
+PR #13 aprobada por Gaby e integrada. Sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ ; workflow correcto y cinco páginas comprobadas. Evidencia en memory-bank/verificacion.md. PageSpeed bloqueado por HTTP 429; no se afirma E07 cumplido. Roger confirma que solo se comparte el enlace del repositorio; no se ha enviado al instructor. Este registro documental está pendiente de revisión.

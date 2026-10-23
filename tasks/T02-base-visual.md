@@ -1,22 +1,24 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T02 — Guía visual y elementos compartidos
 
 Proyecto: Maison RDL.
-Estado: Base visual integrada en main mediante la PR #4; build, HTML y comprobaciones estáticas correctos. Verificación de navegador pendiente: T02 no se marca verificada. Esta corrección aún requiere su propia PR.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Roger.
 Revisión de la base: Lydia, aprobación registrada en la PR #4.
 Revisor del cierre: Gaby; revisión pendiente, sin aprobación atribuida.
 Rama de la base integrada: codex/base-visual.
 Rama de esta corrección: codex/cierre-t02.
 Depende de: T01.
-Archivos: docs/diseno.md, docs/componentes.html, README.md, src/styles/input.css, src/partials/navbar.html, src/partials/footer.html, cinco esqueletos, assets/css/styles.css y recursos de assets/ documentados en assets/PROCEDENCIA.md. src/styles/tokens.css se conserva sin cambios.
-Responsable activo del cierre: Roger; docs/componentes.html, docs/diseno.md (solo estado), README.md y esta ficha. Sin cambios de diseño, inventario ni fichas de Daniel o Lydia.
+Archivos: memory-bank/diseno.md, docs/componentes.html, README.md, src/styles/input.css, src/partials/navbar.html, src/partials/footer.html, cinco esqueletos, assets/css/styles.css y recursos de assets/ documentados en assets/PROCEDENCIA.md. src/styles/tokens.css se conserva sin cambios.
+Responsable activo del cierre: Roger; docs/componentes.html, memory-bank/diseno.md (solo estado), README.md y esta ficha. Sin cambios de diseño, inventario ni fichas de Daniel o Lydia.
 PR de la base: [#4, integrada](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/4). PR de esta corrección: todavía no creada por instrucción de Roger.
 
 ## Instrucciones
 
-Partir de la [guía visual v0.1](../docs/diseno.md) y los [tokens compartidos](../src/styles/tokens.css). Roger ha aceptado la portada como buena base de trabajo. Conservar esa dirección; las otras cuatro vistas requieren su diseño y revisión.
+Partir de la [guía visual v0.1](../memory-bank/diseno.md) y los [tokens compartidos](../src/styles/tokens.css). Roger ha aceptado la portada como buena base de trabajo. Conservar esa dirección; las otras cuatro vistas requieren su diseño y revisión.
 
-Ya existe una [primera propuesta HTML del inicio](../docs/referencia-visual/index.html) con hero a pantalla completa, imágenes para móvil/escritorio y una [lámina del logo](../docs/referencia-visual/identidad.html). Trasladar recursos y patrones de esa referencia al integrar T02. Adaptar enlaces a las cinco páginas reales y retirar la dependencia documental de la carpeta local de preview. No dar la tarea por completada por disponer de esa vista previa.
+Ya existe una primera propuesta HTML del inicio (antecedente en el historial Git) con hero a pantalla completa, imágenes para móvil/escritorio y una lámina del logo (antecedente en el historial Git). Trasladar recursos y patrones de esa referencia al integrar T02. Adaptar enlaces a las cinco páginas reales y retirar la dependencia documental de la carpeta local de preview. No dar la tarea por completada por disponer de esa vista previa.
 
 Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Integrar la identidad documentada de Maison RDL y preparar composiciones de las cinco vistas, variantes de cabecera y reglas responsive. Usar utilidades Tailwind para layout/estados, sin trasladar todo el ejercicio a CSS manual.
@@ -27,7 +29,7 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 ## Criterios de cierre
 
-- [x] Existe guía concreta que Daniel y Lydia pueden seguir: docs/diseno.md y docs/componentes.html, integrados en la PR #4.
+- [x] Existe guía concreta que Daniel y Lydia pueden seguir: memory-bank/diseno.md y docs/componentes.html, integrados en la PR #4.
 - [ ] Navbar/footer y controles de referencia funcionan dentro del alcance estático y se revisan en móvil y escritorio.
 - [x] Cada enlace de las seis vistas tiene destino existente: comprobación estática de enlaces/anclas realizada el 23/10/2026; no acredita navegación interactiva.
 - [x] Comprobaciones realizadas y límites documentados: build, Nu HTML Checker, rutas/recursos/IDs/controles y bloqueo actual de Chromium, en el registro de cierre inferior.
@@ -114,6 +116,6 @@ Quedan sin acreditar de forma inequívoca menú móvil; apertura/cierre de búsq
 
 ## Traspaso y siguiente paso
 
-La base ya está disponible en main para Daniel (T04–T06) y Lydia (T07–T08): fragmentos src/partials/navbar.html y footer.html con copias en las cinco páginas; navbar clara/sobre foto, menú móvil nativo, búsqueda/cuenta de demo, footer, tarjetas, botones, campos, selectores, hover/foco/deshabilitado; tokens y entrada de src/styles/, assets/css/styles.css, fuentes/logos/imágenes con licencias y procedencia; muestrario docs/componentes.html y esquemas en docs/diseno.md. Los fragmentos no son includes automáticos.
+La base ya está disponible en main para Daniel (T04–T06) y Lydia (T07–T08): fragmentos src/partials/navbar.html y footer.html con copias en las cinco páginas; navbar clara/sobre foto, menú móvil nativo, búsqueda/cuenta de demo, footer, tarjetas, botones, campos, selectores, hover/foco/deshabilitado; tokens y entrada de src/styles/, assets/css/styles.css, fuentes/logos/imágenes con licencias y procedencia; muestrario docs/componentes.html y esquemas en memory-bank/diseno.md. Los fragmentos no son includes automáticos.
 
 Roger deja la corrección de cierre preparada en su rama para revisión de Gaby, todavía no realizada. Sin commit, push, PR ni merge en esta sesión. Fuera del cierre: inventario y contenido T03–T08, diseños finales D01–D05, Schema.org T09 y PageSpeed T12. No se toman sus fichas ni se declara terminado su trabajo. Se conservan fuera de los cambios pquete-maison/, node_modules/ y los cuatro borrados locales previos.

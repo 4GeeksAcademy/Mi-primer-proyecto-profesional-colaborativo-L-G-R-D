@@ -1,4 +1,4 @@
-> Estado vigente: continuar el cierre; no repetir setup o inventario. Leer docs/verificacion.md y memory-bank/progress.md antes de escoger una ficha.
+> Estado vigente: continuar el cierre; no repetir setup o inventario. Leer memory-bank/verificacion.md y memory-bank/progress.md antes de escoger una ficha.
 
 # Maison RDL — Prompt maestro corregido
 
@@ -13,8 +13,8 @@ Ficha: tasks/<ARCHIVO>.md.
 Rama exacta: <RAMA de la ficha>.
 
 Lee AGENTS.md, CONTEXT.md, memory-bank/projectbrief.md, techContext.md y progress.md.
-Consulta docs/requisitos.md, PLAN-DE-PROYECTO.md y la ficha propia.
-Si tocas HTML/CSS, aplica docs/diseno.md, src/styles/tokens.css y .agents/rules/visual-identity.md. Aplica siempre .agents/rules/project-scope.md.
+Consulta memory-bank/requisitos.md, PLAN-DE-PROYECTO.md y la ficha propia.
+Si tocas HTML/CSS, aplica memory-bank/diseno.md, src/styles/tokens.css y .agents/rules/visual-identity.md. Aplica siempre .agents/rules/project-scope.md.
 Stack de la tienda: solo HTML semántico y Tailwind CSS.
 Sin JavaScript de aplicación, React, otros frameworks, backend, cuentas reales ni procesamiento de pagos.
 Tailwind CLI es una herramienta de desarrollo permitida por este plan para generar CSS estático; no implica añadir lógica a la tienda. Usa el método documentado en T01. No añadas bibliotecas ajenas.
@@ -48,7 +48,7 @@ AL TERMINAR:
 2. Ejecuta verificaciones pertinentes y documenta resultados reales.
 3. Actualiza tu ficha con estado, decisiones, pendiente, evidencias, reserva de archivos y PR. Daniel coordina cambios de CONTEXT.md y memoria global cuando cambian acuerdos o se integra una fase, siguiendo memory-bank/README.md. No reescribáis los tres un resumen global por sesión.
 4. Añade archivos explícitos, revisa git diff --cached y crea commits por cambio lógico con mensajes claros.
-5. Sube tu rama. Si cumple los criterios, abre PR con resumen, IDs de docs/requisitos.md, pruebas y capturas útiles. Usa .github/PULL_REQUEST_TEMPLATE.md.
+5. Sube tu rama. Si cumple los criterios, abre PR con resumen, IDs de memory-bank/requisitos.md, pruebas y capturas útiles. Usa .github/PULL_REQUEST_TEMPLATE.md.
 6. Usa un cuerpo estructurado o un archivo con --body-file para descripciones multilínea.
 7. Incorpora los cambios recientes de main antes de integrar; repite comprobaciones afectadas si hubo conflictos.
 8. Solicita revisión al integrante indicado. Usa los estados de la ficha: Pendiente → En curso → En revisión → Integrada → Verificada; no adelantes estados sin evidencia.

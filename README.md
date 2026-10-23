@@ -28,21 +28,21 @@ Búsqueda, filtros, cuenta y carrito son demostraciones identificadas. Todas las
 
 ## Equipo y revisión
 
-Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. La actualización visual y SEO de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) fue aprobada por Gaby e integrada; publicación comprobada en bef45b0.
+Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gabriela (Gaby): se incorporó al equipo en la fase final para la revisión manual y aprobación de PR. La actualización visual y SEO de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) fue aprobada por Gaby e integrada; publicación comprobada en bef45b0.
 
 ## Entrega y evaluación
 
-[Requisitos](docs/requisitos.md), [verificación actual](docs/verificacion.md), [guía visual](docs/diseno.md), [inventario](docs/inventario-productos.md) y [procedencia de imágenes](docs/fuentes-imagenes.md).
+[Requisitos](memory-bank/requisitos.md), [verificación actual](memory-bank/verificacion.md), [guía visual](memory-bank/diseno.md), [inventario](memory-bank/inventario-productos.md) y [procedencia de imágenes](assets/fuentes-imagenes.md).
 
 **SEO completado:** Organization y Product/Offer validados en Schema.org con cero errores y advertencias. La publicación genera canónicas, metadatos sociales, robots y sitemap con la URL real; incluye un workflow de GitHub Pages. [Procedimiento](#publicación).
 
-**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Pendiente E07:** Google PageSpeed devuelve HTTP 429; aún no se acredita ≥80 ni su captura. Ver evidencia y límites en docs/verificacion.md.
+**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Pendiente E07:** Google PageSpeed devuelve HTTP 429; aún no se acredita ≥80 ni su captura. Ver evidencia y límites en memory-bank/verificacion.md.
 
 ## Archivos necesarios
 
 - Cinco HTML, `assets/` y `src/`: sitio, imágenes, fuentes/licencias y entrada de Tailwind.
 - `package.json`, `package-lock.json`, `.gitignore`, `.vscode/`, `.github/`: instalación reproducible y trabajo del equipo.
-- `docs/`, `tasks/`, `memory-bank/`, `.agents/` y archivos de coordinación: requisitos, evidencia y acuerdos. La referencia visual se conserva porque está enlazada por la guía y la procedencia.
+- `memory-bank/`, `tasks/`, `.agents/` y archivos de coordinación: requisitos, diseño, inventario, acuerdos y estados. `evidencias/` conserva las pruebas y dos capturas de referencia; `assets/` conserva la procedencia. La carpeta `docs/` se retira para evitar duplicados.
 - `node_modules/` se instala localmente y no se versiona ni se entrega en el ZIP. Se retiran README de plantilla en otros idiomas, servidor Flask, ficha learn.json y foto de plantilla sin uso. No se retira el historial Git.
 
 El CSS generado no se edita a mano: modificar `src/styles/` y ejecutar `npm run build`. Si hay conflictos, resolver las fuentes y regenerar.
@@ -74,3 +74,7 @@ Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpet
 https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D
 
 Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza arriba. PageSpeed permanece pendiente por la limitación externa de consultas; no se inventa su resultado.
+
+## Medir SEO en la URL correcta
+
+La web pública obtuvo SEO 100/100 en Lighthouse 13.5.0; [informe](evidencias/lighthouse-seo-public.json). Usar GitHub Pages para evaluar la entrega. La URL temporal de Codespaces puede requerir autenticación y no representa la indexación del sitio público. La medición de rendimiento de PageSpeed sigue pendiente por HTTP 429.

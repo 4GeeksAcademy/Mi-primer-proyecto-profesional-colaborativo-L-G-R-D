@@ -5,7 +5,7 @@ Estado: inventario base integrado; nuevas imágenes de esta actualización pendi
 
 > **Datos ficticios.** Maison RDL es una marca inventada para un prototipo académico. Productos, referencias, precios, tallas, materiales y descripciones son de demostración: no existen, no se venden y no describen artículos reales. No hay existencias, envíos ni condiciones comerciales.
 
-Fuente común para las cinco páginas: inicio (T04), catálogo (T05), producto (T06), carrito (T07) y checkout (T08). Copiar los datos tal como aparecen aquí; no crear nombres, precios ni referencias distintos por página. Imágenes y procedencia: [fuentes de imágenes](fuentes-imagenes.md).
+Fuente común para las cinco páginas: inicio (T04), catálogo (T05), producto (T06), carrito (T07) y checkout (T08). Copiar los datos tal como aparecen aquí; no crear nombres, precios ni referencias distintos por página. Imágenes y procedencia: [fuentes de imágenes](../assets/fuentes-imagenes.md).
 
 ## Acuerdos y pendientes que afectan a los datos
 
@@ -16,7 +16,7 @@ Fuente común para las cinco páginas: inicio (T04), catálogo (T05), producto (
 | Impuestos | Supuesto de demostración confirmado por Lydia; no es fiscalidad real ni requisito del enunciado. | Impuesto de simulación del 20 % incluido en los precios; se desglosa, no se suma de nuevo. |
 | Cantidades del carrito | Confirmadas por Lydia. | Una unidad de cada una de las tres referencias de T07. |
 | Talla de cada línea del carrito | Selección autorizada por Lydia entre las tallas disponibles. | Camisa M, pantalón 38 y mocasín 42; ver supuesto de importes. |
-| Imágenes de 16 productos | Completadas por petición de Roger el 23/10/2026. | Imágenes de muestra generadas para cada referencia; ver [fuentes](fuentes-imagenes.md). |
+| Imágenes de 16 productos | Completadas por petición de Roger el 23/10/2026. | Imágenes de muestra generadas para cada referencia; ver [fuentes](../assets/fuentes-imagenes.md). |
 
 Si cambia la moneda, cambian todos los precios de este documento en el mismo cambio.
 

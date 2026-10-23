@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T05 — Estructura y contenido de catálogo
 
 Proyecto: Maison RDL.
-Estado: En revisión (PR pendiente de revisión de Gaby).
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Daniel.
 Revisor: Lydia; Roger si afecta a la composición.
 Revisora de esta entrega: Gaby (revisión y aprobación de la PR). Revisión pendiente.
@@ -31,7 +33,7 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 Sesión del 23/10/2026. Dependencias en origin/main: T02 (PR #4/#5) y T03 completo (PR #6) integrados. Revisora de esta entrega: Gaby.
 
-- Veinte tarjetas, una por producto del [inventario](../docs/inventario-productos.md), en su orden (camisas, pantalones, calzado, accesorios). Datos generados desde el inventario con un script temporal fuera del repositorio.
+- Veinte tarjetas, una por producto del [inventario](../memory-bank/inventario-productos.md), en su orden (camisas, pantalones, calzado, accesorios). Datos generados desde el inventario con un script temporal fuera del repositorio.
 - Imágenes: los cuatro productos con foto propia la muestran con alt del inventario, width/height reales y `loading="lazy"`. Los dieciséis restantes muestran un hueco 3:4 «Imagen pendiente» (decisión de Daniel mientras Roger no decida; sin reutilizar fotos de otros artículos).
 - Rejilla con el patrón del muestrario: `grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-4`. Cuatro columnas × cinco filas en escritorio; dos columnas en tablet y móvil, una por debajo de 360 px. No se fuerza el 4×5 en pantallas pequeñas.
 - Filtros estáticos sin formulario: categoría con cinco radios (`choice`, «Todas» marcada) en un fieldset; talla con un `select` (`field`) agrupado por tipo (letras, talla francesa, numeración europea, centímetros y «Única») con las tallas reales del inventario. Un texto visible, asociado con aria-describedby, aclara que no cambian los productos ni envían datos.

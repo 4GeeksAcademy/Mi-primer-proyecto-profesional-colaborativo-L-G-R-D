@@ -2,7 +2,7 @@
 
 Alcance: HTML, estilos, marca, imágenes y revisión de las vistas.
 
-Leer [guía visual](../../docs/diseno.md) y reutilizar [tokens](../../src/styles/tokens.css).
+Leer [guía visual](../../memory-bank/diseno.md) y reutilizar [tokens](../../src/styles/tokens.css).
 Roger dirige y realiza el diseño de las cinco páginas y la optimización.
 
 - Mantener lujo editorial cálido, paleta marfil/piedra/oliva y las dos familias acordadas.

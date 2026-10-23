@@ -1,3 +1,5 @@
+> Estado vigente: PR #13 aprobada e integrada; sitio publicado. PR #14 registra evidencia y consolidación documental. E07 pendiente por HTTP 429; no hay puntuación ni captura satisfactoria de PageSpeed. Los apartados cronológicos siguientes documentan los pasos previos.
+
 # Verificación de entrega — 23/10/2026
 
 Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d9654`. La PR #13 fue aprobada por Gaby e integrada en main; versión publicada bef45b0. Esta actualización documental de evidencias se prepara en codex/evidencias-entrega y todavía requiere revisión.
@@ -5,13 +7,13 @@ Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d965
 ## Resultado local
 
 - Build: `npm run build`, correcto; Tailwind CSS 4.3.3, sin dependencias de aplicación añadidas.
-- Nu HTML Checker: cinco HTML enviados al validador oficial, sin mensajes. [Resultado completo](evidencias/html-validation.json).
+- Nu HTML Checker: cinco HTML enviados al validador oficial, sin mensajes. [Resultado completo](../evidencias/html-validation.json).
 - Chromium con Playwright externo al proyecto (Browser plugin no disponible): cinco vistas a 320, 375, 390, 768, 1024, 1280 y 1440 px. Sin desbordamiento horizontal del documento, un h1/main/header/footer por página y sin IDs duplicados.
 - Cabecera fija o sticky en las cinco vistas: top 0 después de desplazar 700 px. En inicio, superpuesta sobre la foto sin franja sólida al cargar, fondo oliva profundo de marca opaco al desplazarse en navegadores con scroll-driven animations; alternativa semitransparente sin JavaScript. Anclas separadas de la cabecera.
 - Búsqueda abierta/cerrada y menú móvil por encima del contenido. Recorrido real inicio → catálogo → producto → carrito → checkout en los siete tamaños; pago deshabilitado.
 - Metadescripción única en las cinco páginas, idioma español, alt y dimensiones en imágenes. Organization en inicio; Product y Offer en ficha con SKU MRDL-CAM-001, nombre, imagen, descripción, material, precio 240.00 y moneda EUR coincidentes con el contenido visible.
 - Contraste calculado de colores sólidos: texto principal 12.84:1, secundario/marfil 6.71:1, secundario/piedra 6.09:1, secundario del footer 8.87:1, texto sobre oliva 7.91:1; borde de controles/marfil 4.49:1. Las fotografías requieren además revisión visual y no se consideran superficies de color uniforme.
-- [Comprobaciones de navegador y ratios](evidencias/evaluacion.json). Las herramientas de QA no forman parte de las dependencias del sitio.
+- [Comprobaciones de navegador y ratios](../evidencias/evaluacion.json). Las herramientas de QA no forman parte de las dependencias del sitio.
 
 ## Matriz de evaluación
 
@@ -22,12 +24,12 @@ Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d965
 | V03 | Ficha con imagen/datos a dos columnas, SKU, talla, precio, cantidad, añadir, descripción, materiales y uso. Implementado y probado localmente. |
 | V04 | Carrito completo, tres productos, importes por línea y resumen: 770,83 + 154,17 = 925,00 EUR. Implementado y probado localmente. |
 | V05 | Tres bloques numerados: datos, dirección y tarjeta ficticia; sin envío ni pago. Implementado y probado localmente. |
-| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. La actualización está integrada mediante [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); aprobada por Gaby e integrada; no se certifica ausencia absoluta de force-push a partir del historial público. |
+| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](../evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. La actualización está integrada mediante [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); aprobada por Gaby e integrada; no se certifica ausencia absoluta de force-push a partir del historial público. |
 | E01 | Cinco HTML válidos según Nu; landmarks, encabezados y etiquetas revisados. |
 | E02 | Tailwind compilado y breakpoints; sin frameworks ni JavaScript de aplicación. |
 | E03 | Componentes compartidos y contenido de las cinco vistas presentes. |
 | E04 | Siete anchos sin overflow de página, navegación y menú probados. |
-| E05 | Organization y Product/Offer incorporados y propiedades contrastadas con el DOM. Schema Markup Validator: **0 errores y 0 advertencias** en ambas páginas, con [resultado](evidencias/schema-validator.json) y capturas reales [Organization](evidencias/schema-index.png) / [Product](evidencias/schema-producto.png). No se afirma elegibilidad comercial ni aprobación de Rich Results Test. |
+| E05 | Organization y Product/Offer incorporados y propiedades contrastadas con el DOM. Schema Markup Validator: **0 errores y 0 advertencias** en ambas páginas, con [resultado](../evidencias/schema-validator.json) y capturas reales [Organization](../evidencias/schema-index.png) / [Product](../evidencias/schema-producto.png). No se afirma elegibilidad comercial ni aprobación de Rich Results Test. |
 | E07 | **Pendiente:** PageSpeed Insights sobre la URL pública de la versión final; mínimo 80 y captura real dentro del repositorio. No se sustituye por una puntuación local. |
 
 ## Cierre pendiente
@@ -51,7 +53,7 @@ Fuentes técnicas: [Web Interface Guidelines](https://github.com/vercel-labs/web
 
 `.github/workflows/pages.yml` instala desde el lockfile, compila Tailwind, comprueba rutas con `tools/check_site.py`, obtiene la URL de Pages, genera el paquete y publica tras integrar en main. El administrador debe seleccionar **Settings → Pages → Source: GitHub Actions** antes de ejecutarlo. Tras la autorización explícita de Roger se habilitó Pages con GitHub Actions y se ejecutó la publicación correctamente. La configuración previamente ausente ya está creada; [ejecución exitosa](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/actions/runs/40009296141).
 
-Prueba local del paquete bajo `/tienda/`: doce comprobaciones de navegador en móvil/escritorio sin imágenes rotas, errores de carga o overflow; recorrido enlazado completo. [Resultado](evidencias/public-build.json). Los cinco HTML generados pasan Nu sin mensajes: [resultado](evidencias/public-html-validation.json). Es una prueba del paquete, no evidencia de publicación.
+Prueba local del paquete bajo `/tienda/`: doce comprobaciones de navegador en móvil/escritorio sin imágenes rotas, errores de carga o overflow; recorrido enlazado completo. [Resultado](../evidencias/public-build.json). Los cinco HTML generados pasan Nu sin mensajes: [resultado](../evidencias/public-html-validation.json). Es una prueba del paquete, no evidencia de publicación.
 
 ### Después de integrar esta única PR
 
@@ -71,15 +73,27 @@ La captura del Codespace muestra `pquete-maison/Maison-RDL-equipo`, sin seguimie
 
 - URL pública: [Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/).
 - Commit publicado: `bef45b0184393eb8a89dcbcd0644e93480932c07`. [Workflow exitoso](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/actions/runs/40009296141).
-- Cinco páginas públicas comprobadas a 375 y 1440 px: HTTP 200, cero imágenes rotas, cero errores de recursos y sin overflow horizontal. Canónicas con dominio/subruta reales. [Evidencia](evidencias/public-live.json).
+- Cinco páginas públicas comprobadas a 375 y 1440 px: HTTP 200, cero imágenes rotas, cero errores de recursos y sin overflow horizontal. Canónicas con dominio/subruta reales. [Evidencia](../evidencias/public-live.json).
 - PR #13 aprobada por Gaby y fusionada. Estas evidencias no modifican la web publicada; requieren revisión documental.
 
 ## PageSpeed: bloqueo externo real
 
 Se intentó analizar la URL pública raíz y también index.html. La interfaz mostró “Unable to resolve”; la inspección de red confirmó HTTP 429 en `PagespeedUi/data/batchexecute`. La API oficial devolvió HTTP 429, cuota diaria agotada de pagespeedonline.googleapis.com. Por eso no existe una puntuación real que pueda afirmarse ni un archivo pagespeed-result.png satisfactorio. Las capturas de error se guardan con nombres explícitos en evidencias y no cumplen E07.
 
-[Intento raíz](evidencias/pagespeed-error-inicial.json), [captura raíz](evidencias/pagespeed-error-inicial.png), [intento index](evidencias/pagespeed-error-index.json), [captura index](evidencias/pagespeed-error-index.png). [Resumen de publicación y bloqueo](evidencias/publicacion.json). Repetir la medición cuando el servicio vuelva a permitir consultas o desde el navegador del equipo. Registrar URL, modo, fecha y puntuación ≥80 y guardar su captura real.
+[Intento raíz](../evidencias/pagespeed-error-inicial.json), [captura raíz](../evidencias/pagespeed-error-inicial.png), [intento index](../evidencias/pagespeed-error-index.json), [captura index](../evidencias/pagespeed-error-index.png). [Resumen de publicación y bloqueo](../evidencias/publicacion.json). Repetir la medición cuando el servicio vuelva a permitir consultas o desde el navegador del equipo. Registrar URL, modo, fecha y puntuación ≥80 y guardar su captura real.
 
 ## Enlace de entrega confirmado por Roger
 
 El instructor solo solicita compartir el enlace del repositorio: https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D . No se requiere otro archivo de entrega ni se ha enviado un mensaje al instructor desde esta sesión. Puede compartirse el enlace, manteniendo explícito que la acreditación E07 sigue pendiente.
+
+## Auditoría SEO pública
+
+Lighthouse 13.5.0 sobre https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ devuelve **SEO 100/100**, sin auditorías SEO fallidas. Informe real: [JSON](../evidencias/lighthouse-seo-public.json). La captura de Roger con 63 corresponde al puerto privado de Codespaces, que desde fuera redirige al inicio de sesión; no equivale a medir la web pública. Este 100 es SEO en Lighthouse CLI, no una puntuación de rendimiento de PageSpeed Insights ni cierre de E07.
+
+## Capturas aportadas por Roger y equipo final
+
+Se conservan las dos capturas originales de DevTools Lighthouse en Codespaces: [escritorio](../evidencias/lighthouse-codespaces-desktop.png), rendimiento 100/accesibilidad 100/buenas prácticas 100/SEO 63; [móvil](../evidencias/lighthouse-codespaces-mobile.png), rendimiento 97/accesibilidad 100/buenas prácticas 100/SEO 63. No son informes de PageSpeed Insights sobre la URL pública; no se cambia su procedencia ni se presentan como pagespeed-result.png satisfactorio.
+
+El 63 se midió en una URL temporal de Codespaces. No se afirma que medir “desde fuera” reduzca por sí solo el SEO: esa dirección redirige a autenticación desde fuera y no es la URL publicada. Sin el informe JSON original no se puede atribuir cada punto perdido a una auditoría concreta. La URL pública se auditó por separado y obtuvo SEO 100/100, con informe y captura conservados.
+
+Gabriela (Gaby) se incorporó al equipo en la fase final como revisora y aprobadora de PR. Se reconoce en inicio, footer, README, contexto y memoria; no se le atribuye autoría de implementación. El enunciado no pudo releerse en la sesión autenticada del navegador porque Computer Use detuvo el acceso al no poder verificar la URL. Se usa la matriz previamente contrastada; no se inventa una nueva lectura del campus.

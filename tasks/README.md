@@ -1,6 +1,6 @@
 # Maison RDL — Índice de tareas
 
-Estado vigente: implementación base T01–T08 en PR integradas; cierre visual, SEO y comprobaciones en actualización conjunta pendiente de Gaby. Publicación, PageSpeed y entrega aún no acreditados. Evidencias: [verificación](../docs/verificacion.md). Las secciones iniciales de fichas anteriores se conservan como historial.
+Estado vigente: implementación base T01–T08 en PR integradas; cierre visual/SEO de PR #13 aprobado por Gaby e integrado. Sitio publicado y comprobado; PageSpeed y envío al instructor pendientes. Evidencia y consolidación documental en PR #14, pendiente de Gaby. Evidencias: [verificación](../memory-bank/verificacion.md). Las secciones iniciales de fichas anteriores se conservan como historial.
 Referencia: [Plan vigente](../PLAN-DE-PROYECTO.md). Inicio de sesión: [Prompt maestro](../PROMPT-MAESTRO.md).
 
 | ID | Tarea | Responsable | Revisor | Dependencias |
@@ -34,7 +34,7 @@ Cambiar el responsable activo de un archivo requiere coordinación. El responsab
 ## Estado del cierre conjunto
 
 - T01–T08: estructuras/base/inventario integrados; ver PR #1–#12. No se inventa una verificación histórica adicional.
-- D01–D05, T09 y T10: acabados y comprobaciones locales preparados para la revisión de Gaby en esta PR.
-- T11: workflow listo; URL y ejecución de publicación pendientes.
-- T12–T13: recursos optimizados y evidencia local disponible; PageSpeed público y captura pendientes.
+- D01–D05, T09 y T10: implementación integrada mediante PR #13; evidencias técnicas y límites en la memoria.
+- T11: sitio publicado, workflow correcto y cinco rutas públicas comprobadas.
+- T12–T13: recursos optimizados y QA local/público comprobados; PageSpeed y captura bloqueados por HTTP 429.
 - T14: documentación preparada; envío al instructor pendiente.

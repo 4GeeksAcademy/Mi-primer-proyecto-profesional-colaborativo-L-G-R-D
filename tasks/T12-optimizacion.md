@@ -1,12 +1,14 @@
+> Estado vigente a 23/10/2026: Optimización y QA contrastados; PageSpeed público y captura pendientes por HTTP 429. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T12 — Optimización y PageSpeed
 
 Proyecto: Maison RDL.
-Estado: En curso; preparación local de entrega, pendiente de revisión e integración.
+Estado: Optimización y QA contrastados; PageSpeed público y captura pendientes por HTTP 429.
 Responsable: Roger.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/optimizacion.
 Depende de: T11 con URL pública.
-Archivos previstos: Imágenes, estilos fuente y CSS generado, cinco HTML cuando proceda, docs/verificacion.md y ficha propia.
+Archivos previstos: Imágenes, estilos fuente y CSS generado, cinco HTML cuando proceda, memory-bank/verificacion.md y ficha propia.
 Responsable activo de los archivos: sin reserva todavía.
 PR: pendiente.
 
@@ -44,4 +46,4 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 
 ## Actualización de Roger — 23/10/2026
 
-Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../memory-bank/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.

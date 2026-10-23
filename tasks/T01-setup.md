@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T01 — Setup y método de Tailwind
 
 Proyecto: Maison RDL.
-Estado: En curso.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Daniel.
 Revisor: Roger.
 Rama: codex/setup-tecnico (creada desde origin/main el 23/10/2026; codex/setup se usó para incorporar la documentación, PR #1 integrada).
@@ -73,4 +75,4 @@ Tras la revisión y la PR integrada, T02 (Roger) recibe los esqueletos, input.cs
 
 ## Actualización de limpieza — 23/10/2026
 
-Las menciones anteriores a Flask y a los README de plantilla son históricas. Se retiran por petición de Roger; el procedimiento vigente es npm start con Python estándar, sin Flask. Ver README y docs/verificacion.md.
+Las menciones anteriores a Flask y a los README de plantilla son históricas. Se retiran por petición de Roger; el procedimiento vigente es npm start con Python estándar, sin Flask. Ver README y memory-bank/verificacion.md.

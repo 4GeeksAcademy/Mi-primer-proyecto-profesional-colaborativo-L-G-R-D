@@ -101,7 +101,7 @@ Búsqueda, filtros y carrito se representan dentro del alcance HTML/CSS; no se p
 - [ ] URL pública correspondiente a la versión final.
 - [ ] PageSpeed ≥80; objetivo >90, también indicado como ideal por el enunciado.
 - [ ] Captura real de PageSpeed incluida en el repo; nombre de equipo: pagespeed-result.png.
-- [ ] docs/verificacion.md registra fecha, URL exacta, modo, resultado y evidencia.
+- [ ] memory-bank/verificacion.md registra fecha, URL exacta, modo, resultado y evidencia.
 - [ ] README final con ejecución, build, URL, alcance, equipo y aportaciones.
 - [ ] Repositorio compartido por el canal y fecha del instructor; registrar la entrega solo cuando ocurra.
 

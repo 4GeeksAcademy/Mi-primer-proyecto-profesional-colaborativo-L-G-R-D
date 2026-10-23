@@ -1,3 +1,5 @@
+> Estado actual: diseño/SEO de PR #13 aprobados e integrados; sitio publicado. Las instrucciones de traslado T01/T02 se conservan como antecedentes, no deben repetirse. Las referencias antiguas retiradas se recuperan del historial Git.
+
 # Maison RDL — Guía visual compartida v0.1
 
 Fecha: 23/10/2026. Responsable: Roger.
@@ -7,9 +9,9 @@ Estado: base visual T02 aprobada por Lydia e integrada en main mediante la PR #4
 
 **Lujo editorial cálido:** fotografía protagonista, serif expresiva, texto funcional limpio, espacio generoso y contraste entre marfil, piedra y oliva profundo. El aspecto premium se construye con composición, legibilidad y consistencia.
 
-La referencia concreta es la [portada HTML](referencia-visual/index.html), su [captura de escritorio](referencia-visual/preview/desktop.png), su [captura móvil](referencia-visual/preview/mobile.png) y la [lámina de identidad](referencia-visual/identidad.html). La referencia está incluida en docs/referencia-visual; sus enlaces son internos. Durante T02 trasladar los recursos necesarios al sitio final sin confundir la referencia con las cinco páginas de entrega.
+La referencia concreta es la portada HTML (antecedente en el historial Git), su [captura de escritorio](../evidencias/referencia-desktop.png), su [captura móvil](../evidencias/referencia-mobile.png) y la lámina de identidad (antecedente en el historial Git). Se conservan dos capturas de la referencia en evidencias; el material histórico restante está en Git. Durante T02 trasladar los recursos necesarios al sitio final sin confundir la referencia con las cinco páginas de entrega.
 
-Verin, Levor y las capturas aportadas inspiran tipografía editorial, fotografía cálida y sobriedad. No copiar sus logos, imágenes ni promesas comerciales. Investigación y procedencia: [recursos de la propuesta](referencia-visual/docs/RECURSOS-Y-BRANDING.md).
+Verin, Levor y las capturas aportadas inspiran tipografía editorial, fotografía cálida y sobriedad. No copiar sus logos, imágenes ni promesas comerciales. Investigación y procedencia: [recursos de la propuesta](../assets/referencia-recursos.md).
 
 ## Fuente de verdad
 
@@ -55,7 +57,7 @@ No añadir otros colores de marca por página. Para un estado de error, usar men
 - El logo es un SVG trazado: no recomponerlo con una fuente del navegador ni deformarlo.
 - Variantes tinta sobre claro y marfil sobre oscuro; bronce reservado para usos que mantengan contraste.
 - Logo centrado en cabecera; ancho de referencia 128 px escritorio, 116 tablet, 104 móvil. Mantener proporción y área libre de al menos un cuarto de su altura. Usar el favicon simplificado para tamaños pequeños.
-- Archivos actuales: [assets/brand](referencia-visual/assets/brand/logo-ink.svg). Trasladarlos en T02 sin cambiar nombres arbitrariamente.
+- Archivos actuales: assets/brand (antecedente en el historial Git). Trasladarlos en T02 sin cambiar nombres arbitrariamente.
 
 | Elemento | Escritorio | Tablet | Móvil |
 | --- | --- | --- | --- |
@@ -112,14 +114,14 @@ El hero a pantalla completa corresponde solo a inicio: height 100svh con foto pa
 
 ## Base reutilizable T02
 
-Base integrada mediante la PR #4: [muestrario](componentes.html), [navbar](../src/partials/navbar.html), [footer](../src/partials/footer.html) y [entrada CSS](../src/styles/input.css). Los valores de tokens no cambian. Las fuentes se declaran en la entrada CSS; las rutas `../fonts/` se resuelven desde `assets/css/styles.css`, no desde el HTML. Recursos y licencias: [procedencia](../assets/PROCEDENCIA.md).
+Base integrada mediante la PR #4: muestrario (antecedente en el historial Git), [navbar](../src/partials/navbar.html), [footer](../src/partials/footer.html) y [entrada CSS](../src/styles/input.css). Los valores de tokens no cambian. Las fuentes se declaran en la entrada CSS; las rutas `../fonts/` se resuelven desde `assets/css/styles.css`, no desde el HTML. Recursos y licencias: [procedencia](../assets/PROCEDENCIA.md).
 
 - `site-container`: márgenes de 20/32/56 px; `section-title`: Cormorant 38/42/50 px. `font-body`: Manrope.
 - `site-header`: cabecera clara en flujo normal. Inicio añade `site-header--photo on-dark` y usa `logo-ivory.svg`; no aplicar esa variante a internas.
 - `btn`, `btn--secondary`, `btn--light`, `text-link`, `field`, `choice` y `product-card`: patrones del muestrario. Layout, espaciado, rejillas y estados puntuales siguen usando utilidades Tailwind. `product-track` prepara los dos listados horizontales de T04, aún sin inventario.
 - `on-dark` cambia el foco a marfil. Los paneles `surface-light` recuperan foco bronce. Deshabilitar controles con `disabled`, no solo una apariencia visual.
 - Menú `details/summary` y paneles `popover` nativos, sin JavaScript. Escape cierra popovers; el menú se vuelve a cerrar con su summary. Búsqueda sin formulario ni envío; cuenta sin credenciales.
-- Los fragmentos tienen rutas para HTML en la raíz: copiar su contenido, ajustar `aria-current="page"` y, desde `docs/`, anteponer `../` a rutas de páginas/recursos. No enlazarlos con `iframe`, `fetch` ni includes supuestos. Sincronizar siempre las cinco copias al cambiar un fragmento.
+- Los fragmentos tienen rutas para HTML en la raíz: copiar su contenido, ajustar `aria-current="page"` y ajustar rutas relativas si se copian a un subdirectorio. No enlazarlos con `iframe`, `fetch` ni includes supuestos. Sincronizar siempre las cinco copias al cambiar un fragmento.
 - Los enlaces de categorías llevan a la sección de productos del catálogo, no activan filtros. Los textos legales y el contacto describen solo la demo, sin domicilios o condiciones comerciales inventados.
 - Hero: foto panorámica desde 1024 px, vertical por debajo; `100svh`, titular HTML de 58/88/104 px y 52 px en poca altura. Sin tipografía basada en `vw` ni tracking negativo nuevo; ajuste de legibilidad sobre la referencia, no cambio de identidad. CTA de 48 px y gradación oscura compartida.
 
@@ -154,4 +156,4 @@ Un cambio de marca se registra aquí y en los tokens dentro de la misma PR. Dani
 
 ## Cabecera final — 23/10/2026
 
-Menú pegajoso. Superposición con degradado neutro al inicio de la portada; al desplazar usa night (#22271F), texto y logo marfil. Las vistas internas conservan marfil/tinta. Contraste reforzado en muted y control; los tokens son la fuente de verdad. Ver docs/verificacion.md.
+Menú pegajoso. Superposición con degradado neutro al inicio de la portada; al desplazar usa night (#22271F), texto y logo marfil. Las vistas internas conservan marfil/tinta. Contraste reforzado en muted y control; los tokens son la fuente de verdad. Ver memory-bank/verificacion.md.

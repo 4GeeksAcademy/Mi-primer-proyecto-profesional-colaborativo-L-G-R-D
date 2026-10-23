@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Coordinación inicial registrada; no se inventa una nueva prueba de permisos de terceros. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T00 — Accesos y coordinación
 
 Proyecto: Maison RDL.
-Estado: Pendiente.
+Estado: Coordinación inicial registrada; no se inventa una nueva prueba de permisos de terceros.
 Responsable: Daniel.
 Revisor: Lydia.
 Rama: codex/coordinacion.
