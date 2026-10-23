@@ -1,0 +1,24 @@
+/* Maison RDL v0.1 — Tailwind CSS 4.
+   Importar desde input.css después de @import "tailwindcss".
+   Solo tokens: no contiene el layout ni carga fuentes por sí mismo.
+   Guía: docs/diseno.md. Responsable visual: Roger. */
+@theme {
+  --color-ivory: #f3f0e9;
+  --color-ink: #262a22;
+  --color-muted: #666058;
+  --color-sand: #e5ded1;
+  --color-stone: #e9e5df;
+  --color-line: #cfc8bd;
+  --color-control: #8c857b;
+  --color-bronze: #7a6143;
+  --color-paper: #e7e3d9;
+  --color-olive: #343b2e;
+  --color-night: #22271f;
+  --color-gold: #a89270;
+  --color-on-dark-muted: #c4c7b9;
+  --color-on-olive-muted: #d6d6ca;
+  --color-dark-line: #5b6252;
+  --color-gold-light: #d0bd99;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", Arial, sans-serif;
+}
