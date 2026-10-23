@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-ivory text-ink font-body antialiased">
-  <!-- Esqueleto T01. Navbar, footer y composición definitivos: T02 y diseño de Roger. -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
@@ -59,23 +58,159 @@
   <a class="text-link mt-6 inline-block text-sm" href="catalogo.html">Continuar sin registrarse</a>
 </section>
 
-  <main id="contenido">
-    <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
-      <div class="py-12">
-        <h1 class="font-display text-5xl">Catálogo</h1>
+  <main id="contenido" class="site-container py-12 lg:py-16">
+    <h1 class="section-title">Catálogo</h1>
+    <p class="mt-5 max-w-3xl text-sm leading-7 text-muted">Veinte productos ficticios de la colección de demostración: camisas, pantalones, calzado y accesorios. Todas las tarjetas abren la misma ficha de ejemplo.</p>
+
+    <section class="mt-8 border-t border-line pt-8" aria-labelledby="filtros-titulo">
+      <h2 id="filtros-titulo" class="font-display text-3xl">Filtros</h2>
+      <p id="filtros-ayuda" class="mt-2 max-w-3xl text-sm leading-7 text-muted">Filtros de demostración: se pueden marcar, pero no cambian los productos mostrados ni envían datos.</p>
+      <div class="mt-6 grid gap-8 lg:grid-cols-2">
+        <fieldset aria-describedby="filtros-ayuda">
+          <legend class="mb-2 text-sm">Categoría</legend>
+          <div class="flex flex-wrap gap-x-6">
+            <label class="flex min-h-12 items-center gap-2"><input class="choice" type="radio" name="categoria" value="todas" checked> Todas</label>
+            <label class="flex min-h-12 items-center gap-2"><input class="choice" type="radio" name="categoria" value="camisas"> Camisas</label>
+            <label class="flex min-h-12 items-center gap-2"><input class="choice" type="radio" name="categoria" value="pantalones"> Pantalones</label>
+            <label class="flex min-h-12 items-center gap-2"><input class="choice" type="radio" name="categoria" value="calzado"> Calzado</label>
+            <label class="flex min-h-12 items-center gap-2"><input class="choice" type="radio" name="categoria" value="accesorios"> Accesorios</label>
+          </div>
+        </fieldset>
+        <div>
+          <label class="mb-2 block text-sm" for="filtro-talla">Talla</label>
+          <select class="field" id="filtro-talla" aria-describedby="filtros-ayuda">
+            <option value="">Todas las tallas</option>
+            <optgroup label="Camisas y guantes">
+              <option value="l-xs">XS</option>
+              <option value="l-s">S</option>
+              <option value="l-m">M</option>
+              <option value="l-l">L</option>
+              <option value="l-xl">XL</option>
+            </optgroup>
+            <optgroup label="Pantalones (talla francesa)">
+              <option value="fr-34">34</option>
+              <option value="fr-36">36</option>
+              <option value="fr-38">38</option>
+              <option value="fr-40">40</option>
+              <option value="fr-42">42</option>
+              <option value="fr-44">44</option>
+            </optgroup>
+            <optgroup label="Calzado (numeración europea)">
+              <option value="eu-36">36</option>
+              <option value="eu-37">37</option>
+              <option value="eu-38">38</option>
+              <option value="eu-39">39</option>
+              <option value="eu-40">40</option>
+              <option value="eu-41">41</option>
+              <option value="eu-42">42</option>
+              <option value="eu-43">43</option>
+              <option value="eu-44">44</option>
+              <option value="eu-45">45</option>
+            </optgroup>
+            <optgroup label="Cinturones (cm)">
+              <option value="cm-80">80 cm</option>
+              <option value="cm-85">85 cm</option>
+              <option value="cm-90">90 cm</option>
+              <option value="cm-95">95 cm</option>
+              <option value="cm-100">100 cm</option>
+            </optgroup>
+            <optgroup label="Accesorios">
+              <option value="unica">Única</option>
+            </optgroup>
+          </select>
+        </div>
       </div>
-      <section class="py-12 border-t border-line" aria-labelledby="filtros-titulo">
-        <h2 id="filtros-titulo" class="font-display text-4xl">Filtros</h2>
-        <!-- T05: filtros por categoría y talla. -->
-      </section>
-      <section class="py-12 border-t border-line" aria-labelledby="productos-titulo">
-        <h2 id="productos-titulo" class="font-display text-4xl">Productos</h2>
-        <!-- T05: rejilla de veinte productos. -->
-      </section>
-    </div>
+    </section>
+
+    <section class="mt-12 border-t border-line pt-8" aria-labelledby="productos-titulo">
+      <h2 id="productos-titulo" class="font-display text-3xl">Productos</h2>
+      <p class="mt-2 text-sm text-muted">20 productos</p>
+      <div class="mt-8 grid grid-cols-1 gap-6 min-[360px]:grid-cols-2 lg:grid-cols-4">
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/shirt.webp" width="850" height="1133" alt="Camisa de seda marfil de manga larga colgada en una percha de madera" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Camisa de seda marfil</h3></a>
+          <p class="mt-2 text-sm tabular-nums">240,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa de popelín blanca</h3></a>
+          <p class="mt-2 text-sm tabular-nums">165,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa de lino arena</h3></a>
+          <p class="mt-2 text-sm tabular-nums">175,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Camisa oxford azul niebla</h3></a>
+          <p class="mt-2 text-sm tabular-nums">155,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Sobrecamisa de lana oliva</h3></a>
+          <p class="mt-2 text-sm tabular-nums">285,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/trousers.webp" width="850" height="1133" alt="Pantalón ancho de pinzas color taupe colgado de una percha de madera" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Pantalón ancho de pinzas taupe</h3></a>
+          <p class="mt-2 text-sm tabular-nums">295,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón recto de lana carbón</h3></a>
+          <p class="mt-2 text-sm tabular-nums">270,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de lino marfil</h3></a>
+          <p class="mt-2 text-sm tabular-nums">210,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Chino de algodón piedra</h3></a>
+          <p class="mt-2 text-sm tabular-nums">180,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pantalón de pana chocolate</h3></a>
+          <p class="mt-2 text-sm tabular-nums">230,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/shoes.webp" width="850" height="1133" alt="Par de mocasines de piel marrón oscuro sobre un suelo de piedra clara" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Mocasín de piel espresso</h3></a>
+          <p class="mt-2 text-sm tabular-nums">390,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Bailarina de piel marfil</h3></a>
+          <p class="mt-2 text-sm tabular-nums">320,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Botín de ante arena</h3></a>
+          <p class="mt-2 text-sm tabular-nums">450,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Zapato derby de piel negra</h3></a>
+          <p class="mt-2 text-sm tabular-nums">410,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Sandalia de piel coñac</h3></a>
+          <p class="mt-2 text-sm tabular-nums">280,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="overflow-hidden bg-stone"><img src="assets/images/bag.webp" width="850" height="1133" alt="Bolso de piel color coñac con asa superior sobre un bloque de piedra" loading="lazy"></div><h3 class="mt-4 text-sm group-hover:underline">Bolso de asa corta coñac</h3></a>
+          <p class="mt-2 text-sm tabular-nums">690,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Cinturón de piel espresso</h3></a>
+          <p class="mt-2 text-sm tabular-nums">140,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Pañuelo de seda piedra</h3></a>
+          <p class="mt-2 text-sm tabular-nums">160,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Bufanda de cachemira oliva</h3></a>
+          <p class="mt-2 text-sm tabular-nums">260,00 €</p>
+        </article>
+        <article class="product-card min-w-0">
+          <a class="group block" href="producto.html"><div class="flex aspect-[3/4] items-center justify-center bg-stone text-sm text-muted" aria-hidden="true">Imagen pendiente</div><h3 class="mt-4 text-sm group-hover:underline">Guantes de piel chocolate</h3></a>
+          <p class="mt-2 text-sm tabular-nums">170,00 €</p>
+        </article>
+      </div>
+    </section>
   </main>
 
-<!-- T02/T04: categorías, legal, marca y contacto con destinos reales. -->
+<!-- Footer compartido: copia de src/partials/footer.html. -->
 <footer class="on-dark bg-night text-ivory">
   <div class="site-container grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-12 lg:py-16">
     <div id="marca">
