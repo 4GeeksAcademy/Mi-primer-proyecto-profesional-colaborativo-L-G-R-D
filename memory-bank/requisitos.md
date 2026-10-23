@@ -106,3 +106,7 @@ Búsqueda, filtros y carrito se representan dentro del alcance HTML/CSS; no se p
 - [ ] Repositorio compartido por el canal y fecha del instructor; registrar la entrega solo cuando ocurra.
 
 La captura es obligatoria; el nombre concreto del archivo es un ejemplo del enunciado adoptado por el equipo. La fecha y el canal específico siguen pendientes. Las fichas de tareas contienen los estados de trabajo; esta matriz evita duplicarlos.
+
+## Evidencia final seleccionada por el equipo
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido. Véanse las dos capturas originales en README. Se conserva el texto del criterio E07 del enunciado, sin reescribirlo como si exigiera otra herramienta ni atribuir una aprobación docente inexistente.

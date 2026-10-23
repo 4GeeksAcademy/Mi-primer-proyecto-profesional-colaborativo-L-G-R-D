@@ -1,9 +1,9 @@
-> Estado vigente a 23/10/2026: Enlace de repositorio listo; no se ha registrado envío al instructor. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+> Estado vigente: evidencia final de rendimiento seleccionada por Roger, Lighthouse 100 escritorio y 97 móvil. Se conserva la procedencia Codespaces; PageSpeed Insights devolvió 429. Revisión de la actualización en PR #14 pendiente de Gaby.
 
 # T14 — Entrega documentada
 
 Proyecto: Maison RDL.
-Estado: Enlace de repositorio listo; no se ha registrado envío al instructor.
+Estado: Evidencia final preparada por decisión de Roger; revisión e integración en PR #14 pendientes.
 Responsable: Lydia; aportaciones de Roger y Daniel.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/entrega.
@@ -51,3 +51,7 @@ Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límit
 ## Verificación pública — 23/10/2026
 
 PR #13 aprobada por Gaby e integrada. Sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ ; workflow correcto y cinco páginas comprobadas. Evidencia en memory-bank/verificacion.md. PageSpeed bloqueado por HTTP 429; no se afirma E07 cumplido. Roger confirma que solo se comparte el enlace del repositorio; no se ha enviado al instructor. Este registro documental está pendiente de revisión.
+
+## Evidencia final elegida por Roger
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido. Capturas enlazadas desde README y memory-bank/verificacion.md.

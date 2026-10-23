@@ -36,7 +36,7 @@ Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inic
 
 **SEO completado:** Organization y Product/Offer validados en Schema.org con cero errores y advertencias. La publicación genera canónicas, metadatos sociales, robots y sitemap con la URL real; incluye un workflow de GitHub Pages. [Procedimiento](#publicación).
 
-**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Pendiente E07:** Google PageSpeed devuelve HTTP 429; aún no se acredita ≥80 ni su captura. Ver evidencia y límites en memory-bank/verificacion.md.
+**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido.
 
 ## Archivos necesarios
 
@@ -73,12 +73,21 @@ Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpet
 
 https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D
 
-Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza arriba. PageSpeed permanece pendiente por la limitación externa de consultas; no se inventa su resultado.
+Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza arriba. La entrega usa las capturas finales de Lighthouse elegidas por Roger, con origen y resultados documentados.
 
 ## Medir SEO en la URL correcta
 
-La web pública obtuvo SEO 100/100 en Lighthouse 13.5.0; [informe](evidencias/lighthouse-seo-public.json). Usar GitHub Pages para evaluar la entrega. La URL temporal de Codespaces puede requerir autenticación y no representa la indexación del sitio público. La medición de rendimiento de PageSpeed sigue pendiente por HTTP 429.
+La web pública obtuvo SEO 100/100 en Lighthouse 13.5.0; [informe](evidencias/lighthouse-seo-public.json). Usar GitHub Pages para evaluar la entrega. La URL temporal de Codespaces puede requerir autenticación y no representa la indexación del sitio público. El equipo utiliza como evidencia final de rendimiento las capturas originales de Lighthouse: 100 escritorio y 97 móvil.
 
 ## Limpieza final de entrega
 
 La entrega no incluye docs, paquetes iniciales duplicados, carpetas de respaldo, originales de generación ni informes históricos redundantes. Se conservan solo la web, herramientas de build/publicación, instrucciones de agentes y contexto, memoria/fichas útiles, licencias/procedencia y pruebas relevantes. La limpieza de duplicados se ejecuta con `python tools/clean_workspace.py --apply`, sin crear ZIP ni carpetas de respaldo. No borra .git ni node_modules, que está ignorado y no se entrega.
+
+## Pruebas finales de rendimiento
+
+| Modo | Rendimiento | Herramienta y entorno | Captura |
+| --- | --- | --- | --- |
+| Escritorio | 100/100 | Chrome DevTools Lighthouse, Codespaces | [Ver captura](evidencias/lighthouse-codespaces-desktop.png) |
+| Móvil | 97/100 | Chrome DevTools Lighthouse, Codespaces | [Ver captura](evidencias/lighthouse-codespaces-mobile.png) |
+
+Roger elige estas dos capturas como evidencia final del equipo. Ambas muestran accesibilidad 100 y buenas prácticas 100; el SEO 63 pertenece a la URL temporal de Codespaces. La URL pública obtuvo SEO 100/100 en una auditoría independiente conservada en evidencias. PageSpeed Insights web/API devolvió 429; no se inventa una puntuación de ese servicio.

@@ -1,4 +1,4 @@
-> Estado vigente: PR #13 aprobada e integrada; sitio publicado. PR #14 registra evidencia y consolidación documental. E07 pendiente por HTTP 429; no hay puntuación ni captura satisfactoria de PageSpeed. Los apartados cronológicos siguientes documentan los pasos previos.
+> Estado vigente: PR #13 integrada y sitio publicado. PR #14 pendiente de Gaby. Por decisión de Roger se usan como evidencia final de rendimiento las dos capturas originales de Chrome Lighthouse (100 escritorio, 97 móvil), manteniendo su origen en Codespaces y sin atribuirlas a PageSpeed Insights.
 
 # Verificación de entrega — 23/10/2026
 
@@ -101,3 +101,12 @@ Gabriela (Gaby) se incorporó al equipo en la fase final como revisora y aprobad
 ## Política final de archivos
 
 La entrega no contiene carpetas de respaldo. Las copias externas mencionadas en apartados históricos no forman parte del repositorio ni de la publicación. Por instrucción posterior de Roger, clean_workspace.py ya no crea respaldos: retira únicamente las carpetas de paquete inicial autorizadas, con comprobación de ruta y rechazo de enlaces/repositorios anidados. Los intentos fallidos de PageSpeed se resumen en evidencias/publicacion.json, sin conservar capturas de error innecesarias.
+
+## Decisión final de entrega de Roger — 23/10/2026
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido.
+
+- Captura final escritorio: [Lighthouse 100](../evidencias/lighthouse-codespaces-desktop.png).
+- Captura final móvil: [Lighthouse 97](../evidencias/lighthouse-codespaces-mobile.png).
+- Son capturas originales aportadas por el usuario; no se alteran puntuaciones ni URLs.
+- Se eligen como evidencia final alternativa frente al bloqueo 429 de PageSpeed Insights. Los apartados anteriores sobre otra captura pendiente son el historial previo a esta decisión.

@@ -1,9 +1,9 @@
-> Estado vigente a 23/10/2026: Optimización y QA contrastados; PageSpeed público y captura pendientes por HTTP 429. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+> Estado vigente: evidencia final de rendimiento seleccionada por Roger, Lighthouse 100 escritorio y 97 móvil. Se conserva la procedencia Codespaces; PageSpeed Insights devolvió 429. Revisión de la actualización en PR #14 pendiente de Gaby.
 
 # T12 — Optimización y PageSpeed
 
 Proyecto: Maison RDL.
-Estado: Optimización y QA contrastados; PageSpeed público y captura pendientes por HTTP 429.
+Estado: Evidencia final preparada por decisión de Roger; revisión e integración en PR #14 pendientes.
 Responsable: Roger.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/optimizacion.
@@ -47,3 +47,7 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 ## Actualización de Roger — 23/10/2026
 
 Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../memory-bank/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+
+## Evidencia final elegida por Roger
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido. Capturas enlazadas desde README y memory-bank/verificacion.md.

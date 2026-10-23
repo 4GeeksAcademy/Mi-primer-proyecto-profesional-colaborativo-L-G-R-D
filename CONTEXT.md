@@ -34,6 +34,6 @@ TrackFlow aporta prácticas de documentación y memoria, adaptadas en la referen
 
 ## Pendientes
 
-PageSpeed ≥80 y captura real, actualmente bloqueados por HTTP 429. PR #13 aprobada e integrada, sitio publicado. Roger confirma que solo se comparte el enlace del repositorio; la evidencia y consolidación documental de PR #14 requieren revisión de Gaby. Idioma español, moneda EUR e inventario de veinte productos ya están definidos; ver inventario y memory-bank/verificacion.md.
+Roger decide usar como evidencia final de rendimiento las dos capturas reales de Chrome Lighthouse en Codespaces: 100 escritorio y 97 móvil. PageSpeed Insights devolvió 429; no se atribuye a ese servicio una puntuación ni se afirma aceptación del instructor. PR #13 aprobada e integrada, sitio publicado. Roger confirma que solo se comparte el enlace del repositorio; la evidencia y consolidación documental de PR #14 requieren revisión de Gaby. Idioma español, moneda EUR e inventario de veinte productos ya están definidos; ver inventario y memory-bank/verificacion.md.
 
 T01, estructuras y cierre visual/SEO están incorporados y publicados. La evidencia y consolidación documental están subidas a la rama de PR #14. El progreso global se consulta en [memory-bank/progress.md](memory-bank/progress.md); no confundir planificación y preview con entrega.

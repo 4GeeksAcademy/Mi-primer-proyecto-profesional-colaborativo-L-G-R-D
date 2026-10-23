@@ -1,23 +1,15 @@
 # Maison RDL — Estado contrastado
 
-Actualizado: 23/10/2026. [Evidencia actual](verificacion.md).
+Actualizado: 23/10/2026. [Verificación](verificacion.md).
 
-La PR #13 fue aprobada por Gaby e integrada en main, commit bef45b0. GitHub Pages habilitado por autorización de Roger y publicado con éxito: [sitio](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). Cinco rutas públicas verificadas en móvil/escritorio, HTTP 200, sin recursos rotos ni overflow.
+PR #13 aprobada por Gaby e integrada; sitio publicado: https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ . Cinco rutas públicas comprobadas en móvil/escritorio sin errores de recursos ni overflow. HTML y microdata validados. SEO público 100/100 en Lighthouse 13.5.0.
 
-Build, HTML, microdata y QA local contrastados. E07 sigue pendiente: PageSpeed web y API responden 429 por cuota; no hay puntuación ni captura satisfactorias. Se conservan capturas de los errores como diagnóstico, no como evidencia de cumplimiento. Las evidencias de publicación se preparan para revisión de Gaby en codex/evidencias-entrega.
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido.
 
-Roger confirma que la entrega consiste únicamente en compartir [el repositorio](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D). No se ha enviado al instructor desde esta sesión. Cuando PageSpeed permita medir: obtener ≥80, guardar pagespeed-result.png real y registrar URL/modo/fecha/resultado.
+[Escritorio](../evidencias/lighthouse-codespaces-desktop.png) · [Móvil](../evidencias/lighthouse-codespaces-mobile.png). Son las pruebas finales seleccionadas para la entrega, no se sigue marcando la preparación de evidencia del equipo como pendiente de otra captura. Se mantiene la distinción con PageSpeed Insights.
 
-## Consolidación de documentación
+Equipo final: Roger, Daniel, Lydia y Gabriela (Gaby), incorporada al final para revisar/aprobar PR. Reconocida en la web y documentación, sin atribuirle implementación.
 
-Por petición de Roger se retira docs/. Los requisitos, diseño, inventario y verificación se consolidan en esta memoria, la procedencia en assets y las pruebas en evidencias/. Se conserva copia recuperable externa y el historial Git. No se alteran los hechos de aprobación/publicación: PR #13 integrada y sitio público operativo; PR #14 documenta evidencias y esta limpieza, pendiente de Gaby. PageSpeed continúa sin puntuación válida por HTTP 429.
+PR #14 reúne evidencia, limpieza, memoria y reconocimiento del equipo, pendiente de revisión/integración. Sin docs ni carpetas de respaldo; solo código/herramientas, contexto/memoria/fichas útiles, licencias/procedencia y pruebas reales. clean_workspace.py elimina el paquete inicial autorizado sin respaldos.
 
-## Auditoría SEO pública
-
-Lighthouse 13.5.0 sobre https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ devuelve **SEO 100/100**, sin auditorías SEO fallidas. Informe real: [JSON](../evidencias/lighthouse-seo-public.json). La captura de Roger con 63 corresponde al puerto privado de Codespaces, que desde fuera redirige al inicio de sesión; no equivale a medir la web pública. Este 100 es SEO en Lighthouse CLI, no una puntuación de rendimiento de PageSpeed Insights ni cierre de E07.
-
-Equipo final: Roger, Daniel, Lydia y Gabriela (Gaby). Gabriela se incorporó al final para revisión/aprobación de PR; reconocida en la web y la documentación. Capturas originales de Lighthouse de Codespaces aportadas por Roger guardadas en evidencias; su origen y límites se distinguen de la auditoría SEO pública de 100 y del requisito PageSpeed todavía pendiente.
-
-## Limpieza final sin respaldos
-
-Por instrucción de Roger se elimina la documentación redundante de arranque/verificación, las dos capturas visuales antiguas y las capturas de error de PageSpeed. El diagnóstico 429 se conserva en publicacion.json y verificacion.md. No se incluyen carpetas de respaldo en la entrega ni se crean nuevas; clean_workspace.py retira directamente solo el paquete inicial duplicado. Se mantienen AGENTS, CONTEXT, README, memoria/fichas, procedencia/licencias y evidencias útiles (incluidas las dos capturas aportadas por Roger y SEO público 100).
+La entrega confirmada por Roger consiste únicamente en compartir https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D . No se ha enviado al instructor desde esta sesión.

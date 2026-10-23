@@ -22,5 +22,26 @@
     "required": "Compartir el enlace del repositorio, confirmado por Roger",
     "repository": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D",
     "sentToInstructor": false
+  },
+  "finalPerformanceEvidence": {
+    "selectedBy": "Roger",
+    "tool": "Chrome DevTools Lighthouse",
+    "environment": "Codespaces",
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 63,
+      "screenshot": "evidencias/lighthouse-codespaces-desktop.png"
+    },
+    "mobile": {
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 63,
+      "screenshot": "evidencias/lighthouse-codespaces-mobile.png"
+    },
+    "pagespeedInsightsResult": false,
+    "instructorAcceptanceConfirmed": false
   }
 }
