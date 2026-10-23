@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-ivory text-ink font-body antialiased">
-  <!-- Esqueleto T01. Navbar, footer y composición definitivos: T02 y diseño de Roger. -->
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
@@ -59,18 +58,68 @@
   <a class="text-link mt-6 inline-block text-sm" href="catalogo.html">Continuar sin registrarse</a>
 </section>
 
-  <main id="contenido">
-    <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-14">
-      <div class="py-12">
-        <h1 class="font-display text-5xl">Carrito</h1>
-      </div>
-      <section class="py-12 border-t border-line" aria-labelledby="lineas-titulo">
-        <h2 id="lineas-titulo" class="font-display text-4xl">Productos en el carrito</h2>
-        <!-- T07: tres líneas con miniatura, precio unitario, cantidad y total. -->
+  <main id="contenido" class="site-container py-12 lg:py-16">
+    <h1 class="section-title">Carrito</h1>
+    <p class="mt-5 max-w-3xl text-sm leading-7 text-muted">Selección de demostración con tres productos ficticios. No se guardan productos ni se recalculan importes automáticamente. Continuar a checkout no crea un pedido ni realiza un pago.</p>
+    <a class="text-link mt-5 inline-block text-sm" href="catalogo.html">Seguir explorando la colección</a>
+
+    <div class="mt-8 grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+      <section class="min-w-0 border-t border-line pt-8" aria-labelledby="lineas-titulo">
+        <h2 id="lineas-titulo" class="font-display text-3xl">Productos en el carrito</h2>
+        <ul class="mt-6">
+          <li class="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-line pb-8 sm:gap-6">
+            <img class="aspect-[3/4] h-auto w-24 bg-stone object-cover" src="assets/images/shirt.webp" width="850" height="1133" alt="Camisa de seda marfil de manga larga colgada en una percha de madera">
+            <div class="min-w-0">
+              <h3 class="font-display text-2xl">Camisa de seda marfil</h3>
+              <p class="mt-2 break-words text-sm text-muted">Referencia: MRDL-CAM-001</p>
+              <dl class="mt-4 grid gap-3 text-sm leading-6">
+                <div><dt class="text-muted">Talla</dt><dd>M</dd></div>
+                <div><dt class="text-muted">Precio unitario, impuestos incluidos</dt><dd class="tabular-nums">240,00 €</dd></div>
+                <div><dt class="text-muted">Cantidad</dt><dd>1</dd></div>
+                <div><dt class="text-muted">Total de línea, impuestos incluidos</dt><dd class="tabular-nums">240,00 €</dd></div>
+              </dl>
+            </div>
+          </li>
+          <li class="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-line py-8 sm:gap-6">
+            <img class="aspect-[3/4] h-auto w-24 bg-stone object-cover" src="assets/images/trousers.webp" width="850" height="1133" loading="lazy" alt="Pantalón ancho de pinzas color taupe colgado de una percha de madera">
+            <div class="min-w-0">
+              <h3 class="font-display text-2xl">Pantalón ancho de pinzas taupe</h3>
+              <p class="mt-2 break-words text-sm text-muted">Referencia: MRDL-PAN-001</p>
+              <dl class="mt-4 grid gap-3 text-sm leading-6">
+                <div><dt class="text-muted">Talla</dt><dd>38</dd></div>
+                <div><dt class="text-muted">Precio unitario, impuestos incluidos</dt><dd class="tabular-nums">295,00 €</dd></div>
+                <div><dt class="text-muted">Cantidad</dt><dd>1</dd></div>
+                <div><dt class="text-muted">Total de línea, impuestos incluidos</dt><dd class="tabular-nums">295,00 €</dd></div>
+              </dl>
+            </div>
+          </li>
+          <li class="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-line py-8 sm:gap-6">
+            <img class="aspect-[3/4] h-auto w-24 bg-stone object-cover" src="assets/images/shoes.webp" width="850" height="1133" loading="lazy" alt="Par de mocasines de piel marrón oscuro sobre un suelo de piedra clara">
+            <div class="min-w-0">
+              <h3 class="font-display text-2xl">Mocasín de piel espresso</h3>
+              <p class="mt-2 break-words text-sm text-muted">Referencia: MRDL-CAL-001</p>
+              <dl class="mt-4 grid gap-3 text-sm leading-6">
+                <div><dt class="text-muted">Talla</dt><dd>42</dd></div>
+                <div><dt class="text-muted">Precio unitario, impuestos incluidos</dt><dd class="tabular-nums">390,00 €</dd></div>
+                <div><dt class="text-muted">Cantidad</dt><dd>1</dd></div>
+                <div><dt class="text-muted">Total de línea, impuestos incluidos</dt><dd class="tabular-nums">390,00 €</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ul>
       </section>
-      <section class="py-12 border-t border-line" aria-labelledby="resumen-titulo">
-        <h2 id="resumen-titulo" class="font-display text-4xl">Resumen del pedido</h2>
-        <!-- T07: subtotal, impuestos, total y Comprar. -->
+
+      <section class="min-w-0 border-t border-line pt-8" aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo" class="font-display text-3xl">Resumen del pedido</h2>
+        <dl class="mt-6 grid gap-4 text-sm leading-6 tabular-nums">
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1"><dt>Subtotal sin impuestos</dt><dd>770,83 €</dd></div>
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1"><dt>Impuestos incluidos (20 %)</dt><dd>154,17 €</dd></div>
+          <div class="flex flex-wrap justify-between gap-x-4 gap-y-1 border-t border-line pt-4 font-semibold"><dt>Total</dt><dd>925,00 €</dd></div>
+        </dl>
+        <p class="mt-6 text-sm leading-7 text-muted">Supuesto del ejercicio: precios en EUR con un impuesto de simulación del 20 % incluido. No representa una implementación fiscal real. No se añaden portes, descuentos ni otros cargos.</p>
+        <p class="mt-4 text-sm leading-7 text-muted">El impuesto ya forma parte de los 925,00 €; se desglosa sin sumarlo de nuevo. El subtotal sin impuestos se obtiene dividiendo el total entre 1,20 y redondeando a dos decimales; el impuesto es la diferencia con el total.</p>
+        <a class="btn mt-6 w-full" href="checkout.html" aria-describedby="comprar-ayuda">Comprar</a>
+        <p id="comprar-ayuda" class="mt-3 text-sm leading-7 text-muted">Acceso al checkout de demostración, sin trasladar ni guardar esta selección.</p>
       </section>
     </div>
   </main>

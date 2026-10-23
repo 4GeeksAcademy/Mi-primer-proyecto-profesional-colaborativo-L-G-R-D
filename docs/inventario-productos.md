@@ -11,11 +11,11 @@ Fuente común para las cinco páginas: inicio (T04), catálogo (T05), producto (
 
 | Tema | Estado | Qué se usa en este documento |
 | --- | --- | --- |
-| Idioma | **Pendiente de confirmar.** No hay acuerdo registrado en [CONTEXT.md](../CONTEXT.md). | Textos en español, igual que los HTML (`lang="es"` provisional de T01). |
-| Moneda | **Pendiente de confirmar.** No hay acuerdo registrado. | Propuesta: euro (EUR), por la sede francesa y porque el [muestrario](componentes.html) ya muestra importes en €. Importes enteros, formato `240 €`. |
-| Impuestos | **Pendiente de coordinar con Lydia.** El enunciado no fija ningún porcentaje ni modalidad. | No se indica si los precios incluyen impuestos. No se fija ningún porcentaje. |
-| Cantidades del carrito | **Pendiente de coordinar con Lydia.** | Sin valores. |
-| Talla de cada línea del carrito | **Pendiente de coordinar con Lydia.** | Debe ser una de las tallas disponibles del producto. |
+| Idioma | Confirmado por Lydia el 23/10/2026 para completar la demostración. | Español (`lang="es"`). |
+| Moneda | Confirmada por Lydia el 23/10/2026 para completar la demostración. | Euro (EUR). El carrito muestra dos decimales; los precios enteros de las fichas conservan el mismo valor. |
+| Impuestos | Supuesto de demostración confirmado por Lydia; no es fiscalidad real ni requisito del enunciado. | Impuesto de simulación del 20 % incluido en los precios; se desglosa, no se suma de nuevo. |
+| Cantidades del carrito | Confirmadas por Lydia. | Una unidad de cada una de las tres referencias de T07. |
+| Talla de cada línea del carrito | Selección autorizada por Lydia entre las tallas disponibles. | Camisa M, pantalón 38 y mocasín 42; ver supuesto de importes. |
 | Imágenes de 16 productos | **Pendiente de coordinar con Roger.** | Ver [imágenes pendientes](fuentes-imagenes.md#imágenes-pendientes). |
 
 Si cambia la moneda, cambian todos los precios de este documento en el mismo cambio.
@@ -32,14 +32,22 @@ Los tres tienen imagen propia de muestra y todos sus datos completos. Las fichas
 
 ### Supuesto de importes
 
-Pendiente de completar con Lydia antes de implementar T07. Hay que decidir y anotar aquí:
+Confirmado por Lydia el 23/10/2026 para completar T07. Registro en la fuente común para coordinación y revisión de Daniel, responsable del inventario; no se atribuye aprobación a Daniel ni se han enviado mensajes en su nombre. Roger mantiene la dirección del diseño.
 
-1. Cantidad de cada línea (entero positivo) y talla elegida.
-2. Si los precios unitarios incluyen impuestos o no.
-3. Porcentaje del supuesto de simulación, si se aplica. Se presentará como supuesto de la demo, no como fiscalidad real ni como requisito del enunciado.
-4. Precisión (céntimos) y regla de redondeo.
+**Supuesto del ejercicio, no implementación fiscal real:** precios en EUR con un impuesto de simulación del 20 % incluido. Español e importes con dos decimales. Datos estáticos, sin persistencia ni recálculo automático.
 
-Fórmulas ya descritas en [T07](../tasks/T07-estructura-carrito.md#esquema-de-importes): total de línea = precio unitario × cantidad; sin doble contabilización de impuestos. Sin portes, descuentos ni otros cargos salvo acuerdo.
+| Referencia | Talla elegida | Precio unitario con impuesto incluido | Cantidad | Total de línea con impuesto incluido |
+| --- | --- | --- | --- | --- |
+| MRDL-CAM-001 | M | 240,00 € | 1 | 240,00 € |
+| MRDL-PAN-001 | 38 | 295,00 € | 1 | 295,00 € |
+| MRDL-CAL-001 | 42 | 390,00 € | 1 | 390,00 € |
+
+- Total de cada línea = precio unitario × cantidad. Total con impuestos incluidos = 240,00 + 295,00 + 390,00 = **925,00 €**.
+- Desglose sobre el total del pedido: subtotal sin impuestos = 925,00 / 1,20 = 770,8333...; redondeado a dos decimales = **770,83 €**.
+- Regla de presentación: redondeo al céntimo más próximo, con mitades hacia arriba. El impuesto se obtiene por diferencia entre el total incluido y el subtotal redondeado: 925,00 - 770,83 = **154,17 €**.
+- Conciliación: subtotal sin impuestos 770,83 + impuestos incluidos 154,17 = total **925,00 €**. No sumar otra vez los impuestos al total ni aplicar el 20 % sobre el precio ya incluido para extraerlos.
+
+Se conserva el esquema de [T07](../tasks/T07-estructura-carrito.md#esquema-de-importes), concretado aquí con la modalidad de impuestos incluidos. Sin portes, descuentos ni otros cargos. La revisión de Daniel de este registro queda pendiente; los valores solicitados por Lydia ya están definidos para la demostración.
 
 ## Resumen de los veinte productos
 
