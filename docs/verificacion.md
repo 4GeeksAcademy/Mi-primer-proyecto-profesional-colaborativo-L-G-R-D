@@ -22,7 +22,7 @@ Rama local: `codex/imagenes-revision-visual`. Base integrada comprobada: `b5d965
 | V03 | Ficha con imagen/datos a dos columnas, SKU, talla, precio, cantidad, añadir, descripción, materiales y uso. Implementado y probado localmente. |
 | V04 | Carrito completo, tres productos, importes por línea y resumen: 770,83 + 154,17 = 925,00 EUR. Implementado y probado localmente. |
 | V05 | Tres bloques numerados: datos, dirección y tarjeta ficticia; sin envío ni pago. Implementado y probado localmente. |
-| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. Esta rama aún requiere commit/PR, revisión de Gaby e integración; no se certifica ausencia absoluta de force-push a partir del historial público. |
+| G01–G05 / E06 | GitHub confirma doce PR integradas de ramas de trabajo; autores y ramas en [evidencia](evidencias/pull-requests.json). Las PR #8 y #11 reflejan resolución de conflictos y regeneración de CSS. Esta rama está subida en [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13); requiere revisión de Gaby e integración; no se certifica ausencia absoluta de force-push a partir del historial público. |
 | E01 | Cinco HTML válidos según Nu; landmarks, encabezados y etiquetas revisados. |
 | E02 | Tailwind compilado y breakpoints; sin frameworks ni JavaScript de aplicación. |
 | E03 | Componentes compartidos y contenido de las cinco vistas presentes. |
@@ -62,3 +62,7 @@ Prueba local del paquete bajo `/tienda/`: doce comprobaciones de navegador en m�
 ## Limpieza del paquete inicial duplicado
 
 La captura del Codespace muestra `pquete-maison/Maison-RDL-equipo`, sin seguimiento. No existe en esta copia local ni puede eliminarse con un commit remoto. Se incluye `tools/clean_workspace.py` para retirarlo allí, con respaldo ZIP fuera del repositorio, comprobación CRC, lista cerrada de rutas y rechazo de enlaces u otros repositorios. Ambas variantes del nombre quedan ignoradas por Git. Los documentos de arranque se actualizan para que no indiquen descomprimir otra vez el paquete ni repetir tareas ya integradas.
+
+## Subida de la actualización
+
+[PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) abierta contra main. Rama: `codex/imagenes-revision-visual`. Commit de implementación: `c0dd340`. La PR permanece sin fusionar y sin aprobación atribuida a Gaby. La carpeta duplicada no existe localmente; su retirada en el Codespace se ejecuta con la herramienta incluida después de disponer de esta rama.

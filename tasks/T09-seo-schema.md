@@ -1,6 +1,6 @@
 # T09 — SEO y Schema.org
 
-Estado: Implementado y comprobado localmente; pendiente de PR, revisión de Gaby e integración.
+Estado: En revisión; implementación y comprobaciones subidas en [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13). Pendiente de Gaby e integración.
 Responsable del cierre autorizado: Roger; se conserva la autoría previa del equipo.
 Revisor: Gaby.
 Rama: codex/imagenes-revision-visual.

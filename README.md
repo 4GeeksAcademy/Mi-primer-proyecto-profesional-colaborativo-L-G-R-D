@@ -28,7 +28,7 @@ Búsqueda, filtros, cuenta y carrito son demostraciones identificadas. Todas las
 
 ## Equipo y revisión
 
-Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. Los cambios actuales se preparan en `codex/imagenes-revision-visual`, pendientes de revisión e integración; no se atribuyen nuevas aprobaciones.
+Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. Los cambios actuales están subidos en `codex/imagenes-revision-visual`, [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13), pendientes de revisión de Gaby e integración; no se atribuyen nuevas aprobaciones.
 
 ## Entrega y evaluación
 

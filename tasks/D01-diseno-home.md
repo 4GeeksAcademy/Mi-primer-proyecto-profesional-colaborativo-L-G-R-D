@@ -1,9 +1,9 @@
 # D01 — Diseño de inicio
 
 Proyecto: Maison RDL.
-Estado: Pendiente.
+Estado: En revisión en la actualización conjunta; pendiente de Gaby e integración.
 Responsable: Roger.
-Revisor: Lydia.
+Revisor: Gaby.
 Rama: codex/diseno-home.
 Depende de: T04 integrado.
 Archivos previstos: index.html, estilos fuente si hacen falta, CSS generado y ficha propia.
@@ -41,3 +41,7 @@ Pendiente. Registrar qué se probó, URL/archivo, tamaño de pantalla si aplica,
 ## Traspaso y siguiente paso
 
 Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la reserva del archivo.
+
+## Cierre visual conjunto — 23/10/2026
+
+Vista contrastada dentro de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13). Cabecera compartida y contraste corregidos; resultados locales en [verificación](../docs/verificacion.md). No se marca integrada ni se atribuye aprobación.
