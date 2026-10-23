@@ -8,13 +8,13 @@ Responsable: Daniel.
 Revisor: Roger.
 Rama: codex/setup-tecnico (creada desde origin/main el 23/10/2026; codex/setup se usó para incorporar la documentación, PR #1 integrada).
 Depende de: T00.
-Archivos previstos: README.md, PLAN-DE-PROYECTO.md, CONTEXT.md, AGENTS.md, PROMPT-MAESTRO.md, memory-bank/, .agents/rules/, .github/PULL_REQUEST_TEMPLATE.md, docs/, tasks/, estructura de carpetas, esqueletos de cinco HTML, src/styles/input.css, assets/css/styles.css.
+Archivos previstos: README.md, PLAN-DE-PROYECTO.md, CONTEXT.md, AGENTS.md, AGENTS.md, memory-bank/, .agents/rules/, .github/PULL_REQUEST_TEMPLATE.md, docs/, tasks/, estructura de carpetas, esqueletos de cinco HTML, src/styles/input.css, assets/css/styles.css.
 Responsable activo de los archivos: Daniel, para package.json, package-lock.json, .gitignore, src/styles/input.css, assets/css/styles.css, los cinco esqueletos HTML, README.md y esta ficha mientras dure T01.
 PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Revisar instrucciones reales del repositorio. Incorporar este paquete de planificación, reglas, memoria y tokens sin sus antecedentes históricos; seguir docs/INICIO-DE-TRABAJO.md. Conservar información útil del README existente.
 2. Crear cinco esqueletos HTML enlazados con idioma, charset, viewport, title y landmarks. No confundir el esqueleto con una vista terminada.
 3. Preparar la generación de CSS estático con Tailwind CLI oficial; documentar versión, instalación y comando. Priorizar CLI independiente si facilita el entorno; la preview usa Tailwind 4.3.3 con npm. Los tokens usan @theme de v4: documentar versión real y adaptar configuración si fuera necesario sin cambiar identidad.

@@ -15,7 +15,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Añadir filtros HTML etiquetados por categoría y talla sin prometer filtrado dinámico.
 2. Mostrar veinte productos con nombres, precios e imágenes del inventario.
 3. Seguir la composición de Roger y preparar la rejilla adaptable.

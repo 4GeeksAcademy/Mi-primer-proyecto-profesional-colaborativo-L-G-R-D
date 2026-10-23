@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Medir la versión pública y priorizar problemas observados.
 2. Optimizar imágenes, dimensiones, CSS y tipografía conservando contenido y diseño.
 3. No cargar de forma diferida la imagen principal si perjudica su aparición inicial; reservar lazy loading para imágenes fuera de la primera pantalla.

@@ -16,7 +16,7 @@ La planificación previa y el registro de implementación parcial se conservan c
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Crear página completa del carrito con tres productos compartidos.
 2. Mostrar miniatura, precio unitario, cantidad y total por línea.
 3. Calcular y comprobar manualmente subtotal, impuestos y total conforme al supuesto documentado.

@@ -20,7 +20,7 @@ Partir de la [guía visual v0.1](../memory-bank/diseno.md) y los [tokens compart
 
 Ya existe una primera propuesta HTML del inicio (antecedente en el historial Git) con hero a pantalla completa, imágenes para móvil/escritorio y una lámina del logo (antecedente en el historial Git). Trasladar recursos y patrones de esa referencia al integrar T02. Adaptar enlaces a las cinco páginas reales y retirar la dependencia documental de la carpeta local de preview. No dar la tarea por completada por disponer de esa vista previa.
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Integrar la identidad documentada de Maison RDL y preparar composiciones de las cinco vistas, variantes de cabecera y reglas responsive. Usar utilidades Tailwind para layout/estados, sin trasladar todo el ejercicio a CSS manual.
 2. Preparar navbar con logo, búsqueda y cuenta; footer con categorías, legal, marca y contacto.
 3. Definir tarjetas, campos, botones, enlaces, foco y navegación móvil sin JavaScript.

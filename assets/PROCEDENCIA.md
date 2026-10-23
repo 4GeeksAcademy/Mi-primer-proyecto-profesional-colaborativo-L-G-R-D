@@ -1,14 +1,9 @@
-# Recursos compartidos de Maison RDL
+# Procedencia de recursos actuales
 
-Traslado selectivo de la referencia aceptada en T02, sin modificar los archivos.
+Las veinte imágenes de producto son muestras generadas con image_gen para una marca ficticia; no representan productos reales. Los prompts de las cuatro imágenes base se conservan en [prompts-productos-base.json](prompts-productos-base.json); los dieciséis productos nuevos y la campaña del equipo, en [imagenes-generadas.json](imagenes-generadas.json). Correspondencia con inventario en [fuentes-imagenes.md](fuentes-imagenes.md).
 
-- `brand/logo-ink.svg`, `logo-ivory.svg` y `logo-horizontal-ivory.svg`: composición propia de Maison RDL sobre Cormorant Garamond y Manrope, convertida a contornos. No acredita registro ni exclusividad marcaria.
-- `favicon.svg`: icono R simplificado de la misma referencia.
-- `fonts/font-0.woff2`: Cormorant Garamond 500 italic; `font-1.woff2`: Cormorant Garamond 500 normal; `font-2.woff2`: Manrope variable. Fuentes descargadas desde Google Fonts según la referencia, servidas localmente sin renombrar. Licencias SIL OFL junto a los WOFF2: [Cormorant](fonts/cormorantgaramond-OFL.txt) y [Manrope](fonts/manrope-OFL.txt).
-- `images/hero-equipo-desktop.webp` y `hero-equipo-mobile.webp`: campaña actual del equipo. Las dos portadas anteriores se retiraron por no utilizarse; se recuperan del historial Git y copia externa.
-- `images/shirt.webp`, `trousers.webp`, `bag.webp` y `shoes.webp`: recursos exclusivos de demostración del muestrario; no fijan el inventario T03.
+Las dos portadas hero-equipo se generaron por petición de Roger usando las fotografías personales aportadas como referencia; los originales personales no se incluyen. Se mantiene el traje estampado y los demás conjuntos se adaptan a la campaña. Parecido facial aproximado de una recreación generada.
 
-Las imágenes proceden de la generación con image_gen documentada en la referencia; no representan productos reales. No se atribuye una licencia de terceros no acreditada. Fuente y contexto: [recursos y branding](referencia-recursos.md). Prompts conservados en [images.json](prompts-referencia.json) y [hero-desktop.json](prompt-hero-referencia.json). El sitio no necesita esa carpeta para servir sus recursos.
-## Ampliación solicitada por Roger — 23/10/2026
+Logos SVG Maison RDL y favicon: composición de la propuesta del proyecto sobre Cormorant Garamond y Manrope, convertida a contornos, sin afirmar registro marcario. Se conservan únicamente las tres variantes usadas por cabecera/footer.
 
-Dieciséis imágenes de producto y dos portadas del equipo generadas con image_gen. Imágenes de muestra, sin productos reales. Referencias personales aportadas por el usuario para las portadas, sin distribuir las fotos originales. Detalle: [fuentes](fuentes-imagenes.md) y [descripciones de generación](imagenes-generadas.json).
+Fuentes servidas localmente: Cormorant Garamond 500 normal e italic y Manrope variable, obtenidas de Google Fonts. Licencias SIL OFL incluidas en assets/fonts. No se atribuyen licencias de terceros no acreditadas a imágenes generadas.

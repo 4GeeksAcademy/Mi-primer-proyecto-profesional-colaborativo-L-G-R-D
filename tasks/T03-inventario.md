@@ -15,7 +15,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Entregar pronto tres productos completos para que Lydia arranque carrito y checkout.
 2. Completar veinte productos con referencia, categoría, talla, precio, moneda, imagen y descripción.
 3. Representar calzado, camisas, pantalones y accesorios.

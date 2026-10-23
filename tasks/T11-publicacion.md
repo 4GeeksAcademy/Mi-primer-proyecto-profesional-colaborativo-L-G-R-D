@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. En fase de ejecución, preparar GitHub Pages desde main si está disponible; si no, documentar alojamiento estático acordado.
 2. Publicar la versión integrada y comprobar acceso a las cinco páginas.
 3. Revisar rutas relativas, CSS e imágenes bajo la subruta real del repositorio.

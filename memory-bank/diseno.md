@@ -9,9 +9,9 @@ Estado: base visual T02 aprobada por Lydia e integrada en main mediante la PR #4
 
 **Lujo editorial cálido:** fotografía protagonista, serif expresiva, texto funcional limpio, espacio generoso y contraste entre marfil, piedra y oliva profundo. El aspecto premium se construye con composición, legibilidad y consistencia.
 
-La referencia concreta es la portada HTML (antecedente en el historial Git), su [captura de escritorio](../evidencias/referencia-desktop.png), su [captura móvil](../evidencias/referencia-mobile.png) y la lámina de identidad (antecedente en el historial Git). Se conservan dos capturas de la referencia en evidencias; el material histórico restante está en Git. Durante T02 trasladar los recursos necesarios al sitio final sin confundir la referencia con las cinco páginas de entrega.
+La referencia concreta es la portada HTML (antecedente en el historial Git), su [captura de escritorio](../evidencias/hero-final-1440.jpg), su [captura móvil](../evidencias/hero-final-375.jpg) y la lámina de identidad (antecedente en el historial Git). Se conservan dos capturas de la referencia en evidencias; el material histórico restante está en Git. Durante T02 trasladar los recursos necesarios al sitio final sin confundir la referencia con las cinco páginas de entrega.
 
-Verin, Levor y las capturas aportadas inspiran tipografía editorial, fotografía cálida y sobriedad. No copiar sus logos, imágenes ni promesas comerciales. Investigación y procedencia: [recursos de la propuesta](../assets/referencia-recursos.md).
+Verin, Levor y las capturas aportadas inspiran tipografía editorial, fotografía cálida y sobriedad. No copiar sus logos, imágenes ni promesas comerciales. Investigación y procedencia: [recursos de la propuesta](../assets/PROCEDENCIA.md).
 
 ## Fuente de verdad
 

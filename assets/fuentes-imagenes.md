@@ -9,7 +9,7 @@ Relaciona cada imagen local con los productos del [inventario](../memory-bank/in
 ## Procedencia y permiso de uso
 
 - Las seis imágenes de `assets/images/` llegaron con la base visual de Roger (T02, commit 2b63c59) y son copias idénticas de las de docs/referencia-visual (antecedente en el historial Git). Comprobado con `cmp` el 23/10/2026.
-- Según [la procedencia](PROCEDENCIA.md) y los [recursos de la referencia](referencia-recursos.md), son imágenes generadas con la herramienta image_gen para esta propuesta. Los prompts están en [images.json](prompts-referencia.json) y [hero-desktop.json](prompt-hero-referencia.json); los originales de generación no se incluyen.
+- Según [la procedencia](PROCEDENCIA.md) y los [recursos de la referencia](PROCEDENCIA.md), son imágenes generadas con la herramienta image_gen para esta propuesta. Los prompts están en [images.json](prompts-productos-base.json) y [hero-desktop.json](imagenes-generadas.json); los originales de generación no se incluyen.
 - Son **imágenes de muestra**: no son fotografías de productos reales ni de prendas que existan. Así deben presentarse.
 - No se atribuye ninguna licencia de terceros que no esté acreditada. Si el equipo necesita confirmar las condiciones de uso de la herramienta de generación, queda como consulta pendiente; este documento no la resuelve.
 - No se ha descargado ninguna imagen nueva en T03.

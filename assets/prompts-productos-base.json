@@ -1,11 +1,5 @@
 [
   {
-    "key": "hero",
-    "prompt": "Photorealistic high fashion editorial photograph for a French contemporary luxury clothing label Maison RDL. A woman in her early 30s with dark slicked back hair wearing a flowing dark chocolate silk blouse tucked into ivory wide-leg tailored trousers, next to a man in his early 30s with dark hair in a relaxed sand linen suit and white shirt. Both stand naturally together on a limestone Parisian terrace, warm natural late afternoon light with elegant architectural shadows, editorial magazine art direction, understated timeless wardrobe, tactile fine fabrics, film-like neutral color grading, true-to-life skin texture. Full-length standing portrait composition, both subjects comfortably inside the center 75 percent of the frame with generous limestone backdrop around them, portrait 4:5 aspect ratio. Image only, absolutely no typography, logos, brand marks, borders, UI, watermarks or text.",
-    "asset": "assets/images/hero.webp",
-    "source_note": "Generada con image_gen; se incluye la versión WebP optimizada. Original de generación no incluido."
-  },
-  {
     "key": "shirt",
     "prompt": "Photorealistic luxury fashion e-commerce product photograph: one beautiful ivory silk long sleeve women's shirt with mother of pearl buttons, relaxed elegant tailoring, crisp collar and fluid material, hanging on a minimal wooden hanger against a pale warm greige plaster wall, no rack visible. Studio natural soft light, editorial and understated, centered full garment, 3:4 portrait composition, lots of breathing room, texture visible, muted warm palette. No person, no text, no logo, no watermark, no interface. A single product.",
     "asset": "assets/images/shirt.webp",

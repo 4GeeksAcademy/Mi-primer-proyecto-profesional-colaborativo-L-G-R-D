@@ -80,7 +80,7 @@ La captura del Codespace muestra `pquete-maison/Maison-RDL-equipo`, sin seguimie
 
 Se intentó analizar la URL pública raíz y también index.html. La interfaz mostró “Unable to resolve”; la inspección de red confirmó HTTP 429 en `PagespeedUi/data/batchexecute`. La API oficial devolvió HTTP 429, cuota diaria agotada de pagespeedonline.googleapis.com. Por eso no existe una puntuación real que pueda afirmarse ni un archivo pagespeed-result.png satisfactorio. Las capturas de error se guardan con nombres explícitos en evidencias y no cumplen E07.
 
-[Intento raíz](../evidencias/pagespeed-error-inicial.json), [captura raíz](../evidencias/pagespeed-error-inicial.png), [intento index](../evidencias/pagespeed-error-index.json), [captura index](../evidencias/pagespeed-error-index.png). [Resumen de publicación y bloqueo](../evidencias/publicacion.json). Repetir la medición cuando el servicio vuelva a permitir consultas o desde el navegador del equipo. Registrar URL, modo, fecha y puntuación ≥80 y guardar su captura real.
+Intento raíz (diagnóstico resumido en publicacion.json), captura raíz (diagnóstico resumido en publicacion.json), intento index (diagnóstico resumido en publicacion.json), captura index (diagnóstico resumido en publicacion.json). [Resumen de publicación y bloqueo](../evidencias/publicacion.json). Repetir la medición cuando el servicio vuelva a permitir consultas o desde el navegador del equipo. Registrar URL, modo, fecha y puntuación ≥80 y guardar su captura real.
 
 ## Enlace de entrega confirmado por Roger
 
@@ -97,3 +97,7 @@ Se conservan las dos capturas originales de DevTools Lighthouse en Codespaces: [
 El 63 se midió en una URL temporal de Codespaces. No se afirma que medir “desde fuera” reduzca por sí solo el SEO: esa dirección redirige a autenticación desde fuera y no es la URL publicada. Sin el informe JSON original no se puede atribuir cada punto perdido a una auditoría concreta. La URL pública se auditó por separado y obtuvo SEO 100/100, con informe y captura conservados.
 
 Gabriela (Gaby) se incorporó al equipo en la fase final como revisora y aprobadora de PR. Se reconoce en inicio, footer, README, contexto y memoria; no se le atribuye autoría de implementación. El enunciado no pudo releerse en la sesión autenticada del navegador porque Computer Use detuvo el acceso al no poder verificar la URL. Se usa la matriz previamente contrastada; no se inventa una nueva lectura del campus.
+
+## Política final de archivos
+
+La entrega no contiene carpetas de respaldo. Las copias externas mencionadas en apartados históricos no forman parte del repositorio ni de la publicación. Por instrucción posterior de Roger, clean_workspace.py ya no crea respaldos: retira únicamente las carpetas de paquete inicial autorizadas, con comprobación de ruta y rechazo de enlaces/repositorios anidados. Los intentos fallidos de PageSpeed se resumen en evidencias/publicacion.json, sin conservar capturas de error innecesarias.

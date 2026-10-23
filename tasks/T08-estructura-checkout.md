@@ -16,7 +16,7 @@ La planificación inicial se conserva como historial en los apartados siguientes
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Crear tres bloques visibles y numerados para datos personales, dirección y tarjeta.
 2. Usar form, fieldset, legend, label y tipos/restricciones HTML adecuados.
 3. Permitir navegación por anclas sin afirmar que valida campos o cambia un paso activo automáticamente.

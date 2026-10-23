@@ -15,7 +15,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Preparar imagen y datos con estructura compatible con las dos columnas previstas por Roger.
 2. Incluir nombre, referencia, talla, precio, cantidad y navegación al carrito de ejemplo.
 3. Completar materiales y usos recomendados.

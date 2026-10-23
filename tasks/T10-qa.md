@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Probar las cinco páginas a 375, 768 y 1280 px y en tamaños intermedios.
 2. Recorrer inicio → catálogo → producto → carrito → checkout y enlaces de vuelta/footer.
 3. Validar HTML, teclado, foco, etiquetas, contraste, imágenes e importes.

@@ -15,7 +15,7 @@ PR: #8 integrada (estructura de secciones). PR de tarjetas: ver Traspaso.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Usar la guía y los fragmentos comunes de Roger.
 2. Añadir campaña del hero y dos listados horizontales: Nuevos lanzamientos y Más vendidos.
 3. Completar tarjetas con inventario real del proyecto y enlaces relativos.

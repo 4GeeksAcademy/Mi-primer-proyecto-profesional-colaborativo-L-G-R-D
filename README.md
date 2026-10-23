@@ -67,7 +67,7 @@ Sustituir la URL por la real, incluida su subruta. `dist` debe estar vacío o no
 
 ## Mantener el Codespace limpio
 
-Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: crea un respaldo verificado fuera del proyecto y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.
+Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: no crea respaldos y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.
 
 ## Enlace para compartir con el instructor
 
@@ -78,3 +78,7 @@ Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza a
 ## Medir SEO en la URL correcta
 
 La web pública obtuvo SEO 100/100 en Lighthouse 13.5.0; [informe](evidencias/lighthouse-seo-public.json). Usar GitHub Pages para evaluar la entrega. La URL temporal de Codespaces puede requerir autenticación y no representa la indexación del sitio público. La medición de rendimiento de PageSpeed sigue pendiente por HTTP 429.
+
+## Limpieza final de entrega
+
+La entrega no incluye docs, paquetes iniciales duplicados, carpetas de respaldo, originales de generación ni informes históricos redundantes. Se conservan solo la web, herramientas de build/publicación, instrucciones de agentes y contexto, memoria/fichas útiles, licencias/procedencia y pruebas relevantes. La limpieza de duplicados se ejecuta con `python tools/clean_workspace.py --apply`, sin crear ZIP ni carpetas de respaldo. No borra .git ni node_modules, que está ignorado y no se entrega.

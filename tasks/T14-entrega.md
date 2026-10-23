@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Completar README: Maison RDL, equipo, reparto, stack, ejecución, CSS, cinco vistas, URL y alcance estático.
 2. Comprobar historial y PR de los tres sin afirmar que una tarea está completa si falta su integración.
 3. Verificar última versión pública y captura de PageSpeed incluida.

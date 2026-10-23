@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Repetir recorrido y revisión responsive tras la optimización.
 2. Ejecutar mediciones de comprobación móvil/escritorio y registrar URL, fecha, página, modo y puntuación.
 3. Guardar captura real de PageSpeed en pagespeed-result.png y capturas adicionales útiles.

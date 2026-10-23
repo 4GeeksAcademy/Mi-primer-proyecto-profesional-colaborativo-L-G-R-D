@@ -14,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Tomar la página integrada desde main y coordinar su reserva antes de modificarla.
 2. Aplicar la identidad y composición de Maison RDL definida en T02.
 3. Página completa con líneas de producto y resumen; conservar precios e importes acordados.

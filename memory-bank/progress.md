@@ -17,3 +17,7 @@ Por petición de Roger se retira docs/. Los requisitos, diseño, inventario y ve
 Lighthouse 13.5.0 sobre https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/ devuelve **SEO 100/100**, sin auditorías SEO fallidas. Informe real: [JSON](../evidencias/lighthouse-seo-public.json). La captura de Roger con 63 corresponde al puerto privado de Codespaces, que desde fuera redirige al inicio de sesión; no equivale a medir la web pública. Este 100 es SEO en Lighthouse CLI, no una puntuación de rendimiento de PageSpeed Insights ni cierre de E07.
 
 Equipo final: Roger, Daniel, Lydia y Gabriela (Gaby). Gabriela se incorporó al final para revisión/aprobación de PR; reconocida en la web y la documentación. Capturas originales de Lighthouse de Codespaces aportadas por Roger guardadas en evidencias; su origen y límites se distinguen de la auditoría SEO pública de 100 y del requisito PageSpeed todavía pendiente.
+
+## Limpieza final sin respaldos
+
+Por instrucción de Roger se elimina la documentación redundante de arranque/verificación, las dos capturas visuales antiguas y las capturas de error de PageSpeed. El diagnóstico 429 se conserva en publicacion.json y verificacion.md. No se incluyen carpetas de respaldo en la entrega ni se crean nuevas; clean_workspace.py retira directamente solo el paquete inicial duplicado. Se mantienen AGENTS, CONTEXT, README, memoria/fichas, procedencia/licencias y evidencias útiles (incluidas las dos capturas aportadas por Roger y SEO público 100).

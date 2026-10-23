@@ -1,7 +1,7 @@
 # Maison RDL — Índice de tareas
 
 Estado vigente: implementación base T01–T08 en PR integradas; cierre visual/SEO de PR #13 aprobado por Gaby e integrado. Sitio publicado y comprobado; PageSpeed y envío al instructor pendientes. Evidencia y consolidación documental en PR #14, pendiente de Gaby. Evidencias: [verificación](../memory-bank/verificacion.md). Las secciones iniciales de fichas anteriores se conservan como historial.
-Referencia: [Plan vigente](../PLAN-DE-PROYECTO.md). Inicio de sesión: [Prompt maestro](../PROMPT-MAESTRO.md).
+Referencia: [Plan vigente](../PLAN-DE-PROYECTO.md). Inicio de sesión: [Prompt maestro](../AGENTS.md).
 
 | ID | Tarea | Responsable | Revisor | Dependencias |
 | --- | --- | --- | --- | --- |
