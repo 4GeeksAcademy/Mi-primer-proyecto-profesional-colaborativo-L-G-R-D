@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-23",
+  "publishedCommit": "bef45b0184393eb8a89dcbcd0644e93480932c07",
+  "url": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/",
+  "workflow": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/actions/runs/40009296141",
+  "conclusion": "success",
+  "pr13": {
+    "merged": true,
+    "reviewer": "gabrielajara2982",
+    "review": "APPROVED"
+  },
+  "pagespeed": {
+    "status": "blocked",
+    "apiStatus": 429,
+    "apiReason": "Queries per day quota exceeded",
+    "frontendRequestStatus": 429,
+    "frontendMessage": "Unable to resolve",
+    "score": null,
+    "screenshotOfSuccessfulResult": false
+  },
+  "delivery": {
+    "required": "Compartir el enlace del repositorio, confirmado por Roger",
+    "repository": "https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D",
+    "sentToInstructor": false
+  },
+  "finalPerformanceEvidence": {
+    "selectedBy": "Roger",
+    "tool": "Chrome DevTools Lighthouse",
+    "environment": "Codespaces",
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 63,
+      "screenshot": "evidencias/lighthouse-codespaces-desktop.png"
+    },
+    "mobile": {
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 63,
+      "screenshot": "evidencias/lighthouse-codespaces-mobile.png"
+    },
+    "pagespeedInsightsResult": false,
+    "instructorAcceptanceConfirmed": false
+  }
+}

@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T06 — Estructura y contenido de producto
 
 Proyecto: Maison RDL.
-Estado: En revisión (PR pendiente de revisión de Gaby).
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Daniel.
 Revisor: Lydia; Roger si afecta a la composición.
 Revisora de esta entrega: Gaby (revisión y aprobación de la PR). Revisión pendiente.
@@ -13,7 +15,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Preparar imagen y datos con estructura compatible con las dos columnas previstas por Roger.
 2. Incluir nombre, referencia, talla, precio, cantidad y navegación al carrito de ejemplo.
 3. Completar materiales y usos recomendados.
@@ -31,7 +33,7 @@ Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE
 
 Sesión del 23/10/2026. Dependencias en origin/main: T02 (PR #4/#5), T03 (PR #6) y T07 (PR #7) integrados.
 
-- Producto de la ficha: MRDL-CAM-001 «Camisa de seda marfil», con foto propia y primera línea del carrito de T07. Referencia, nombre, precio (240,00 €, impuestos incluidos), imagen y alt coinciden con el [inventario](../docs/inventario-productos.md) y con carrito.html; la talla M aparece seleccionada, como en la línea del carrito.
+- Producto de la ficha: MRDL-CAM-001 «Camisa de seda marfil», con foto propia y primera línea del carrito de T07. Referencia, nombre, precio (240,00 €, impuestos incluidos), imagen y alt coinciden con el [inventario](../memory-bank/inventario-productos.md) y con carrito.html; la talla M aparece seleccionada, como en la línea del carrito.
 - Composición del esquema de Roger: `grid gap-8 lg:grid-cols-2`, imagen a la izquierda y datos a la derecha en escritorio; apiladas por debajo de 1024 px con la imagen primero. Imagen principal sin lazy loading, con `fetchpriority="high"` y width/height reales.
 - Datos: categoría, nombre (h1), referencia, precio, talla (fieldset con radios `choice` y las tallas del inventario), cantidad (`input type="number"` 1–9 con label, patrón `field`) y «Añadir al carrito» como enlace `btn` a carrito.html, sin formulario ni envío.
 - Un texto visible, asociado al enlace con aria-describedby, aclara que el carrito de ejemplo muestra una selección fija y que la talla y la cantidad no se guardan. Otro texto indica que todas las tarjetas abren esta misma ficha.

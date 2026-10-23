@@ -1,22 +1,13 @@
-# Memoria de Maison RDL
+# Memoria del proyecto
 
-La memoria conserva continuidad sin sustituir las fuentes del proyecto.
+- [progress.md](progress.md): estado actual y pendientes reales.
+- [projectbrief.md](projectbrief.md): objetivo y alcance.
+- [techContext.md](techContext.md): stack, comandos y publicación.
+- [requisitos.md](requisitos.md): matriz de evaluación del enunciado.
+- [diseno.md](diseno.md): identidad visual; valores en src/styles/tokens.css.
+- [inventario-productos.md](inventario-productos.md): datos comunes de los veinte productos.
+- [verificacion.md](verificacion.md): pruebas, publicación, límites y entrega.
 
-- [projectbrief.md](projectbrief.md): objetivo, alcance y enlaces.
-- [techContext.md](techContext.md): organización técnica y comandos realmente disponibles.
-- [progress.md](progress.md): estado global contrastado y próximo paso.
-- [CONTEXT.md](../CONTEXT.md): acuerdos estables.
-- [tasks](../tasks/README.md): fuente de estados, reservas, comprobaciones y PR por tarea.
+Contexto estable: [CONTEXT.md](../CONTEXT.md). Reglas del asistente: [AGENTS.md](../AGENTS.md). Fichas y antecedentes: [tasks](../tasks/README.md). Evidencias reales: ../evidencias/. Procedencia y licencias: ../assets/.
 
-## Mantenimiento entre tres
-
-Cada integrante actualiza su ficha al trabajar. Daniel coordina cambios de memoria global cuando se integra una fase o cambian acuerdos; Roger revisa decisiones visuales. Cualquier integrante puede corregir un dato erróneo mediante una PR coordinada. No escribir un resumen global por persona y sesión.
-
-1. Leer la ficha y los cambios reales.
-2. Separar decisiones confirmadas, propuestas, implementación y verificaciones.
-3. Actualizar solo el archivo cuya información haya cambiado.
-4. Enlazar tareas/evidencias; evitar copiar paleta, inventario o matriz de requisitos.
-5. Registrar límites y siguiente paso.
-6. Revisar enlaces y coherencia antes de integrar.
-
-No inventar pruebas, aprobaciones, puntuaciones o PR. No modificar archivos solo para registrar que se leyeron.
+Actualizar hechos que cambien, sin duplicar todo el contenido en cada sesión. Separar implementación, publicación, pruebas y aprobación. Conservar autoría y no inventar resultados. Gaby revisa las PR; Roger dirige el diseño. Los estados iniciales de fichas antiguas son antecedentes: prevalece progress.md y la última actualización confirmada.

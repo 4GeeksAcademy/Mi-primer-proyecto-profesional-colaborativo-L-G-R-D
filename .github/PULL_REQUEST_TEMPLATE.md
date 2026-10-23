@@ -7,7 +7,7 @@ Problema y resultado:
 
 ## Requisitos cubiertos
 
-IDs de docs/requisitos.md:
+IDs de memory-bank/requisitos.md:
 Archivos afectados:
 Fuera del alcance / limitaciones conocidas:
 

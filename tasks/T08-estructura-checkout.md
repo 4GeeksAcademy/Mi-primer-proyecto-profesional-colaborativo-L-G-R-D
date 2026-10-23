@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T08 — Estructura y contenido de checkout
 
 Proyecto: Maison RDL.
-Estado: Implementada y preparada para revisión de Gaby; comprobaciones de navegador pendientes. No integrada ni verificada.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Lydia.
 Revisora de esta entrega: Gaby (gabrielajara2982); revisión solicitada en la PR #11, todavía pendiente. Roger mantiene la dirección visual y el acabado D05.
 Rama: codex/estructura-checkout.
@@ -14,7 +16,7 @@ La planificación inicial se conserva como historial en los apartados siguientes
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Crear tres bloques visibles y numerados para datos personales, dirección y tarjeta.
 2. Usar form, fieldset, legend, label y tipos/restricciones HTML adecuados.
 3. Permitir navegación por anclas sin afirmar que valida campos o cambia un paso activo automáticamente.
@@ -59,7 +61,7 @@ Estas restricciones se comprobarán con datos ficticios al implementar; no impli
 - Aviso claro de demostración y de no introducir datos reales. Sin backend, persistencia, JavaScript de aplicación ni servicio de pago.
 - Botón final de tipo button y disabled; ningún control de envío. Al implementar, impedir también el envío implícito con Enter mediante un patrón HTML nativo comprobado; no confiar únicamente en omitir action, que no impide un envío.
 - Verificar en navegador, con datos ficticios, clic y Enter en los campos: no debe haber envío, petición de formulario ni datos personales en la URL. Mantener pago deshabilitado.
-- Navbar, footer, campos, foco y acciones serán los de Roger, usando [guía](../docs/diseno.md) y [tokens](../src/styles/tokens.css), sin estilos alternativos. Vuelta al [carrito](../carrito.html); un resumen, si se incorpora, copiará exactamente los importes documentados en T07.
+- Navbar, footer, campos, foco y acciones serán los de Roger, usando [guía](../memory-bank/diseno.md) y [tokens](../src/styles/tokens.css), sin estilos alternativos. Vuelta al [carrito](../carrito.html); un resumen, si se incorpora, copiará exactamente los importes documentados en T07.
 
 ## Pendiente
 

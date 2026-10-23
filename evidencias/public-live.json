@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-23T19:12:15.344Z",
+  "commit": "bef45b0184393eb8a89dcbcd0644e93480932c07",
+  "rows": [
+    {
+      "page": "index.html",
+      "width": 375,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "catalogo.html",
+      "width": 375,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/catalogo.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "producto.html",
+      "width": 375,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/producto.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "carrito.html",
+      "width": 375,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/carrito.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "checkout.html",
+      "width": 375,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/checkout.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "catalogo.html",
+      "width": 1440,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/catalogo.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "producto.html",
+      "width": 1440,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/producto.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "carrito.html",
+      "width": 1440,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/carrito.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "page": "checkout.html",
+      "width": 1440,
+      "status": 200,
+      "canonical": "https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/checkout.html",
+      "broken": 0,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

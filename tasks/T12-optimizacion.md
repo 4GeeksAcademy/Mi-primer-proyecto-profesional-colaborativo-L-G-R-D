@@ -1,18 +1,20 @@
+> Estado vigente: evidencia final de rendimiento seleccionada por Roger, Lighthouse 100 escritorio y 97 móvil. Se conserva la procedencia Codespaces; PageSpeed Insights devolvió 429. Revisión de la actualización en PR #14 pendiente de Gaby.
+
 # T12 — Optimización y PageSpeed
 
 Proyecto: Maison RDL.
-Estado: En curso; preparación local de entrega, pendiente de revisión e integración.
+Estado: Evidencia final preparada por decisión de Roger; revisión e integración en PR #14 pendientes.
 Responsable: Roger.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/optimizacion.
 Depende de: T11 con URL pública.
-Archivos previstos: Imágenes, estilos fuente y CSS generado, cinco HTML cuando proceda, docs/verificacion.md y ficha propia.
+Archivos previstos: Imágenes, estilos fuente y CSS generado, cinco HTML cuando proceda, memory-bank/verificacion.md y ficha propia.
 Responsable activo de los archivos: sin reserva todavía.
 PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Medir la versión pública y priorizar problemas observados.
 2. Optimizar imágenes, dimensiones, CSS y tipografía conservando contenido y diseño.
 3. No cargar de forma diferida la imagen principal si perjudica su aparición inicial; reservar lazy loading para imágenes fuera de la primera pantalla.
@@ -44,4 +46,8 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 
 ## Actualización de Roger — 23/10/2026
 
-Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../memory-bank/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+
+## Evidencia final elegida por Roger
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido. Capturas enlazadas desde README y memory-bank/verificacion.md.

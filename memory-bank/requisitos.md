@@ -101,8 +101,12 @@ Búsqueda, filtros y carrito se representan dentro del alcance HTML/CSS; no se p
 - [ ] URL pública correspondiente a la versión final.
 - [ ] PageSpeed ≥80; objetivo >90, también indicado como ideal por el enunciado.
 - [ ] Captura real de PageSpeed incluida en el repo; nombre de equipo: pagespeed-result.png.
-- [ ] docs/verificacion.md registra fecha, URL exacta, modo, resultado y evidencia.
+- [ ] memory-bank/verificacion.md registra fecha, URL exacta, modo, resultado y evidencia.
 - [ ] README final con ejecución, build, URL, alcance, equipo y aportaciones.
 - [ ] Repositorio compartido por el canal y fecha del instructor; registrar la entrega solo cuando ocurra.
 
 La captura es obligatoria; el nombre concreto del archivo es un ejemplo del enunciado adoptado por el equipo. La fecha y el canal específico siguen pendientes. Las fichas de tareas contienen los estados de trabajo; esta matriz evita duplicarlos.
+
+## Evidencia final seleccionada por el equipo
+
+**Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido. Véanse las dos capturas originales en README. Se conserva el texto del criterio E07 del enunciado, sin reescribirlo como si exigiera otra herramienta ni atribuir una aprobación docente inexistente.

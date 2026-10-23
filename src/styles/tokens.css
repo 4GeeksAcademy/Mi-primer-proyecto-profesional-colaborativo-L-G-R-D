@@ -1,7 +1,7 @@
 /* Maison RDL v0.1 — Tailwind CSS 4.
    Importar desde input.css después de @import "tailwindcss".
    Solo tokens: no contiene el layout ni carga fuentes por sí mismo.
-   Guía: docs/diseno.md. Responsable visual: Roger. */
+   Guía: memory-bank/diseno.md. Responsable visual: Roger. */
 @theme {
   --color-ivory: #f3f0e9;
   --color-ink: #262a22;

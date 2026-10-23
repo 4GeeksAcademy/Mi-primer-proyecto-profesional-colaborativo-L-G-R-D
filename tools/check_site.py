@@ -79,7 +79,7 @@ def check(root):
         urls = [e.text for e in ET.parse(root / 'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
         if len(urls) != 3 or any(not p.canonical for p in pages.values()):
             errors.append('Sitemap/canónicas incompletos')
-        if any((root / name).exists() for name in ('node_modules', '.git', 'tasks', 'docs', 'package.json')):
+        if any((root / name).exists() for name in ('node_modules', '.git', 'tasks', 'memory-bank', 'evidencias', 'tools', 'package.json')):
             errors.append('La publicación contiene archivos de desarrollo')
     result = {'pages': 5, 'public_build': public, 'errors': errors}
     print(json.dumps(result, ensure_ascii=False, indent=2))

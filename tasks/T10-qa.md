@@ -1,18 +1,20 @@
+> Estado vigente a 23/10/2026: Comprobaciones locales y públicas realizadas; evidencias en PR #14 para revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T10 — QA de las cinco vistas
 
 Proyecto: Maison RDL.
-Estado: En curso; preparación local de entrega, pendiente de revisión e integración.
+Estado: Comprobaciones locales y públicas realizadas; evidencias en PR #14 para revisión.
 Responsable: Lydia.
 Revisor: Gaby (revisión y aprobación manual).
 Rama: codex/qa.
 Depende de: T09.
-Archivos previstos: docs/verificacion.md, docs/evidencias/ y ficha propia; correcciones HTML coordinadas.
+Archivos previstos: memory-bank/verificacion.md, evidencias/ y ficha propia; correcciones HTML coordinadas.
 Responsable activo de los archivos: sin reserva todavía.
 PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Probar las cinco páginas a 375, 768 y 1280 px y en tamaños intermedios.
 2. Recorrer inicio → catálogo → producto → carrito → checkout y enlaces de vuelta/footer.
 3. Validar HTML, teclado, foco, etiquetas, contraste, imágenes e importes.
@@ -44,4 +46,4 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 
 ## Actualización de Roger — 23/10/2026
 
-Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../docs/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.
+Preparación autorizada en `codex/imagenes-revision-visual`; resultados y límites en [verificación](../memory-bank/verificacion.md). No se marca integrada ni entregada. Gaby revisa manualmente. PageSpeed y publicación final siguen pendientes cuando sean aplicables.

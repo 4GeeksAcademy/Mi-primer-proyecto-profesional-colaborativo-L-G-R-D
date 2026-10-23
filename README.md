@@ -28,21 +28,21 @@ Búsqueda, filtros, cuenta y carrito son demostraciones identificadas. Todas las
 
 ## Equipo y revisión
 
-Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gaby: revisión manual y aprobación de PR. Los cambios actuales están subidos en `codex/imagenes-revision-visual`, [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13), pendientes de revisión de Gaby e integración; no se atribuyen nuevas aprobaciones.
+Roger: diseño, imágenes, componentes y optimización. Daniel: inventario, inicio, catálogo, producto y preparación técnica. Lydia: carrito, checkout y coordinación de pruebas. Gabriela (Gaby): se incorporó al equipo en la fase final para la revisión manual y aprobación de PR. La actualización visual y SEO de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13) fue aprobada por Gaby e integrada; publicación comprobada en bef45b0.
 
 ## Entrega y evaluación
 
-[Requisitos](docs/requisitos.md), [verificación actual](docs/verificacion.md), [guía visual](docs/diseno.md), [inventario](docs/inventario-productos.md) y [procedencia de imágenes](docs/fuentes-imagenes.md).
+[Requisitos](memory-bank/requisitos.md), [verificación actual](memory-bank/verificacion.md), [guía visual](memory-bank/diseno.md), [inventario](memory-bank/inventario-productos.md) y [procedencia de imágenes](assets/fuentes-imagenes.md).
 
 **SEO completado:** Organization y Product/Offer validados en Schema.org con cero errores y advertencias. La publicación genera canónicas, metadatos sociales, robots y sitemap con la URL real; incluye un workflow de GitHub Pages. [Procedimiento](#publicación).
 
-**Pendientes externos:** integrar la PR revisada por Gaby, publicar esa versión, medir PageSpeed Insights sobre su URL pública (mínimo 80), guardar la captura real `pagespeed-result.png` y compartir el repositorio por el canal del instructor. URL pública final: pendiente de publicación; no se presenta localhost como entrega publicada.
+**Publicación:** [Abrir Maison RDL](https://4geeksacademy.github.io/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/). PR #13 aprobada por Gaby e integrada; workflow de Pages correcto. **Evidencia final de rendimiento elegida por Roger:** Chrome DevTools Lighthouse en Codespaces, **100 en escritorio y 97 en móvil**. Capturas originales incluidas; no se presentan como informes de la web de PageSpeed Insights. Ese servicio devolvió HTTP 429. La equivalencia con el requisito específico del enunciado corresponde a la evaluación del instructor; no se atribuye una aceptación que no se ha recibido.
 
 ## Archivos necesarios
 
 - Cinco HTML, `assets/` y `src/`: sitio, imágenes, fuentes/licencias y entrada de Tailwind.
 - `package.json`, `package-lock.json`, `.gitignore`, `.vscode/`, `.github/`: instalación reproducible y trabajo del equipo.
-- `docs/`, `tasks/`, `memory-bank/`, `.agents/` y archivos de coordinación: requisitos, evidencia y acuerdos. La referencia visual se conserva porque está enlazada por la guía y la procedencia.
+- `memory-bank/`, `tasks/`, `.agents/` y archivos de coordinación: requisitos, diseño, inventario, acuerdos y estados. `evidencias/` conserva las pruebas y dos capturas de referencia; `assets/` conserva la procedencia. La carpeta `docs/` se retira para evitar duplicados.
 - `node_modules/` se instala localmente y no se versiona ni se entrega en el ZIP. Se retiran README de plantilla en otros idiomas, servidor Flask, ficha learn.json y foto de plantilla sin uso. No se retira el historial Git.
 
 El CSS generado no se edita a mano: modificar `src/styles/` y ejecutar `npm run build`. Si hay conflictos, resolver las fuentes y regenerar.
@@ -67,4 +67,27 @@ Sustituir la URL por la real, incluida su subruta. `dist` debe estar vacío o no
 
 ## Mantener el Codespace limpio
 
-Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: crea un respaldo verificado fuera del proyecto y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.
+Conservar AGENTS.md, CONTEXT.md, memoria, reglas y evidencia. Si queda la carpeta inicial duplicada mostrada en el explorador, ejecutar `python tools/clean_workspace.py` y después `python tools/clean_workspace.py --apply`: no crea respaldos y retira únicamente `pquete-maison/` o `paquete-maison/`. No toca .git ni cambios ajenos. node_modules sigue ignorado y se recrea con npm ci; no se sube.
+
+## Enlace para compartir con el instructor
+
+https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D
+
+Roger confirma que solo debe compartirse ese enlace. La web pública se enlaza arriba. La entrega usa las capturas finales de Lighthouse elegidas por Roger, con origen y resultados documentados.
+
+## Medir SEO en la URL correcta
+
+La web pública obtuvo SEO 100/100 en Lighthouse 13.5.0; [informe](evidencias/lighthouse-seo-public.json). Usar GitHub Pages para evaluar la entrega. La URL temporal de Codespaces puede requerir autenticación y no representa la indexación del sitio público. El equipo utiliza como evidencia final de rendimiento las capturas originales de Lighthouse: 100 escritorio y 97 móvil.
+
+## Limpieza final de entrega
+
+La entrega no incluye docs, paquetes iniciales duplicados, carpetas de respaldo, originales de generación ni informes históricos redundantes. Se conservan solo la web, herramientas de build/publicación, instrucciones de agentes y contexto, memoria/fichas útiles, licencias/procedencia y pruebas relevantes. La limpieza de duplicados se ejecuta con `python tools/clean_workspace.py --apply`, sin crear ZIP ni carpetas de respaldo. No borra .git ni node_modules, que está ignorado y no se entrega.
+
+## Pruebas finales de rendimiento
+
+| Modo | Rendimiento | Herramienta y entorno | Captura |
+| --- | --- | --- | --- |
+| Escritorio | 100/100 | Chrome DevTools Lighthouse, Codespaces | [Ver captura](evidencias/lighthouse-codespaces-desktop.png) |
+| Móvil | 97/100 | Chrome DevTools Lighthouse, Codespaces | [Ver captura](evidencias/lighthouse-codespaces-mobile.png) |
+
+Roger elige estas dos capturas como evidencia final del equipo. Ambas muestran accesibilidad 100 y buenas prácticas 100; el SEO 63 pertenece a la URL temporal de Codespaces. La URL pública obtuvo SEO 100/100 en una auditoría independiente conservada en evidencias. PageSpeed Insights web/API devolvió 429; no se inventa una puntuación de ese servicio.

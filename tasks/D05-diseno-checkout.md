@@ -1,7 +1,9 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # D05 — Diseño de checkout
 
 Proyecto: Maison RDL.
-Estado: En revisión en la actualización conjunta; pendiente de Gaby e integración.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Roger.
 Revisor: Gaby.
 Rama: codex/diseno-checkout.
@@ -12,7 +14,7 @@ PR: pendiente.
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Tomar la página integrada desde main y coordinar su reserva antes de modificarla.
 2. Aplicar la identidad y composición de Maison RDL definida en T02.
 3. Tres bloques visibles, campos accesibles, botón de pago deshabilitado y nota de demostración; sin envío ni lógica de pasos.
@@ -44,4 +46,4 @@ Pendiente. Al terminar, indicar qué tarea recibe el resultado y liberar la rese
 
 ## Cierre visual conjunto — 23/10/2026
 
-Vista contrastada dentro de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13). Cabecera compartida y contraste corregidos; resultados locales en [verificación](../docs/verificacion.md). No se marca integrada ni se atribuye aprobación.
+Vista contrastada dentro de [PR #13](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/13). Cabecera compartida y contraste corregidos; resultados locales en [verificación](../memory-bank/verificacion.md). No se marca integrada ni se atribuye aprobación.

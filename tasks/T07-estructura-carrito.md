@@ -1,12 +1,14 @@
+> Estado vigente a 23/10/2026: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión. Los apartados de preparación y sesiones anteriores se conservan como historial. Fuente actual: [progress](../memory-bank/progress.md) y [verificación](../memory-bank/verificacion.md).
+
 # T07 — Estructura y contenido de carrito
 
 Proyecto: Maison RDL.
-Estado: Estructura e importes preparados para revisión de Gaby; revisión visual pendiente. No integrada ni verificada.
+Estado: Implementación integrada hasta PR #13; reorganización documental en PR #14 pendiente de revisión.
 Responsable: Lydia.
 Revisora de esta entrega: Gaby; revisión pendiente. Roger mantiene la dirección del diseño y la revisión visual para D04.
 Rama: codex/estructura-carrito.
 Depende de: T02 y tres productos de T03.
-Archivos de esta entrega: carrito.html, supuesto de demostración y acuerdos relacionados en docs/inventario-productos.md, y esta ficha; assets/css/styles.css regenerado exclusivamente con el build.
+Archivos de esta entrega: carrito.html, supuesto de demostración y acuerdos relacionados en memory-bank/inventario-productos.md, y esta ficha; assets/css/styles.css regenerado exclusivamente con el build.
 Responsable activo de los archivos: Lydia, para carrito.html y esta ficha; actualización acotada del supuesto del inventario autorizada por Lydia para coordinación con Daniel, que mantiene su responsabilidad. Sin cambios de tokens, estilos fuente, fragmentos o páginas ajenas.
 PR: no creada; sin commit, push ni integración por indicación de Lydia.
 
@@ -14,7 +16,7 @@ La planificación previa y el registro de implementación parcial se conservan c
 
 ## Instrucciones
 
-Aplicar [el prompt maestro](../PROMPT-MAESTRO.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
+Aplicar [el prompt maestro](../AGENTS.md) y [el plan vigente](../PLAN-DE-PROYECTO.md).
 1. Crear página completa del carrito con tres productos compartidos.
 2. Mostrar miniatura, precio unitario, cantidad y total por línea.
 3. Calcular y comprobar manualmente subtotal, impuestos y total conforme al supuesto documentado.
@@ -54,11 +56,11 @@ Cada línea tomará un producto distinto del [inventario de T03](T03-inventario.
 
 ### Estructura prevista
 
-Página completa con navbar y footer de T02, tres líneas y resumen de subtotal, impuestos y total. Comprar será un enlace a [checkout.html](../checkout.html); habrá navegación de vuelta al [catálogo](../catalogo.html). Datos estáticos sin recálculo ni guardado. Aplicar únicamente [guía visual](../docs/diseno.md), [tokens](../src/styles/tokens.css) y componentes de Roger cuando estén integrados; no crear estilos alternativos. Roger recibirá el resultado en [D04](D04-diseno-carrito.md) tras integrar T07.
+Página completa con navbar y footer de T02, tres líneas y resumen de subtotal, impuestos y total. Comprar será un enlace a [checkout.html](../checkout.html); habrá navegación de vuelta al [catálogo](../catalogo.html). Datos estáticos sin recálculo ni guardado. Aplicar únicamente [guía visual](../memory-bank/diseno.md), [tokens](../src/styles/tokens.css) y componentes de Roger cuando estén integrados; no crear estilos alternativos. Roger recibirá el resultado en [D04](D04-diseno-carrito.md) tras integrar T07.
 
 ## Pendiente
 
-- Daniel: integrar tres fichas completas de T03 (referencia, nombre, talla, precio, moneda e imagen local) y su procedencia; acordar cantidades, tratamiento fiscal y redondeo. El archivo docs/inventario-productos.md todavía no existe; no crearlo ni editarlo sin coordinar su responsabilidad activa.
+- Daniel: integrar tres fichas completas de T03 (referencia, nombre, talla, precio, moneda e imagen local) y su procedencia; acordar cantidades, tratamiento fiscal y redondeo. El archivo memory-bank/inventario-productos.md todavía no existe; no crearlo ni editarlo sin coordinar su responsabilidad activa.
 - Roger: integrar T02, incluidos src/partials/navbar.html, src/partials/footer.html, recursos de marca/fuentes y patrones de campos, acciones, resumen y cabecera interna. Guía y tokens existentes no sustituyen esa integración.
 - Daniel/Roger: confirmar el traspaso de carrito.html; la ficha T01 todavía mantiene su reserva aunque el setup ya está integrado.
 - Tras resolver las dependencias: actualizar esta rama desde origin/main, reservar el HTML, construir T07 y comprobar importes, enlaces, semántica, build y vistas afectadas. Implementación de T08 en una tarea y rama posteriores.
@@ -69,7 +71,7 @@ Página completa con navbar y footer de T02, tres líneas y resumen de subtotal,
 23/10/2026, comprobación previa a la edición:
 - Repositorio remoto: 4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-R-D. git status --short --branch: main sin cambios locales; git fetch origin correcto; main y origin/main sin divergencia (0/0).
 - T01 integrado: origin/main en 6fb5fa4 contiene el merge de la PR #2 y el commit 813b0c8. Existen package.json, package-lock.json, src/styles/input.css, assets/css/styles.css y los cinco HTML. La ficha T01 y la memoria aún conservan estados anteriores; no se actualizan archivos de Daniel ni se da por cerrada toda su verificación.
-- T02/T03 no disponibles: git ls-tree de origin/main no contiene src/partials/navbar.html, src/partials/footer.html, docs/inventario-productos.md ni assets/images/. Sus fichas siguen pendientes. carrito.html conserva el esqueleto de T01, sin las líneas ni los importes.
+- T02/T03 no disponibles: git ls-tree de origin/main no contiene src/partials/navbar.html, src/partials/footer.html, memory-bank/inventario-productos.md ni assets/images/. Sus fichas siguen pendientes. carrito.html conserva el esqueleto de T01, sin las líneas ni los importes.
 - Validación documental: comprobación con Node de los 17 enlaces locales de ambas fichas, todos existentes; git diff --name-only HEAD confirma que solo cambian T07/T08, sin cambios en HTML, CSS ni archivos ajenos.
 - Comprobación de espacios: git diff --check señaló los CRLF originales como espacios finales; repetida correctamente con git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --check. Formato CRLF original conservado en ambas fichas, sin cambiar la configuración del repositorio.
 - No ejecutados build, navegador, validación HTML, pruebas de importes ni PageSpeed: solo cambia planificación y faltan los datos/componentes para implementar. No hay capturas ni aprobación visual nuevas.
@@ -141,7 +143,7 @@ Este registro sustituye los pendientes de datos e importes de la implementación
 
 ### Archivos y coordinación
 
-- [Inventario común](../docs/inventario-productos.md): actualizado el supuesto de importes y las filas relacionadas de acuerdos. Se registra la confirmación de Lydia para coordinación y revisión de Daniel, responsable del documento; no se atribuye aprobación ni contacto realizado con Daniel. No se cambian las fichas de producto ni sus precios.
+- [Inventario común](../memory-bank/inventario-productos.md): actualizado el supuesto de importes y las filas relacionadas de acuerdos. Se registra la confirmación de Lydia para coordinación y revisión de Daniel, responsable del documento; no se atribuye aprobación ni contacto realizado con Daniel. No se cambian las fichas de producto ni sus precios.
 - [carrito.html](../carrito.html): sustituidos todos los pendientes por los datos indicados, con dos decimales y aviso explícito del impuesto de simulación incluido. Se mantienen navegación, componentes de Roger y alcance estático, sin persistencia ni recálculo automático.
 - assets/css/styles.css regenerado únicamente mediante el build. T08, checkout, páginas de Daniel, tokens, estilos fuente y fragmentos compartidos sin cambios.
 
