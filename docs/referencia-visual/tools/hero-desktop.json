@@ -1,0 +1,7 @@
+{
+  "key": "hero-desktop",
+  "prompt": "Create a photorealistic wide landscape companion photograph to the supplied luxury fashion editorial. Preserve the same adult woman with dark slicked-back hair, dark chocolate silk blouse and ivory tailored trousers, and the same dark-haired adult man in a sand linen suit and white shirt. Same warm French limestone terrace, restrained high-end contemporary fashion campaign, tactile fabrics, natural realistic skin. Recompose the two models together into the RIGHT HALF of a very wide horizontal 16:9 landscape scene, full figures visible with space around them, strong but natural standing poses. The LEFT HALF must contain elegant softly shaded limestone architectural planes and subtle terrace shadows, quieter and darker in tone so real HTML ivory headline text can be laid over it later. Warm cinematic late-afternoon sunlight comes from upper right and lights the models, deep warm shadows at left. Luxury editorial magazine photography, realistic lens, sophisticated muted chocolate, olive-gray, ivory and warm stone colors. No text, logos, borders, watermarks or interface. This is only the photograph, not a website mockup.",
+  "mode": "built-in image_gen; edición/reencuadre con referencia a la foto hero",
+  "asset": "assets/images/hero-desktop.webp",
+  "source_note": "Generada con image_gen; se incluye la versión WebP optimizada. Original de generación no incluido."
+}
