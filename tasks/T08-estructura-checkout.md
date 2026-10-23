@@ -141,3 +141,11 @@ Commit de implementación 43598fe: `feat: completar checkout de demostración (T
 [PR #11](https://github.com/4GeeksAcademy/Mi-primer-proyecto-profesional-colaborativo-L-G-R-D/pull/11) creada abierta, no draft, contra main. GitHub confirma solicitud de revisión a gabrielajara2982 (nombre público Gaby Jara). Sin revisión aprobada ni integración. La descripción incluye requisitos, resultados de las comprobaciones y pendientes concretos de navegador y diseño D05.
 
 Control previo a publicación: nueve enlaces locales de la ficha con destino existente, CRLF y planificación histórica conservados; `git diff --check` y comprobación del staging correctos reconociendo CRLF. Rama al día con origin/main antes del commit (0/0). Solo checkout, CSS generado y T08 modificados. Este registro de publicación se incorpora mediante un commit documental posterior; no requiere repetir el build porque no modifica HTML ni CSS.
+
+### Resolución de conflicto con main - 23/10/2026
+
+Se incorpora origin/main en 82799ed a codex/estructura-checkout para resolver el conflicto de la PR #11. Al empezar no había cambios locales ni merge en curso. El único conflicto era assets/css/styles.css; las fuentes se combinaron sin conflictos y no se eligió unilateralmente el CSS de ninguna rama.
+
+`npm run build` correcto con Tailwind 4.3.3: CSS regenerado desde las cinco páginas combinadas. Comprobación sin marcadores de conflicto en archivos de texto versionados y sin archivos sin resolver tras registrar el CSS. Inicio, catálogo, producto y sus fichas coinciden exactamente con origin/main; checkout, carrito, estilos fuente y tokens conservan la versión previa de T08. CSS con componentes de hero, tarjetas y campos, y utilidades de columnas de checkout; las cinco páginas siguen incluidas en el escaneo Tailwind. Diff revisado y control de espacios del staging correcto, respetando CRLF.
+
+No se repiten pruebas de navegador ni se atribuye aprobación de Gaby. La resolución se publica en la misma rama y PR #11; no se crea otra PR ni se fusiona la existente. T08 mantiene pendientes de revisión e interacción.
