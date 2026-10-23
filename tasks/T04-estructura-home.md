@@ -39,7 +39,7 @@ Sesión del 23/10/2026. Dependencias comprobadas en origin/main: T02 integrada (
 
 - Roger: decidir qué productos e imágenes usan los listados (ver [imágenes pendientes](../docs/fuentes-imagenes.md#imágenes-pendientes)). Después, Daniel añade las tarjetas con `product-track` y `product-card` del muestrario: imagen local con width/height y alt del inventario, nombre, precio y enlace a producto.html como ficha demostrativa compartida.
 - Repetir build y comprobaciones tras añadir las tarjetas.
-- Gaby: revisar la PR. Commit, push y PR en borrador presentados por Daniel el 23/10/2026; faltan las tarjetas de los listados. Revisión pendiente.
+- Gaby: revisar y aprobar la PR. Commit, push y PR presentados por Daniel el 23/10/2026; faltan las tarjetas de los listados. Revisión pendiente.
 - D01 (Roger): acabado visual final.
 - Criterio de cierre «La home tiene todo el contenido exigido» no cumplido: faltan las tarjetas de los dos listados.
 
